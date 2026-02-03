@@ -1,0 +1,164 @@
+.Home_Section7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0px;
+    
+    background-color: #0f0f0f;
+
+    width: 100%;
+
+    position: relative;
+}
+
+.Home_Section7_cobra_topo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25.3vw;
+}
+
+.Home_Section7_grupo_de_patrocinadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: aliceblue;
+
+    width: 45%;
+
+    & h4 {
+        margin-bottom: 50px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+    }
+}
+
+.Home_Section7_patrocinadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 630px;
+    /* border: 2px red solid; */
+    font-family: "Cascadia Mono", sans-serif;
+
+    & h5 {
+        font-size: 16px;
+    }
+}
+
+.Home_Section7_patrocinadores_bandeira {
+    width: 100%;
+
+    & .Home_Section7_patrocinadores_bandeira_linha {
+        width: 100%;
+        height: 1px;
+        background-color: aliceblue;
+    }
+
+    & img {
+            margin-left: 30px;
+    }
+}
+
+.Home_Section7_patrocinadores_bandeira_linha {
+    margin-top: -10px;
+    max-width: 630px;
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.Home_Section7_patrocinadores_bandeira_linha_espacamento {
+    margin-bottom: 49px;
+}
+
+.Home_Section7_patrocinadores h5 {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    color: greenyellow
+}
+
+.Home_Section7_patrocinadores_logos {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    /* border: 2px red solid; */
+
+    /* NÃO SEI PQ FUNCIONA, MAS FUNCIONA */
+    & img {
+        flex: 1;
+        width: calc(80% / 4);
+    }
+}
+
+.Home_Section7_cobra_baixo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 25.3vw;
+}
+
+@media (max-width : 900px) {
+    .Home_Section7_grupo_de_patrocinadores {
+        width: 80%;
+        /* border: 2px red solid; */
+    }
+
+    .Home_Section7_patrocinadores_bandeira {
+        & img {
+                width: auto;
+                height: 40px;
+                margin-left: 5vw;
+        }
+    }
+
+    .Home_Section7_patrocinadores_logos.patrocinadores_ouro{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+        gap: 10px;
+        width: 90%;
+
+        & img {
+            flex: 1;
+            width: 100%;
+        }
+    }
+
+    .Home_Section7_patrocinadores_logos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: none;
+        justify-items: center;
+        align-items: center;
+        
+        gap: 10px;
+        width: 90%;
+
+        & img {
+            flex: 1;
+            width: 45%;
+        }
+    }
+
+    .Home_Section7_patrocinadores_bandeira_linha.ultima_linha {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width : 250px) {
+    .Home_Section7_patrocinadores_bandeira {
+        & img {
+                margin-left: 2vw;
+                height: 25px;
+        }
+    }    
+}
