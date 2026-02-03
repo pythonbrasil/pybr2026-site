@@ -1,0 +1,86 @@
+.swiper {
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+}
+
+.swiper-track {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease;
+  width: 800px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.swiper-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.dot {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+  margin: 0 4px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+@media (max-width : 1000px){
+  .swiper-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 60%;
+  }  
+}
+
+@media (max-width : 750px){
+  .swiper-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 70%;
+  }
+}
+
+@media (max-width : 600px){
+  .swiper-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 80%;
+  }
+}
+
+@media (max-width : 500px){
+  .swiper-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 80%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+.Carregamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #0f0f0f;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    & img {
+        position: relative;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        left: 100%;
+
+        animation: slide 2s ease infinite;
+    }
+
+    & h4 {
+        font-size: 30px;
+        font-weight: 700;
+        color: aliceblue;
+        width: auto;
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: 80%;
+    }
+    30% {
+        transform: rotate(360deg);
+    }
+    50% {
+        left: 0%;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: -80%;
+    }
+}

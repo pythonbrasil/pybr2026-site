@@ -1,0 +1,23 @@
+.Programacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 250px;
+    padding-top: 70px;
+    background-color: #0f0f0f;
+
+    & h3 {
+        color: aliceblue;
+        font-family: "Cascadia Mono", sans-serif;
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+.Programacao_margim_baixo {
+    height: 200px;
+    background-color: #0f0f0f;
+}

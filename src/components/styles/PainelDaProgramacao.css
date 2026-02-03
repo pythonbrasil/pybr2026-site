@@ -1,0 +1,250 @@
+.datas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: #E8F4BA;
+  padding: 50px 0px;
+}
+
+.painel_das_palestras{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  max-width: 1100px;
+}
+
+.painel_filtro_de_palestras {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  align-self: start;
+  width: auto;
+}
+
+.painel_filtro_de_palestras_todas_opcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: start;
+  width: 350px;
+}
+
+.painel_filtro_de_palestras_opcao {
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px black solid;
+  color: black;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.painel_filtro_de_palestras_opcao.selecionado {
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px black solid;
+  background-color: #B7FF06;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+.painel_de_datas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.datas_palestras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  border: 2px rgb(0, 0, 0) solid;
+  padding: 25px 10px;
+  width: 100%;
+  font-family: "Cascadia Mono", sans-serif;
+}
+
+.datas_palestras.ativo {
+  background-color: black;
+  color: aliceblue;
+}
+
+.todas_palestras {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+
+  width: 100%;
+}
+
+.card_palestra {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  padding: 25px;
+  gap: 20px;
+
+  width: 100%;
+  background-color: #B7FF06;
+}
+
+.card_palestra_infos_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.card_palestra_infos_1_horario,
+.card_palestra_infos_1_duracao,
+.card_palestra_infos_1_nivel {
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px black solid;
+  color: aliceblue;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.card_palestra_infos_1_atividade {
+  padding: 5px 12px;
+  border-radius: 30px;
+  background-color: black;
+  color: aliceblue;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.card_palestra_infos_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;  
+}
+
+.card_palestra_infos_2_descricao {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card_palestra_infos_2_titulo {
+  font-family: "Cascadia Mono", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card_palestra_infos_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.card_palestra_infos_3_fotos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+
+  /* border: red 2px solid; */
+  & img {
+    margin-left: -5px;
+  }
+}
+
+.card_palestra_infos_3_nomes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.datas_margem_de_baixo {
+  height: 300px;
+  background-color: black;
+}
+
+@media (max-width : 800px) {
+  .datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .painel_de_datas {
+    flex-direction: column;
+  }
+  .card_palestra_infos_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .painel_filtro_de_palestras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .painel_filtro_de_palestras_todas_opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+@media (max-width : 600px) {
+  .card_palestra_infos_1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width : 300px) {
+  .card_palestra_infos_3 {
+    flex-direction: column;
+  }
+
+  .card_palestra_infos_3_nomes {
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+  }
+}
