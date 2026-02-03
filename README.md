@@ -1,7 +1,4 @@
-# A TALITA LIBEROU ISSO
-
-### Primeira PythonBrasil sem a dulce brigando comigo
-...por enquanto...
+# Como rodar o site
 
 Abaixo, todas as informações sobre a enzo stack / genz stack
 
