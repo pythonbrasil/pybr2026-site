@@ -1,0 +1,59 @@
+.contador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.contador_itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    font-family: "Inter", sans-serif;
+    gap: 20px;
+}
+
+.separador {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & span {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    & p {
+        margin-top: -3px;
+        font-size: 14px;
+        color: #0f0000;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width : 400px){
+    .contador_itens {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        /* border: 2px red solid; */
+        width: 80%;
+
+        flex-direction: none;
+        align-items: none;
+        justify-content: none;
+    }
+}

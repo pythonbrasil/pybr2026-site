@@ -1,0 +1,42 @@
+.carrossel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #b7ff06;
+}
+
+/* TRACK = 200% FIXO */
+.carrossel-track {
+  display: flex;
+  width: 100%;
+  animation: scroll 150s linear infinite;
+}
+
+/* CADA BLOCO = 50% */
+.Carrossel {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 45px;
+  white-space: nowrap;
+  margin-left: 500px;
+  font-family: "Cascadia Mono", sans-serif;
+  /* border: 2px red solid; */
+}
+
+.Carrossel > * {
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
