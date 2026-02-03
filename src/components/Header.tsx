@@ -10,7 +10,6 @@ import X_menu from "/img/components/menu/X.svg"
 import surf_menu from "/img/components/menu/surf.svg"
 
 export default function Header() {
-    const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [linguaSelecionada, setLinguaSelecionada] = useState("br")
     const { t, i18n } = useTranslation();
