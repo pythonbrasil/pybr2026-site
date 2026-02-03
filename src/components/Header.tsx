@@ -1,7 +1,7 @@
 import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next";
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.svg"
@@ -10,6 +10,7 @@ import X_menu from "/img/components/menu/X.svg"
 import surf_menu from "/img/components/menu/surf.svg"
 
 export default function Header() {
+    const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [linguaSelecionada, setLinguaSelecionada] = useState("br")
     const { t, i18n } = useTranslation();
@@ -45,7 +46,7 @@ export default function Header() {
                                             <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</a>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
-                                            <a href="">
+                                            <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
                                                 <button>{t("header.menu.ComprarIngresso")}</button>
                                             </a>
                                             <a href="">
@@ -87,7 +88,9 @@ export default function Header() {
                         </ul>
                     </li>
                 </div>
-                <button>{t("header.ComprarIngresso")}</button>
+                <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
+                    <button>{t("header.ComprarIngresso")}</button>
+                </a>
             </div>
         </div>
         <div className="Header_logo Header_menu_mobile">
