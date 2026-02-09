@@ -43,7 +43,7 @@ export default function Contador() {
     }, []);
 
     return (
-        <div className="contador">
+        <div className="contador" id="contador-home">
             <div className="contador_itens">
                 <div className="tempo">
                     <span>{tempo.dias}</span>
