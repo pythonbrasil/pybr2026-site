@@ -1,7 +1,8 @@
 import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.svg"
@@ -36,13 +37,13 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</a></Link>
-                                            <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</a>
+                                            <HashLink smooth to="/#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</HashLink>
                                             {/* <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a> */}
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
                                             {/* <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>{t("header.menu.guiaDaCidade")}</a> */}
                                             {/* <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>{t("header.menu.patrocinadores")}</a> */}
                                             <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
-                                            <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</a>
+                                            <HashLink smooth to="/#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</HashLink>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
                                             <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
@@ -61,8 +62,8 @@ export default function Header() {
 
                         </div>
                     </ul>
-                    <ul className="Header_menu_desktop"><a href="#O_EVENTO">{t("header.OEvento")}</a></ul>
-                    <ul className="Header_menu_desktop"><a href="#SUBMISSAO_DE_ATIVIDADES">{t("home.section4.submissaoDeAtividades")}</a></ul>
+                    <ul className="Header_menu_desktop"><HashLink smooth to="/#O_EVENTO">{t("header.OEvento")}</HashLink></ul>
+                    <ul className="Header_menu_desktop"><HashLink smooth to="/#SUBMISSAO_DE_ATIVIDADES">{t("home.section4.submissaoDeAtividades")}</HashLink></ul>
                     {/* <ul className="Header_menu_desktop"><a href="#KEYNOTES">Keynotes</a></ul> */}
                     {/* <Link to="/programacao"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
                     {/* <Link to="/"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
