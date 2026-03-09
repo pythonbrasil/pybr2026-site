@@ -99,19 +99,19 @@ i18n
                 perguntas : [
                     {
                         pergunta : "Qual a programação do evento?",
-                        resposta : "A Python Brasil 2025 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta : "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
                     },
                     {
-                        pergunta: "Ganho certificado por participar da Python Brasil 2025?",
-                        resposta: "A Python Brasil 2025 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        pergunta: "Ganho certificado por participar da Python Brasil 2026?",
+                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
                     },
                     {
                         pergunta: "Quem organiza a Python Brasil?",
-                        resposta: "A Python Brasil 2025 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
                     },
                     {
                         pergunta: "Quais as condições para adquirir um ingresso de meia entrada?",
-                        resposta: "A Python Brasil 2025 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
                     },
                 ]
             }
@@ -211,19 +211,19 @@ i18n
                 perguntas: [
                     {
                         pergunta : "What is the event schedule?",
-                        resposta : "Python Brasil 2025 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
                     },
                     {
-                        pergunta : "Do I receive a certificate for participating in Python Brasil 2025?",
-                        resposta : "Python Brasil 2025 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        pergunta : "Do I receive a certificate for participating in Python Brasil 2026?",
+                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
                     },
                     {
                         pergunta : "Who organizes Python Brasil?",
-                        resposta : "Python Brasil 2025 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
                     },
                     {
                         pergunta : "What are the conditions to purchase a discounted (half-price) ticket?",
-                        resposta : "Python Brasil 2025 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
                     }
                 ]
             }
@@ -323,19 +323,19 @@ i18n
                 perguntas: [
                     {
                         pergunta : "¿Cuál es la programación del evento?",
-                        resposta : "Python Brasil 2025 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
                     },
                     {
-                        pergunta : "¿Obtengo un certificado por participar en Python Brasil 2025?",
-                        resposta : "Python Brasil 2025 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        pergunta : "¿Obtengo un certificado por participar en Python Brasil 2026?",
+                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
                     },
                     {
                         pergunta : "¿Quién organiza Python Brasil?",
-                        resposta : "Python Brasil 2025 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
                     },
                     {
                         pergunta : "¿Cuáles son las condiciones para adquirir una entrada de media tarifa?",
-                        resposta : "Python Brasil 2025 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
                     }
                 ]
             }
