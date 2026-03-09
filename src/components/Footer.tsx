@@ -20,7 +20,7 @@ export default function Footer() {
                     <ul><a href="#SUBMISSAO_DE_ATIVIDADES">{t("home.section4.submissaoDeAtividades")}</a></ul>
                     {/* <ul>{t("footer.programacao")}</ul> */}
                     {/* <ul>{t("footer.guiaDaCidade")}</ul> */}
-                    {/* <ul>{t("footer.patrocinadores")}</ul> */}
+                    <ul><a href="#PATROCINADORES">{t("footer.patrocinadores")}</a></ul>
                     {/* <ul>FAQ</ul> */}
                     {/* <ul>{t("footer.contato")}</ul> */}
                     {/* <ul>{t("footer.inscrevaSe")}</ul> */}
@@ -29,29 +29,27 @@ export default function Footer() {
             <div className="Footer_links_nossas_redes">
                 <h4>{t("footer.nossasRedes")}</h4>
                 <li>
-                    <ul> <a href="https://www.instagram.com/pythonbrasil/" target="_blank"><img src="" alt="" />Instagram</a></ul>
-                    <ul> <a href="https://www.linkedin.com/company/apyb/" target="_blank"><img src="" alt="" />Linkedin</a></ul>
-                    <ul> <a href="https://www.facebook.com/pythonbrasil/" target="_blank"><img src="" alt="" />Facebook</a></ul>
-                    <ul> <a href="https://x.com/pythonbrasil" target="_blank"><img src="" alt="" />X</a></ul>
-                    <ul> <a href="https://bsky.app/profile/pythonbrasil.bsky.social" target="_blank"><img src="" alt="" />Bluesky</a></ul>
-                    <ul> <a href="https://www.youtube.com/@pythonbrasiloficial" target="_blank"><img src="" alt="" />Youtube</a></ul>
-                    <ul> <a href="mailto:brasil@python.org.br" target="_blank"><img src="" alt="" />E-mail</a></ul>
-                    <ul> <a href="https://www.flickr.com/photos/pythonbrasil/" target="_blank"><img src="" alt="" />Flickr</a></ul>
-                    {/* <ul> <a href="https://t.me/pythonbrasil" target="_blank"><img src="" alt="" />Telegram</a></ul> */}
+                    <ul><a target="_blank" href="https://instagram.com/pythonbrasil"> Instagram</a></ul>
+                    <ul><a target="_blank" href="https://www.linkedin.com/company/apyb/"> Linkedin</a></ul>
+                    <ul><a target="_blank" href="http://fb.com/pythonbrasil">Facebook</a></ul>
+                    <ul><a target="_blank" href="https://x.com/pythonbrasil">X</a></ul>
+                    <ul><a target="_blank" href="https://bsky.app/profile/pythonbrasil"> Bluesky</a></ul>
+                    <ul><a target="_blank" href="https://www.youtube.com/c/pythonbrasiloficial"> Youtube</a></ul>
+                    <ul><a target="_blank" href="https://www.flickr.com/photos/pythonbrasil">Flickr</a></ul>
                 </li>
             </div>
             <div className="Footer_links_da_apyb">
                 <h4>{t("footer.linksDaAPyB")}</h4>
                 <li>
-                    <ul>APyB</ul>
-                    <ul><a href="https://www.python.org.br/codigo-de-conduta/" target="_blank">{t("footer.codigoDeConduta")}</a></ul>
+                    <ul><a href="https://apyb.python.org.br/" target="_blank">APyB</a></ul>
+                    <ul><a href="https://apyb.python.org.br/pythonbrasil/cdc/" target="_blank">{t("footer.codigoDeConduta")}</a></ul>
                     {/* <ul>{t("footer.formulario")}</ul> */}
                     {/* <ul>Dormeles Tremea / Jean Ferri</ul> */}
                 </li>
             </div>
             <div className="Footer_links_botoes_politicas">
-                <div className="Footer_links_botoes_politicas_buttons">
-                    <button><a href="https://www.eventbrite.com.br/e/python-brasil-2026-tickets-1011861115217" target="_blank">{t("footer.comprarIngressos")}</a></button>
+                <div className="Footer_links_botoes_politicas_buttons">                    
+                    <button><a href="https://pybr2026.eventbrite.com.br/" target="_blank">{t("footer.comprarIngressos")}</a></button>
                     <button><a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">{t("footer.planoDePatrocinio")}</a></button>
                 </div>
                 {/* <h4>{t("footer.politicasDePrivacidade")}</h4> */}
