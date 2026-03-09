@@ -37,11 +37,11 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</a></Link>
-                                            <HashLink smooth to="/#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</HashLink>
+                                            <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</a>
                                             {/* <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a> */}
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
                                             {/* <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>{t("header.menu.guiaDaCidade")}</a> */}
-                                            {/* <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>{t("header.menu.patrocinadores")}</a> */}
+                                            <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>{t("header.menu.patrocinadores")}</a>
                                             <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
                                             <HashLink smooth to="/#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</HashLink>
                                         </div>

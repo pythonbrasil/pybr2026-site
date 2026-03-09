@@ -16,6 +16,6 @@ export default function Home() {
         <Home_Section4/>
         {/* <Home_Section5/> */}
         <Home_Section6/>
-        {/* <Home_Section7/> */}
+        <Home_Section7/>
     </>)
 }
