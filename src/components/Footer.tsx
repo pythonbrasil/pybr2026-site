@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
             <div className="Footer_links_botoes_politicas">
                 <div className="Footer_links_botoes_politicas_buttons">                    
-                    <button><a href="https://pybr2026.eventbrite.com.br/" target="_blank">{t("footer.comprarIngressos")}</a></button>
+                    <button><a href="https://ingressos.python.org.br/pybr/" target="_blank">{t("footer.comprarIngressos")}</a></button>
                     <button><a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">{t("footer.planoDePatrocinio")}</a></button>
                 </div>
                 {/* <h4>{t("footer.politicasDePrivacidade")}</h4> */}

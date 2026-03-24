@@ -46,7 +46,7 @@ export default function Header() {
                                             <HashLink smooth to="/#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</HashLink>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
-                                            <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
+                                            <a href="https://ingressos.python.org.br/pybr/" target="_blank">
                                                 <button>{t("header.menu.ComprarIngresso")}</button>
                                             </a>
                                             <a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">
@@ -89,7 +89,7 @@ export default function Header() {
                         </ul>
                     </li>
                 </div>
-                <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
+                <a href="https://ingressos.python.org.br/pybr/" target="_blank">
                     <button>{t("header.ComprarIngresso")}</button>
                 </a>
             </div>
