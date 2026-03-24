@@ -7,7 +7,7 @@ export default function ButtonPrincipal() {
     return(
     <div className='ButtonPrincipal'>
         <div className='ButtonPrincipal_itens'>
-            <a href="https://pybr2026.eventbrite.com.br/" target='_blank'>
+            <a href="https://ingressos.python.org.br/pybr/" target='_blank'>
                 <h4>{t("buttonPrincipal.ingressos")}</h4>
             </a>
             <a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target='_blank'>
