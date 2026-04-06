@@ -51,8 +51,8 @@ export default function Footer() {
             </div>
             <div className="Footer_links_botoes_politicas">
                 <div className="Footer_links_botoes_politicas_buttons">
-                    <button>{t("footer.comprarIngressos")}</button>
-                    <button>{t("footer.planoDePatrocinio")}</button>
+                    <button><a href={LINK_COMPRAR_INGRESSO} target="_blank">{t("footer.comprarIngressos")}</a></button>
+                    <button><a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">{t("footer.planoDePatrocinio")}</a></button>
                 </div>
                 {/* <h4>{t("footer.politicasDePrivacidade")}</h4> */}
             </div>
