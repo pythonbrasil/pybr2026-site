@@ -1,0 +1,1 @@
+export const LINK_COMPRAR_INGRESSO : string = "https://ingressos.python.org.br/pybr/"

@@ -9,6 +9,7 @@ import logo from "/img/components/header/logo.svg"
 import logo_menu from "/img/components/menu/Logo.svg"
 import X_menu from "/img/components/menu/X.svg"
 import surf_menu from "/img/components/menu/surf.svg"
+import { LINK_COMPRAR_INGRESSO } from "../links"
 
 export default function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Header() {
                                             <HashLink smooth to="/#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</HashLink>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
-                                            <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
+                                            <a href={LINK_COMPRAR_INGRESSO} target="_blank">
                                                 <button>{t("header.menu.ComprarIngresso")}</button>
                                             </a>
                                             <a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">
@@ -89,7 +90,7 @@ export default function Header() {
                         </ul>
                     </li>
                 </div>
-                <a href="https://pybr2026.eventbrite.com.br/" target="_blank">
+                <a href={LINK_COMPRAR_INGRESSO} target="_blank">
                     <button>{t("header.ComprarIngresso")}</button>
                 </a>
             </div>

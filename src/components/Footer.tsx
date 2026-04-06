@@ -1,6 +1,7 @@
 import "./styles/Footer.css"
 import logo from "/img/components/footer/logo.png"
 import { useTranslation } from "react-i18next";
+import { LINK_COMPRAR_INGRESSO } from "../links"
 
 export default function Footer() {
     const { t } = useTranslation();
@@ -51,7 +52,7 @@ export default function Footer() {
             </div>
             <div className="Footer_links_botoes_politicas">
                 <div className="Footer_links_botoes_politicas_buttons">
-                    <button><a href="https://www.eventbrite.com.br/e/python-brasil-2026-tickets-1011861115217" target="_blank">{t("footer.comprarIngressos")}</a></button>
+                    <button><a href={LINK_COMPRAR_INGRESSO} target="_blank">{t("footer.comprarIngressos")}</a></button>
                     <button><a href={t("buttonPrincipal.linkPlanoDePatrocinio")} target="_blank">{t("footer.planoDePatrocinio")}</a></button>
                 </div>
                 {/* <h4>{t("footer.politicasDePrivacidade")}</h4> */}
