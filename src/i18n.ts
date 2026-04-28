@@ -38,7 +38,8 @@ i18n
                 formulario : "Formulário para relatos do Código de conduta",
                 comprarIngressos : "Comprar Ingressos!",
                 planoDePatrocinio : "Plano de Patrocínio",
-                politicasDePrivacidade : "Politicas de privacidade"
+                politicasDePrivacidade : "Politicas de privacidade",
+                submissaoDeAtividades : "Submissão de Atividades"
             },
             carrossel : {
                 pelaComunidade : "pela comunidade",
@@ -150,7 +151,8 @@ i18n
                 formulario: "Code of Conduct Report Form",
                 comprarIngressos: "Buy Tickets!",
                 planoDePatrocinio: "Sponsorship Plan",
-                politicasDePrivacidade: "Privacy Policy"
+                politicasDePrivacidade: "Privacy Policy",
+                submissaoDeAtividades : "Activity Submission"
             },
             carrossel: {
               pelaComunidade: "by the community",
@@ -262,7 +264,8 @@ i18n
                 formulario: "Formulario para reportes del Código de conducta",
                 comprarIngressos: "¡Comprar Entradas!",
                 planoDePatrocinio: "Plan de Patrocinio",
-                politicasDePrivacidade: "Políticas de privacidad"
+                politicasDePrivacidade: "Políticas de privacidad",
+                submissaoDeAtividades : "Envío de Actividades"
             },
             carrossel: {
               pelaComunidade: "por la comunidad",
