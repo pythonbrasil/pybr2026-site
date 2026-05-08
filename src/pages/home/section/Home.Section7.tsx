@@ -7,6 +7,7 @@ import quansight from '/img/page/home/section7/patrocinador/bronze/quansight.png
 import pythonic_cafe from '/img/page/home/section7/patrocinador/prata/pythonic_cafe.png'
 import bandeira_prata from '/img/page/home/section7/patrocinador/prata/bandeira_prata.png'
 import nekt from '/img/page/home/section7/patrocinador/prata/nekt.png'
+import lincoln_loop from '/img/page/home/section7/patrocinador/bronze/lincoln_loop.png'
 
 
 export default function Home_Section6() {
@@ -49,6 +50,7 @@ export default function Home_Section6() {
                 <h5>{t("home.section7.bronze")}</h5>
                 <div className="Home_Section7_patrocinadores_logos patrocinadores_bronze">
                     <img src={quansight} alt="" />
+                    <img src={lincoln_loop} alt="" />
                 </div>
             </div>
 
