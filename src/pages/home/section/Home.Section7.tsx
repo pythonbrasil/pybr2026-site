@@ -4,6 +4,9 @@ import cobra_topo from '/img/page/home/section7/cobra_topo.png'
 import cobra_baixo from '/img/page/home/section7/cobra_baixo.png'
 import bandeira_bronze from '/img/page/home/section7/patrocinador/bronze/bandeira_bronze.png'
 import quansight from '/img/page/home/section7/patrocinador/bronze/quansight.png'
+import pythonic_cafe from '/img/page/home/section7/patrocinador/prata/pythonic_cafe.png'
+import bandeira_prata from '/img/page/home/section7/patrocinador/prata/bandeira_prata.png'
+import nekt from '/img/page/home/section7/patrocinador/prata/nekt.png'
 
 
 export default function Home_Section6() {
@@ -24,7 +27,7 @@ export default function Home_Section6() {
                     <img src={elastic} alt="" />
                     <img src={nicbr} alt="" />
                 </div>
-            </div>
+            </div> */}
 
             <div className="Home_Section7_patrocinadores">
                 <div className="Home_Section7_patrocinadores_bandeira">
@@ -32,12 +35,11 @@ export default function Home_Section6() {
                     <img src={bandeira_prata} alt="" />
                 </div>
                 <h5>{t("home.section7.prata")}</h5>
-                <div className="Home_Section7_patrocinadores_logos">
-                    <img src={cafe} alt="" />
-                    <img src={cerc} alt="" />
-                    <img src={pydantic} alt="" />
+                <div className="Home_Section7_patrocinadores_logos patrocinadores_prata">
+                    <img src={pythonic_cafe} alt="" />
+                    <img src={nekt} alt="" />
                 </div>
-            </div> */}
+            </div>
 
             <div className="Home_Section7_patrocinadores">
                 <div className="Home_Section7_patrocinadores_bandeira">

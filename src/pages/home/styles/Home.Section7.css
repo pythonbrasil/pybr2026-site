@@ -12,6 +12,21 @@
     position: relative;
 }
 
+.patrocinadores_prata {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+    /* border: 2px red solid; */
+
+    /* NÃO SEI PQ FUNCIONA, MAS FUNCIONA */
+    & img {
+        width: 35%;
+        flex: none;
+    }
+}
+
+
 .patrocinadores_bronze {
     display: flex;
     gap: 20px;
@@ -175,6 +190,16 @@
         }
     }    
 }
+.Home_Section7_patrocinadores_logos.patrocinadores_prata {
+    width: 80%;
+    justify-content: center;
+    
+    & img {
+        flex: 0 0 auto;
+        width: 35%;
+    }
+}
+
 .Home_Section7_patrocinadores_logos.patrocinadores_bronze {
     width: 80%;
     justify-content: center;
