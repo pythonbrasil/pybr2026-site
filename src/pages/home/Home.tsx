@@ -13,7 +13,7 @@ export default function Home() {
         <Home_Section2/>
         {/* <Home_Section3/> */}
         <Carrossel/>
-        <Home_Section4/>
+        {/* <Home_Section4/> */}
         <Home_Section5/>
         <Home_Section6/>
         <Home_Section7/>
