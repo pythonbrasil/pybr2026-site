@@ -72,30 +72,6 @@
     }
 }
 
-.Home_Section3_carrossel_card_keynote_parte_direita {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    text-align: left;
-    min-height: 280px;
-    height: auto;
-    /* border: 2px red solid; */
-
-    color: aliceblue;
-
-    & h4 {
-        margin: 0px 0px 10px 0px;
-        font-weight: 600;
-    }
-
-    & p {
-        font-weight: 200;
-        width: 23vw;
-        max-width: 330px;
-    }
-}
-
 .Home_Section3_carrossel_foto_selecao_keynote {
     display: flex;
     flex-wrap: wrap;
@@ -141,33 +117,6 @@
 
         & img {
             width: 100%;
-        }
-    }
-
-    .Home_Section3_carrossel_card_keynote_parte_direita {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
-        text-align: left;
-        min-height: 280px;
-        height: auto;
-        /* border: 2px red solid; */
-
-        color: aliceblue;
-
-        & h4 {
-            margin: 0px 0px 20px 0px;
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        & p {
-            font-size: 14px;
-            font-weight: 200;
-            width: 90%;
-            max-width: 330px;
-            margin-bottom: 13px;
         }
     }
 }

@@ -5,7 +5,7 @@ import key_dot_3 from "/img/page/home/section3/key_dot_3.png"
 import key_dot_4 from "/img/page/home/section3/key_dot_4.png"
 import Carrossel from "../../../components/Carrossel"
 import SimpleSwiper from "../../../components/SimpleSwiper"
-import Slide from "../../../components/slide"
+import Slide from "../../../feature/KeynoteCarroussel/slide"
 
 export default function Home_Section3() {
     return(<>
