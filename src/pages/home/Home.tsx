@@ -1,17 +1,17 @@
 import Home_Section1 from "./section/Home.Section1"
 import Home_Section2 from "./section/Home.Section2"
-import Home_Section3 from "./section/Home.Section3"
 import Home_Section4 from "./section/Home.Section4"
 import Home_Section5 from "./section/Home.Section5"
 import Home_Section6 from "./section/Home.Section6"
 import Home_Section7 from "./section/Home.Section7"
 import Carrossel from "../../components/Carrossel"
+import { KeynoteCarroussel } from "../../feature/KeynoteCarroussel"
 
 export default function Home() {
     return(<>
         <Home_Section1/>
         <Home_Section2/>
-        {/* <Home_Section3/> */}
+        <KeynoteCarroussel/>
         <Carrossel/>
         <Home_Section4/>
         <Home_Section5/>
