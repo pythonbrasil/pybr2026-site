@@ -66,9 +66,13 @@
             width: 35px;
         }
     }
+}
 
+.Home_Section3_carrossel_card_keynote_parte_esquerda_foto_keynote {    
     & img {
         width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 }
 

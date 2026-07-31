@@ -1,8 +1,4 @@
 import "./KeynoteCarroussel.css"
-import key_dot_1 from "/img/page/home/section3/key_dot_1.png"
-import key_dot_2 from "/img/page/home/section3/key_dot_2.png"
-import key_dot_3 from "/img/page/home/section3/key_dot_3.png"
-import key_dot_4 from "/img/page/home/section3/key_dot_4.png"
 import SimpleSwiper from "../../components/SimpleSwiper"
 import Slide from "./slide"
 import KeynotesInfos from "../../../config/KeynotesInfos.yaml?raw"
@@ -12,8 +8,6 @@ import { parse } from "yaml";
 const Keynotes = parse(KeynotesInfos).allKeynotes;
 
 export function KeynoteCarroussel() {
-    console.log(Keynotes[0].biography_text[0].pt)
-
     return(<>
         <section className="Home_Section3" id="KEYNOTES">
             <div className="Home_Section3_carrossel_keynotes">
@@ -32,7 +26,11 @@ export function KeynoteCarroussel() {
                             />
                         ))
                     }
-                    dots={[key_dot_1, key_dot_2, key_dot_3, key_dot_4]}
+                    dots={
+                        Keynotes.map((Keynote : any) => (
+                            Keynote.dot_photo
+                        ))
+                    }
                 />
             </div>
         </section>

@@ -13,7 +13,9 @@ export default function Slide({
             <>
                 <div className="Home_Sectine3_carrossel_card_keynote">
                     <div className="Home_Section3_carrossel_card_keynote_parte_esquerda">
-                        <img src={foto} alt="foto do keynote" />
+                        <div className="Home_Section3_carrossel_card_keynote_parte_esquerda_foto_keynote">
+                            <img src={foto} alt="foto do keynote"/>
+                        </div>
                         <li>
                             <a href={linkedinUrl}><ul><img src={logo_linkdin} alt="" /></ul></a>
                             <a href={githubUrl}><ul><img src={logo_github} alt="" /></ul></a>

@@ -8,8 +8,8 @@ allKeynotes:
           Popular educator and master's student in Communication at POSCOM-UFBA, member of the research groups Gig@-UFBA and Meninas Digitais-BA, universe carpenter at Raul Hacker Clube, and developer of infrastructure projects for feminist autonomy at Coletiva Periféricas.
       - es: >-
           Educadora popular y estudiante de maestría en Comunicación en POSCOM-UFBA, integrante de los grupos de investigación Gig@-UFBA y Meninas Digitais-BA, carpintera del universo en Raul Hacker Clube y desarrolladora de proyectos de infraestructuras para la autonomía feminista en Coletiva Periféricas.
-    photo: "../public/keynotesImgs/defaultImg/Geisa_Silva.jpg"
-    dot_photo: "../public/keynotesImgs/dotImg/Geisa_Silva.jpg"
+    photo: "keynotesImgs/defaultImg/Geisa_Silva.jpg"
+    dot_photo: "keynotesImgs/dotImg/Geisa_Silva.jpg"
     github_url: ""
     instagram_url: ""
     linkedin_url: ""

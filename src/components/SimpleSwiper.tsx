@@ -7,7 +7,7 @@ type SimpleSwiperProps = {
 };
 
 export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
 
   if (slides.length !== dots.length) {
     console.warn("slides e dots devem ter o mesmo tamanho");
