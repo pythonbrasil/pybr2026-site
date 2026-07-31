@@ -79,11 +79,13 @@ i18n
                 section6 : {
                     localizacao : "Localização",
                     palestras : "Palestras",
-                    palestrasData : "14 a 19 de Outubro",
+                    palestrasData : "16 a 19 de Outubro",
                     paragrafo1 : "Dias principais do evento, espaços para job fair, network, palestras de diversos temas acontecendo simultaneamente.",
                     plantaDoEvento : "Planta do Evento",
                     verNoMapa : "Ver no mapa",
                     tutoriais : "Tutoriais",
+                    tutoriaisData : "14 a 15 de Outubro",
+                    paragrafo2 : "Dias voltados para minicursos oferecidos pela própria comunidade, em breve você poderá se inscrever para participar!",
                     aDefinir : "A definir"
                 },
                 section7 : {
@@ -192,11 +194,13 @@ i18n
                 section6: {
                     localizacao: "Location",
                     palestras: "Talks",
-                    palestrasData: "October 14–19",
+                    palestrasData: "October 16–19",
                     paragrafo1: "Main days of the event, with spaces for the job fair, networking, and talks on various topics happening simultaneously.",
                     plantaDoEvento: "Event Map",
                     verNoMapa: "View on map",
                     tutoriais: "Tutorial Sessions",
+                    tutoriaisData : "October 14–15",
+                    paragrafo2: "Days dedicated to minicourses offered by the community itself, soon you will be able to register to participate!",
                     aDefinir: "To be defined"
                 },
                 section7: {
@@ -305,11 +309,13 @@ i18n
                 section6: {
                     localizacao: "Ubicación",
                     palestras: "Charlas",
-                    palestrasData: "14 al 19 de octubre",
+                    palestrasData: "16 al 19 de octubre",
                     paragrafo1: "Días principales del evento, con espacios para feria de empleo, networking y charlas sobre diversos temas que ocurren simultáneamente.",
                     plantaDoEvento: "Plano del Evento",
                     verNoMapa: "Ver en el mapa",
                     tutoriais: "Talleres",
+                    tutoriaisData : "14 al 15 de octubre",
+                    paragrafo2: "Días dedicados a minicursos ofrecidos por la propia comunidad, pronto podrás registrarte para participar!",
                     aDefinir: "Por definir"
                 },
                 section7: {
