@@ -5,6 +5,7 @@ import cobra_baixo from '/img/page/home/section7/cobra_baixo.png'
 import bandeira_bronze from '/img/page/home/section7/patrocinador/bronze/bandeira_bronze.png'
 import quansight from '/img/page/home/section7/patrocinador/bronze/quansight.png'
 import pythonic_cafe from '/img/page/home/section7/patrocinador/prata/pythonic_cafe.png'
+import robbin from '/img/page/home/section7/patrocinador/bronze/robbin.png'
 import bandeira_prata from '/img/page/home/section7/patrocinador/prata/bandeira_prata.png'
 import nekt from '/img/page/home/section7/patrocinador/prata/nekt.png'
 import lincoln_loop from '/img/page/home/section7/patrocinador/bronze/lincoln_loop.png'
@@ -51,6 +52,7 @@ export default function Home_Section6() {
                 <div className="Home_Section7_patrocinadores_logos patrocinadores_bronze">
                     <img src={quansight} alt="" />
                     <img src={lincoln_loop} alt="" />
+                    <img src={robbin} alt="" />
                 </div>
             </div>
 

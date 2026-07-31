@@ -17,7 +17,7 @@ export default function Footer() {
                 <li>
                     <a href="https://2026.pythonbrasil.org.br/#contador-home"><ul>{t("footer.inicio")}</ul></a>
                     <a href="https://2026.pythonbrasil.org.br/#O_EVENTO"><ul>{t("footer.oEvento")}</ul></a>
-                    <a href="https://2026.pythonbrasil.org.br/#SUBMISSAO_DE_ATIVIDADES"><ul>{t("footer.submissaoDeAtividades")}</ul></a>
+                    {/*<a href="https://2026.pythonbrasil.org.br/#SUBMISSAO_DE_ATIVIDADES"><ul>{t("footer.submissaoDeAtividades")}</ul></a>*/}  
                     {/* <a href=""><ul>Keynotes</ul></a> */}
                     {/* <a href=""><ul>{t("footer.programacao")}</ul></a> */}
                     {/* <a href=""><ul>{t("footer.guiaDaCidade")}</ul></a> */}
