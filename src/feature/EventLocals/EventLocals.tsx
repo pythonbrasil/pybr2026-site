@@ -46,8 +46,8 @@ export function EventLocals() {
     <section className="Home_Section6">
             <h4>{t("home.section6.localizacao")}</h4>
             <div className="Home_Section6_localizacao_cards">
-                <LocalDasPalestras/>
                 <LocalDosTutoriais/>
+                <LocalDasPalestras/>
                 <div className="Home_Section6_localizacao_cards_Sprints">
                     <h6>Sprints</h6>
                     <h5>{t("home.section6.aDefinir")}</h5>
