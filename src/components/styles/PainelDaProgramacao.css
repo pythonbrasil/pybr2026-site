@@ -164,6 +164,14 @@
 
   gap: 10px;
   font-family: "Inter", sans-serif;
+  
+  & img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: solid 1px #1a1a1a;
+  }
 }
 
 .card_palestra_infos_3_fotos {

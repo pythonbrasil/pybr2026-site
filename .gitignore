@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Config files
+config/PyBR26 - pré grade - palestras.csv
+config/PyBR26 - pré grade - tutoriais.csv

@@ -1,349 +1,63 @@
 import './styles/PainelDaProgramacao.css'
 import { useState } from "react";
-import dot1 from '/img/components/painelDaProgramacao/dot1.png'
-import dot2 from '/img/components/painelDaProgramacao/dot2.png'
 import { useTranslation } from "react-i18next";
 
 const datas = [
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
+  {'data' : {'br' : 'Palestras', 'en' : 'Palestras', 'es' : 'Palestras'},
    'info' : [
-      {
-         'id' : 1,
-         'horario' : '7:00',
-         'duracao' : '3:00',
-         'nivel' : {
-              'br' : 'Iniciante',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          },
-         'atividade' : {
-              'br' : 'Tutorial',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-         },
-         'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          }
-          ,
-         'descricao' : {
-              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol',
-          },
-         'palestrante' : [
-           {
-             'nome' : 'Ana Silva',
-             'foto' : dot1
-           },
-           {
-             'nome' : 'Carlos Mendes',
-             'foto' : dot2
-           },
-         ]
-      },
-      {
-         'id' : 2,
-         'horario' : '7:00',
-         'duracao' : '3:00',
-         'nivel' : {
-              'br' : 'Iniciante',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          },
-         'atividade' : {
-              'br' : 'Debate',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-         },
-         'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          }
-          ,
-         'descricao' : {
-              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol',
-          },
-         'palestrante' : [
-           {
-             'nome' : 'Carlos Mendes',
-             'foto' : dot2
-           },
-         ]
-      },
-      {
-         'id' : 3,
-         'horario' : '7:00',
-         'duracao' : '3:00',
-         'nivel' : {
-              'br' : 'Iniciante',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          },
-         'atividade' : {
-              'br' : 'Palestra',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-         },
-         'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          }
-          ,
-         'descricao' : {
-              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol',
-          },
-         'palestrante' : [
-           {
-             'nome' : 'Ana Silva',
-             'foto' : dot1
-           },
-           {
-             'nome' : 'Carlos Mendes',
-             'foto' : dot2
-           },
-         ]
-      },
-      {
-         'id' : 4,
-         'horario' : '7:00',
-         'duracao' : '3:00',
-         'nivel' : {
-              'br' : 'Iniciante',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          },
-         'atividade' : {
-              'br' : 'Tutorial',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-         },
-         'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          }
-          ,
-         'descricao' : {
-              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol',
-          },
-         'palestrante' : [
-           {
-             'nome' : 'Ana Silva',
-             'foto' : dot1
-           },
-         ]
-      },
+      {'id' : 1, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Construindo uma Cultura de Code Review', 'en' : 'Construindo uma Cultura de Code Review', 'es' : 'Construindo uma Cultura de Code Review'}, 'descricao' : {'br' : 'Introdução ao conceito de PRs e code reviews', 'en' : 'Introdução ao conceito de PRs e code reviews', 'es' : 'Introdução ao conceito de PRs e code reviews'}, 'palestrante' : [{'nome' : 'Renan de Assis', 'foto' : "https://talks.python.org.br/media/avatars/PPXL7G_322DSHy_thumbnail_default.jpeg"}]},
+      {'id' : 2, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Shazam da natureza: identificando animais por sons', 'en' : 'Shazam da natureza: identificando animais por sons', 'es' : 'Shazam da natureza: identificando animais por sons'}, 'descricao' : {'br' : 'IA auxiliando ecologistas em monitoramento bioacústico', 'en' : 'IA auxiliando ecologistas em monitoramento bioacústico', 'es' : 'IA auxiliando ecologistas em monitoramento bioacústico'}, 'palestrante' : [{'nome' : 'Ítalo Epifânio', 'foto' : "https://talks.python.org.br/media/avatars/6730205_6U9mSPW_thumbnail_default.jpg"}]},
+      {'id' : 3, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Django + Rust: criptografia transparente no banco de dados', 'en' : 'Django + Rust: criptografia transparente no banco de dados', 'es' : 'Django + Rust: criptografia transparente no banco de dados'}, 'descricao' : {'br' : 'Solução para criptografar campos sensíveis em Django', 'en' : 'Solução para criptografar campos sensíveis em Django', 'es' : 'Solução para criptografar campos sensíveis em Django'}, 'palestrante' : [{'nome' : 'Ricardo Morato Rocha', 'foto' : "https://talks.python.org.br/media/avatars/DGAUTK_kuPiA3t_thumbnail_default.png"}]},
+      {'id' : 4, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Quantum Leap: Building Real Quantum Programs with Python', 'en' : 'Quantum Leap: Building Real Quantum Programs with Python', 'es' : 'Quantum Leap: Building Real Quantum Programs with Python'}, 'descricao' : {'br' : 'Princípios de computação quântica e Python', 'en' : 'Princípios de computação quântica e Python', 'es' : 'Princípios de computação quântica e Python'}, 'palestrante' : [{'nome' : 'Beilak Aliev', 'foto' : "https://talks.python.org.br/media/avatars/ALG3GR_ONgcVGA_thumbnail_default.jpg"}]},
+      {'id' : 5, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'dlt (data load tool): ingestão de dados do jeito Pythônico', 'en' : 'dlt (data load tool): ingestão de dados do jeito Pythônico', 'es' : 'dlt (data load tool): ingestão de dados do jeito Pythônico'}, 'descricao' : {'br' : 'Ferramenta para ingestão de dados em produção', 'en' : 'Ferramenta para ingestão de dados em produção', 'es' : 'Ferramenta para ingestão de dados em produção'}, 'palestrante' : [{'nome' : 'Alan Molina', 'foto' : "https://talks.python.org.br/media/avatars/EXPMKG_nhhENh9_thumbnail_default.png"}]},
+      {'id' : 6, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Alerta de Desvio: Identificando Data Drift em Produção', 'en' : 'Alerta de Desvio: Identificando Data Drift em Produção', 'es' : 'Alerta de Desvio: Identificando Data Drift em Produção'}, 'descricao' : {'br' : 'Mantendo modelos de ML confiáveis após deploy', 'en' : 'Mantendo modelos de ML confiáveis após deploy', 'es' : 'Mantendo modelos de ML confiáveis após deploy'}, 'palestrante' : [{'nome' : 'Ariana Rodrigues Cursino', 'foto' : "https://talks.python.org.br/media/avatars/ZUP8L9_VzNW57E_thumbnail_default.jpeg"}]},
+      {'id' : 7, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Async é isso', 'en' : 'Async é isso', 'es' : 'Async é isso'}, 'descricao' : {'br' : 'Paralelismo real em Python com PEP 703', 'en' : 'Paralelismo real em Python com PEP 703', 'es' : 'Paralelismo real em Python com PEP 703'}, 'palestrante' : [{'nome' : 'Pablo Henrique Aguilar', 'foto' : "https://talks.python.org.br/media/avatars/8TYELR_AIoC10U_thumbnail_default.jpeg"}]},
+      {'id' : 8, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Ataques de Supply Chain via Pip e Entry Points', 'en' : 'Ataques de Supply Chain via Pip e Entry Points', 'es' : 'Ataques de Supply Chain via Pip e Entry Points'}, 'descricao' : {'br' : 'Segurança no ecossistema Python', 'en' : 'Segurança no ecossistema Python', 'es' : 'Segurança no ecossistema Python'}, 'palestrante' : [{'nome' : 'Lucas Lemes', 'foto' : "https://talks.python.org.br/media/avatars/WUEYDQ_uTYep5S_thumbnail_default.jpg"}]},
+      {'id' : 9, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Você confia nos seus testes unitários?', 'en' : 'Você confia nos seus testes unitários?', 'es' : 'Você confia nos seus testes unitários?'}, 'descricao' : {'br' : 'Testes de mutação e qualidade de cobertura', 'en' : 'Testes de mutação e qualidade de cobertura', 'es' : 'Testes de mutação e qualidade de cobertura'}, 'palestrante' : [{'nome' : 'Maurício Meneghini Fauth', 'foto' : "https://talks.python.org.br/media/avatars/VTMY8T_CwV1ozR_thumbnail_default.webp"}]},
+      {'id' : 10, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Criando servidores MCP com FastMCP e Python', 'en' : 'Criando servidores MCP com FastMCP e Python', 'es' : 'Criando servidores MCP com FastMCP e Python'}, 'descricao' : {'br' : 'Model Context Protocol em produção', 'en' : 'Model Context Protocol em produção', 'es' : 'Model Context Protocol em produção'}, 'palestrante' : [{'nome' : 'Andrio Frizon', 'foto' : "https://talks.python.org.br/media/avatars/8JMXPB_Xlm8LVI_thumbnail_default.jpeg"}]},
+      {'id' : 11, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Júnior a Staff+: evoluindo na carreira sem virar gerente', 'en' : 'Júnior a Staff+: evoluindo na carreira sem virar gerente', 'es' : 'Júnior a Staff+: evoluindo na carreira sem virar gerente'}, 'descricao' : {'br' : 'Carreira técnica de forma horizontal e impactful sem gerenciar pessoas', 'en' : 'Carreira técnica de forma horizontal e impactful sem gerenciar pessoas', 'es' : 'Carreira técnica de forma horizontal e impactful sem gerenciar pessoas'}, 'palestrante' : [{'nome' : 'Vinicius Mendes', 'foto' : "https://talks.python.org.br/media/avatars/IMG_4130_0qt9E42_thumbnail_default.jpg"}]},
+      {'id' : 12, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Do webhook à decisão com arquitetura event-driven', 'en' : 'Do webhook à decisão com arquitetura event-driven', 'es' : 'Do webhook à decisão com arquitetura event-driven'}, 'descricao' : {'br' : 'Arquitetura de eventos com AWS e boas práticas', 'en' : 'Arquitetura de eventos com AWS e boas práticas', 'es' : 'Arquitetura de eventos com AWS e boas práticas'}, 'palestrante' : [{'nome' : 'Paula Silva', 'foto' : "https://talks.python.org.br/media/avatars/FNUDRZ_eN7c81i_thumbnail_default.webp"}]},
+      {'id' : 13, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Experiments in Agentic Coding', 'en' : 'Experiments in Agentic Coding', 'es' : 'Experiments in Agentic Coding'}, 'descricao' : {'br' : 'Experimentando com agentes de IA para geração de código', 'en' : 'Experimentando com agentes de IA para geração de código', 'es' : 'Experimentando com agentes de IA para geração de código'}, 'palestrante' : [{'nome' : 'Edwin Jung', 'foto' : "https://talks.python.org.br/media/avatars/9EELX7_PPhuk4N_thumbnail_default.webp"}]},
+      {'id' : 14, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'PEP 810 (lazy imports): Apps melhores, +rápidos e +leves', 'en' : 'PEP 810 (lazy imports): Apps melhores, +rápidos e +leves', 'es' : 'PEP 810 (lazy imports): Apps melhores, +rápidos e +leves'}, 'descricao' : {'br' : 'Importações lazy para melhorar performance em Python 3.15+', 'en' : 'Importações lazy para melhorar performance em Python 3.15+', 'es' : 'Importações lazy para melhorar performance em Python 3.15+'}, 'palestrante' : [{'nome' : 'Vinícius Gubiani Ferreira', 'foto' : "https://talks.python.org.br/media/avatars/headshot_head_only_OsbamU6_thumbnail_default.jpeg"}]},
+      {'id' : 15, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'O poder dos conjuntos', 'en' : 'O poder dos conjuntos', 'es' : 'O poder dos conjuntos'}, 'descricao' : {'br' : 'Explorando conjuntos (sets) e operações em Python', 'en' : 'Explorando conjuntos (sets) e operações em Python', 'es' : 'Explorando conjuntos (sets) e operações em Python'}, 'palestrante' : [{'nome' : 'Luciano Ramalho', 'foto' : "https://talks.python.org.br/media/avatars/XZLNAW_t5FQhfv_thumbnail_default.jpg"}]},
+      {'id' : 16, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Raio X em tempo de execução: segurança máxima em Python Puro', 'en' : 'Raio X em tempo de execução: segurança máxima em Python Puro', 'es' : 'Raio X em tempo de execução: segurança máxima em Python Puro'}, 'descricao' : {'br' : 'sys.audit e sys.monitoring para segurança e profiling', 'en' : 'sys.audit e sys.monitoring para segurança e profiling', 'es' : 'sys.audit e sys.monitoring para segurança e profiling'}, 'palestrante' : [{'nome' : 'João Sebastião de Oliveira Bueno', 'foto' : "https://talks.python.org.br/media/avatars/bla1_exjf6HD_thumbnail_default.jpg"}]},
+      {'id' : 17, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Arte com matrizes: NumPy na programação criativa', 'en' : 'Arte com matrizes: NumPy na programação criativa', 'es' : 'Arte com matrizes: NumPy na programação criativa'}, 'descricao' : {'br' : 'Usando NumPy para criar arte visual com programação', 'en' : 'Usando NumPy para criar arte visual com programação', 'es' : 'Usando NumPy para criar arte visual com programação'}, 'palestrante' : [{'nome' : 'Alexandre B A Villares', 'foto' : "https://talks.python.org.br/media/avatars/YSWVXA_OwHysnK_thumbnail_default.png"}, {'nome' : 'Jim Schmitz', 'foto' : "https://talks.python.org.br/media/avatars/3CMD7S_fUb7Rgw_thumbnail_default.jpg"}]},
+      {'id' : 18, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Python para Blue Team: Análise de Logs e Resposta Ativa', 'en' : 'Python para Blue Team: Análise de Logs e Resposta Ativa', 'es' : 'Python para Blue Team: Análise de Logs e Resposta Ativa'}, 'descricao' : {'br' : 'Python aplicado a segurança defensiva e análise de logs', 'en' : 'Python aplicado a segurança defensiva e análise de logs', 'es' : 'Python aplicado a segurança defensiva e análise de logs'}, 'palestrante' : [{'nome' : 'Kauany Comin', 'foto' : "https://talks.python.org.br/media/avatars/ZLXRFR_G8iWiQL_thumbnail_default.webp"}, {'nome' : 'Wiliam Junior da Maia', 'foto' : "https://talks.python.org.br/media/avatars/MHSZYQ_P6iP1mO_thumbnail_default.webp"}]},
+      {'id' : 19, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'IA no Caos: Pipelines Multimodais em Desastres Urbanos', 'en' : 'IA no Caos: Pipelines Multimodais em Desastres Urbanos', 'es' : 'IA no Caos: Pipelines Multimodais em Desastres Urbanos'}, 'descricao' : {'br' : 'IA generativa para resposta em desastres urbanos', 'en' : 'IA generativa para resposta em desastres urbanos', 'es' : 'IA generativa para resposta em desastres urbanos'}, 'palestrante' : [{'nome' : 'Carolina Soares', 'foto' : "https://talks.python.org.br/media/avatars/ZTJYQC_MrK75or_thumbnail_default.webp"}]},
+      {'id' : 20, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Django aos 20: velho demais ou maduro o suficiente?', 'en' : 'Django aos 20: velho demais ou maduro o suficiente?', 'es' : 'Django aos 20: velho demais ou maduro o suficiente?'}, 'descricao' : {'br' : 'Django como framework maduro e poderoso em 2026', 'en' : 'Django como framework maduro e poderoso em 2026', 'es' : 'Django como framework maduro e poderoso em 2026'}, 'palestrante' : [{'nome' : 'Renne Rocha', 'foto' : "https://talks.python.org.br/media/avatars/NPTGX3_aE29r6w_thumbnail_default.jpg"}]},
+      {'id' : 21, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'ChicasDigitais: Três idiomas, uma linguagem, muitos futuros', 'en' : 'ChicasDigitais: Três idiomas, uma linguagem, muitos futuros', 'es' : 'ChicasDigitais: Três idiomas, una lenguaje, muchos futuros'}, 'descricao' : {'br' : 'Projeto de inclusão e empoderamento feminino em tech', 'en' : 'Projeto de inclusão e empoderamento feminino em tech', 'es' : 'Proyecto de inclusión y empoderamiento femenino en tech'}, 'palestrante' : [{'nome' : 'Paula Silva', 'foto' : "https://talks.python.org.br/media/avatars/FNUDRZ_eN7c81i_thumbnail_default.webp"}]},
+      {'id' : 22, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'thetaflow: Integrando redes neurais a modelos estatísticos', 'en' : 'thetaflow: Integrando redes neurais a modelos estatísticos', 'es' : 'thetaflow: Integrando redes neurais a modelos estatísticos'}, 'descricao' : {'br' : 'Combinando deep learning com métodos estatísticos', 'en' : 'Combinando deep learning com métodos estatísticos', 'es' : 'Combinando deep learning con métodos estadísticos'}, 'palestrante' : [{'nome' : 'Natan H da Silva', 'foto' : "https://talks.python.org.br/media/avatars/UYMRCE_yGS6C7B_thumbnail_default.webp"}]},
+      {'id' : 23, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Python na indústria: transformando vibração em decisões', 'en' : 'Python na indústria: transformando vibração em decisões', 'es' : 'Python en la industria: transformando vibración en decisiones'}, 'descricao' : {'br' : 'Análise de sinais de vibração com Python em ambientes industriais', 'en' : 'Análise de sinais de vibração com Python em ambientes industriais', 'es' : 'Análisis de señales de vibración con Python en ambientes industriales'}, 'palestrante' : [{'nome' : 'Maria Vitoria Sikora', 'foto' : "https://talks.python.org.br/media/avatars/NMMVZA_PA0Zg80_thumbnail_default.webp"}]},
+      {'id' : 24, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Transições de Carreira: Da Educação ao Mercado de Dados', 'en' : 'Transições de Carreira: Da Educação ao Mercado de Dados', 'es' : 'Transiciones de Carrera: De la Educación al Mercado de Datos'}, 'descricao' : {'br' : 'Histórias de transição de carreira para ciência de dados', 'en' : 'Histórias de transição de carreira para ciência de dados', 'es' : 'Historias de transición de carrera para ciencia de datos'}, 'palestrante' : [{'nome' : 'Miky', 'foto' : "https://talks.python.org.br/media/avatars/marcelomiky_circular_fGECJHy_thumbnail_default.png"}]},
+      {'id' : 25, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Quando assíncrono resolve e quando só complica', 'en' : 'Quando assíncrono resolve e quando só complica', 'es' : 'Cuándo asincrónico resuelve y cuándo solo complica'}, 'descricao' : {'br' : 'Decisões de arquitetura entre síncrono e assíncrono', 'en' : 'Decisões de arquitetura entre síncrono e assíncrono', 'es' : 'Decisiones de arquitectura entre síncrono y asincrónico'}, 'palestrante' : [{'nome' : 'Marco Aurelio Soares Abrantes', 'foto' : "https://talks.python.org.br/media/avatars/QPMT8U_m4mzcpI_thumbnail_default.png"}]},
+      {'id' : 26, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Movendo Icebergs Para Um Floco de Neve', 'en' : 'Movendo Icebergs Para Um Floco de Neve', 'es' : 'Moviendo Icebergs a Un Copo de Nieve'}, 'descricao' : {'br' : 'Evoluindo arquitetura de dados com Python e Airflow', 'en' : 'Evoluindo arquitetura de dados com Python e Airflow', 'es' : 'Evolucionando arquitectura de datos con Python y Airflow'}, 'palestrante' : [{'nome' : 'Gabu Bellon', 'foto' : "https://talks.python.org.br/media/avatars/AWRK7D_6h9FmPt_thumbnail_default.jpeg"}]},
+      {'id' : 27, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Diversidade Escalável como Infraestrutura de Resultados', 'en' : 'Diversidade Escalável como Infraestrutura de Resultados', 'es' : 'Diversidad Escalable como Infraestructura de Resultados'}, 'descricao' : {'br' : 'Inclusão e diversidade como estratégia organizacional', 'en' : 'Inclusão e diversidade como estratégia organizacional', 'es' : 'Inclusión y diversidad como estrategia organizacional'}, 'palestrante' : [{'nome' : 'Camila Perroud', 'foto' : "https://talks.python.org.br/media/avatars/LQMUJL_XvFG8nP_thumbnail_default.JPG"}]},
+      {'id' : 28, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'O GIL perdeu o controle? Threads em Python na nova era', 'en' : 'O GIL perdeu o controle? Threads em Python na nova era', 'es' : 'El GIL perdió el control? Threads en Python en la nueva era'}, 'descricao' : {'br' : 'Global Interpreter Lock e concorrência em Python', 'en' : 'Global Interpreter Lock e concorrência em Python', 'es' : 'Global Interpreter Lock y concurrencia en Python'}, 'palestrante' : [{'nome' : 'Ana Laura Berger dos Reis', 'foto' : "https://talks.python.org.br/media/avatars/VE8AR9_hFTIIgj_thumbnail_default.jpg"}]},
+      {'id' : 29, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Stress e Load Testing para Dimensionar sua Arquitetura', 'en' : 'Stress e Load Testing para Dimensionar sua Arquitetura', 'es' : 'Stress y Load Testing para Dimensionar tu Arquitectura'}, 'descricao' : {'br' : 'Testes de carga para otimizar escalabilidade', 'en' : 'Testes de carga para otimizar escalabilidade', 'es' : 'Pruebas de carga para optimizar escalabilidad'}, 'palestrante' : [{'nome' : 'Giovanna Resende', 'foto' : "https://talks.python.org.br/media/avatars/ZMHN98_ooq3uGM_thumbnail_default.jpg"}]},
+      {'id' : 30, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'The Electric Trumpet and Python\'s One-Millisecond Wall', 'en' : 'The Electric Trumpet and Python\'s One-Millisecond Wall', 'es' : 'The Electric Trumpet and Python\'s One-Millisecond Wall'}, 'descricao' : {'br' : 'Arquitetura de sistemas e performance em tempo real', 'en' : 'Arquitetura de sistemas e performance em tempo real', 'es' : 'Arquitectura de sistemas y rendimiento en tiempo real'}, 'palestrante' : [{'nome' : 'Ethan M', 'foto' : "https://talks.python.org.br/media/avatars/GTFTZ9_jlzsstt_thumbnail_default.webp"}]},
+      {'id' : 31, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Python para traducir y preservar lengua Tsimané en Bolivia', 'en' : 'Python para traducir y preservar lengua Tsimané en Bolivia', 'es' : 'Python para traducir y preservar lengua Tsimané en Bolivia'}, 'descricao' : {'br' : 'Preservação de patrimônio linguístico com Python', 'en' : 'Preservação de patrimônio linguístico com Python', 'es' : 'Preservación de patrimonio lingüístico con Python'}, 'palestrante' : [{'nome' : 'Iblin Rocio Mocho', 'foto' : "https://talks.python.org.br/media/avatars/WRVRJW_5aQ0HJl_thumbnail_default.webp"}]},
+      {'id' : 32, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'A tecnologia precisa chegar onde normalmente ela não chega', 'en' : 'A tecnologia precisa chegar onde normalmente ela não chega', 'es' : 'La tecnología necesita llegar donde normalmente no llega'}, 'descricao' : {'br' : 'Tecnologia como ferramenta de transformação social', 'en' : 'Tecnologia como ferramenta de transformação social', 'es' : 'La tecnología como herramienta de transformación social'}, 'palestrante' : [{'nome' : 'Brown', 'foto' : "https://talks.python.org.br/media/avatars/CABNNS_FLFKvsX_thumbnail_default.webp"}]},
+      {'id' : 33, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Busca 3.0: Na era dos agentes a query raciocina, age e vê', 'en' : 'Busca 3.0: Na era dos agentes a query raciocina, age e vê', 'es' : 'Busca 3.0: En la era de los agentes la query razona, actúa y ve'}, 'descricao' : {'br' : 'Evolução de busca com IA generativa e agentes', 'en' : 'Evolução de busca com IA generativa e agentes', 'es' : 'Evolución de búsqueda con IA generativa y agentes'}, 'palestrante' : [{'nome' : 'Alex Salgado', 'foto' : "https://talks.python.org.br/media/avatars/D7SVLS_xIMvDT9_thumbnail_default.png"}]},
+      {'id' : 34, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Não-técnica', 'en' : 'Não-técnica', 'es' : 'Não-técnica'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Arquitetura da hostilidade: elas não estão seguras na rede', 'en' : 'Arquitetura da hostilidade: elas não estão seguras na rede', 'es' : 'Arquitectura de la hostilidad: ellas no están seguras en la red'}, 'descricao' : {'br' : 'Segurança e inclusão de mulheres na internet', 'en' : 'Segurança e inclusão de mulheres na internet', 'es' : 'Seguridad e inclusión de mujeres en internet'}, 'palestrante' : [{'nome' : 'Laura Rodrigues', 'foto' : "https://talks.python.org.br/media/avatars/JLKS3B_yp9h9Rw_thumbnail_default.webp"}]},
+      {'id' : 35, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Caçando bugs em Python: do olho humano à IA', 'en' : 'Caçando bugs em Python: do olho humano à IA', 'es' : 'Cazando bugs en Python: del ojo humano a la IA'}, 'descricao' : {'br' : 'Técnicas de descoberta de bugs com IA no ecossistema Python', 'en' : 'Técnicas de descoberta de bugs com IA no ecossistema Python', 'es' : 'Técnicas de descubrimiento de bugs con IA en el ecosistema Python'}, 'palestrante' : [{'nome' : 'Daniel Diniz', 'foto' : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTku_PscJKAh28zrD-R080Vcu4t7BNtrW8Rurc6YdbbJKfH-TDuWLr_WIDE&s=10"}]}, // TODO TROCAR A FOTO
+      {'id' : 36, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Construindo uma plataforma de agentes com python', 'en' : 'Construindo uma plataforma de agentes com python', 'es' : 'Construyendo una plataforma de agentes con python'}, 'descricao' : {'br' : 'Arquitetura de plataforma de agentes com LLMs', 'en' : 'Arquitetura de plataforma de agentes com LLMs', 'es' : 'Arquitectura de plataforma de agentes con LLMs'}, 'palestrante' : [{'nome' : 'Guilherme Cardoso de Vargas', 'foto' : "https://talks.python.org.br/media/avatars/FNRTVT_XStCVtW_thumbnail_default.webp"}, {'nome' : 'Felipe Bizzo', 'foto' : "https://talks.python.org.br/media/avatars/JN7ANF_bCcYgOh_thumbnail_default.webp"}]},
+      {'id' : 37, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Micro-monolith with Pyramid: team boundaries, no chaos', 'en' : 'Micro-monolith with Pyramid: team boundaries, no chaos', 'es' : 'Micro-monolith with Pyramid: team boundaries, no chaos'}, 'descricao' : {'br' : 'Arquitetura micro-monolith com Pyramid framework', 'en' : 'Arquitetura micro-monolith com Pyramid framework', 'es' : 'Arquitectura micro-monolith con Pyramid framework'}, 'palestrante' : [{'nome' : 'Tomás Silveira Corrêa', 'foto' : "https://talks.python.org.br/media/avatars/KZYPK3_3LyNhsT_thumbnail_default.webp"}]},
+      {'id' : 38, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Se a cabeça não usa, atrofia: LLMs e a ilusão do saber', 'en' : 'Se a cabeça não usa, atrofia: LLMs e a ilusão do saber', 'es' : 'Si la cabeza no se usa, se atrofia: LLMs e la ilusión del saber'}, 'descricao' : {'br' : 'Ensino de programação com LLMs de forma responsável', 'en' : 'Ensino de programação com LLMs de forma responsável', 'es' : 'Enseñanza de programación con LLMs de forma responsable'}, 'palestrante' : [{'nome' : 'Fernando Masanori Ashikaga', 'foto' : "https://talks.python.org.br/media/avatars/Fernando_Masanori_O_Globo_NYpkEXH_thumbnail_default.jpg"}]},
+      {'id' : 39, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Implementando controle de Qualidade de Dados com Python', 'en' : 'Implementando controle de Qualidade de Dados com Python', 'es' : 'Implementando control de Calidad de Datos con Python'}, 'descricao' : {'br' : 'Técnicas de qualidade de dados em pipelines', 'en' : 'Técnicas de qualidade de dados em pipelines', 'es' : 'Técnicas de calidad de datos en pipelines'}, 'palestrante' : [{'nome' : 'Rafael Calixto', 'foto' : "https://talks.python.org.br/media/avatars/foto_perfiljpg_CNGBNeR_thumbnail_default.jpg"}]},
+      {'id' : 40, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Palestra', 'en' : 'Palestra', 'es' : 'Palestra'}, 'titulo' : {'br' : 'Engenharia de Plataforma: quando seu cliente é dev', 'en' : 'Engenharia de Plataforma: quando seu cliente é dev', 'es' : 'Ingeniería de Plataforma: cuando tu cliente es dev'}, 'descricao' : {'br' : 'Estratégias de plataforma para melhorar experiência de devs', 'en' : 'Estratégias de plataforma para melhorar experiência de devs', 'es' : 'Estrategias de plataforma para mejorar experiencia de devs'}, 'palestrante' : [{'nome' : 'Ana Dulce', 'foto' : "https://talks.python.org.br/media/avatars/image_eE9jXNf_thumbnail_default.png"}]},
     ]
   },
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
-   'info' : 
-   [
-    {
-      'id' : 4,
-      'horario' : 'n/a',
-      'duracao' : 'n/a',
-      'nivel' : {
-              'br' : 'Iniciante',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          },
-         'atividade' : {
-              'br' : 'Tutorial',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-         },
-      'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos dia15',
-              'en' : 'Em ingles',
-              'es' : 'Em espanhol'
-          }
-          ,
-      'descricao' : {
-          'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-          'en' : 'Em ingles',
-          'es' : 'Em espanhol',
-        },
-      'palestrante' : [
-        {
-          'nome' : 'n/a',
-          'foto' : "n/a"
-        },
-        {
-          'nome' : 'n/a',
-          'foto' : 'n/a'
-        },
-      ]
-    }
-   ]
-  },
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
-   'info' : 
-   [
-    {
-      'id' : 4,
-      'horario' : 'n/a',
-      'duracao' : 'n/a',
-      'nivel' : {
-           'br' : 'Iniciante',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-      },
-      'atividade' : {
-           'br' : 'Tutorial',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-      },
-      'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos dia16',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'descricao' : {
-           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol',
-       },
-      'palestrante' : [
-        {
-          'nome' : 'n/a',
-          'foto' : "n/a"
-        },
-        {
-          'nome' : 'n/a',
-          'foto' : 'n/a'
-        },
-      ]
-    }
-   ]
-  },
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
-   'info' : 
-   [
-    {
-      'id' : 4,
-      'horario' : 'n/a',
-      'duracao' : 'n/a',
-      'nivel' : {
-           'br' : 'Iniciante',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'atividade' : {
-           'br' : 'Tutorial',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-      },
-      'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos dia17',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'descricao' : {
-           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol',
-       },
-      'palestrante' : [
-        {
-          'nome' : 'n/a',
-          'foto' : "n/a"
-        },
-        {
-          'nome' : 'n/a',
-          'foto' : 'n/a'
-        },
-      ]
-    }
-   ]
-  },
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
-   'info' : 
-   [
-    {
-      'id' : 4,
-      'horario' : 'n/a',
-      'duracao' : 'n/a',
-      'nivel' : {
-           'br' : 'Iniciante',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'atividade' : {
-           'br' : 'Tutorial',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-      },
-      'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos dia18',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'descricao' : {
-           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol',
-       },
-      'palestrante' : [
-        {
-          'nome' : 'n/a',
-          'foto' : "n/a"
-        },
-        {
-          'nome' : 'n/a',
-          'foto' : 'n/a'
-        },
-      ]
-    }
-   ]
-  },
-  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
-   'info' : 
-   [
-    {
-      'id' : 4,
-      'horario' : 'n/a',
-      'duracao' : 'n/a',
-      'nivel' : {
-           'br' : 'Iniciante',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'atividade' : {
-           'br' : 'Tutorial',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-      },
-      'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos dia19',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol'
-       },
-      'descricao' : {
-           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
-           'en' : 'Em ingles',
-           'es' : 'Em espanhol',
-       },
-      'palestrante' : [
-        {
-          'nome' : 'n/a',
-          'foto' : "n/a"
-        },
-        {
-          'nome' : 'n/a',
-          'foto' : 'n/a'
-        },
-      ]
-    }
+  {'data' : {'br' : 'Tutoriais', 'en' : 'Tutoriais', 'es' : 'Tutoriais'},
+   'info' : [
+      {'id' : 41, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Rumo ao Desconhecido: Tratando Drift em Machine Learning', 'en' : 'Rumo ao Desconhecido: Tratando Drift em Machine Learning', 'es' : 'Rumo ao Desconhecido: Tratando Drift em Machine Learning'}, 'descricao' : {'br' : 'Resiliência de modelos ML em produção', 'en' : 'Resiliência de modelos ML em produção', 'es' : 'Resiliência de modelos ML em produção'}, 'palestrante' : [{'nome' : 'Ariana Rodrigues Cursino', 'foto' : "https://talks.python.org.br/media/avatars/ZUP8L9_VzNW57E_thumbnail_default.jpeg"}]},
+      {'id' : 42, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Orientação a Objetos com Python do Zero', 'en' : 'Orientação a Objetos com Python do Zero', 'es' : 'Orientação a Objetos com Python do Zero'}, 'descricao' : {'br' : 'Introdução prática à Programação Orientada a Objetos', 'en' : 'Introdução prática à Programação Orientada a Objetos', 'es' : 'Introdução prática à Programação Orientada a Objetos'}, 'palestrante' : [{'nome' : 'Marcos Rocha', 'foto' : "https://talks.python.org.br/media/avatars/QUFBQP_ZkUQKI0_thumbnail_default.jpg"}]},
+      {'id' : 43, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Dojo de MicroPython: controle um carrinho colaborativamente', 'en' : 'Dojo de MicroPython: controle um carrinho colaborativamente', 'es' : 'Dojo de MicroPython: controle um carrinho colaborativamente'}, 'descricao' : {'br' : 'Atividade interativa com coding dojo e micro:bit', 'en' : 'Atividade interativa com coding dojo e micro:bit', 'es' : 'Atividade interativa com coding dojo e micro:bit'}, 'palestrante' : [{'nome' : 'Juliana Karoline de Sousa', 'foto' : "https://talks.python.org.br/media/avatars/ZVZ3BY_NW8YYOw_thumbnail_default.jpg"}]},
+      {'id' : 44, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Arquitetura e Deploy de Modelos de IA na AWS com Terraform', 'en' : 'Arquitetura e Deploy de Modelos de IA na AWS com Terraform', 'es' : 'Arquitetura e Deploy de Modelos de IA na AWS com Terraform'}, 'descricao' : {'br' : 'Deploy escalável de modelos ML com IaC', 'en' : 'Deploy escalável de modelos ML com IaC', 'es' : 'Deploy escalável de modelos ML com IaC'}, 'palestrante' : [{'nome' : 'Gustavo Mendonça Ferratti', 'foto' : "https://talks.python.org.br/media/avatars/VBAPAF_chJQ4xF_thumbnail_default_CTqw1lx.png"}]},
+      {'id' : 45, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Criando seu primeiro bot para o telegram utilizando python', 'en' : 'Criando seu primeiro bot para o telegram utilizando python', 'es' : 'Criando seu primeiro bot para o telegram utilizando python'}, 'descricao' : {'br' : 'Bot interativo com Pyrogram e boas práticas', 'en' : 'Bot interativo com Pyrogram e boas práticas', 'es' : 'Bot interativo com Pyrogram e boas práticas'}, 'palestrante' : [{'nome' : 'Bernardo De Castro', 'foto' : "https://talks.python.org.br/media/avatars/EAKK9E_pFstwRn_thumbnail_default_MwBPM2X.jpeg"}]},
+      {'id' : 46, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Automatizando Tarefas com Python', 'en' : 'Automatizando Tarefas com Python', 'es' : 'Automatizando Tarefas com Python'}, 'descricao' : {'br' : 'Automação de processos dia a dia', 'en' : 'Automação de processos dia a dia', 'es' : 'Automação de processos dia a dia'}, 'palestrante' : [{'nome' : 'Mateus Santos', 'foto' : "https://talks.python.org.br/media/avatars/79AWMN_pEqC0xI_thumbnail_default.png"}, {'nome' : 'Dâmaris Campos', 'foto' : "https://talks.python.org.br/media/avatars/3JXA7Z_8f1WSzo_thumbnail_default.jpg"}]},
+      {'id' : 47, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Intermediário', 'en' : 'Intermediário', 'es' : 'Intermediário'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Automações Escaláveis em Python e Docker', 'en' : 'Automações Escaláveis em Python e Docker', 'es' : 'Automações Escaláveis em Python e Docker'}, 'descricao' : {'br' : 'Automação com Playwright, Pandas e Docker', 'en' : 'Automação com Playwright, Pandas e Docker', 'es' : 'Automação com Playwright, Pandas e Docker'}, 'palestrante' : [{'nome' : 'Mateus Santos Marques', 'foto' : "https://talks.python.org.br/media/avatars/DV9FR8_mux3hrZ_thumbnail_default.jpeg"}]},
+      {'id' : 48, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Avançado', 'en' : 'Avançado', 'es' : 'Avançado'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Packaging Python extensions with ABI3', 'en' : 'Packaging Python extensions with ABI3', 'es' : 'Packaging Python extensions with ABI3'}, 'descricao' : {'br' : 'Compatibilidade em múltiplas versões Python', 'en' : 'Compatibilidade em múltiplas versões Python', 'es' : 'Compatibilidade em múltiplas versões Python'}, 'palestrante' : [{'nome' : 'Filipe Fernandes', 'foto' : "https://talks.python.org.br/media/avatars/8ZCJGA_bNnBUbc_thumbnail_default.jpg"}]},
+      {'id' : 49, 'horario' : 'n/a', 'duracao' : 'n/a', 'nivel' : {'br' : 'Iniciante', 'en' : 'Iniciante', 'es' : 'Iniciante'}, 'atividade' : {'br' : 'Tutorial', 'en' : 'Tutorial', 'es' : 'Tutorial'}, 'titulo' : {'br' : 'Negado pelo banco: crédito inclusivo com dados do BCB', 'en' : 'Negado pelo banco: crédito inclusivo com dados do BCB', 'es' : 'Negado pelo banco: crédito inclusivo com dados do BCB'}, 'descricao' : {'br' : 'Dados do Banco Central para crédito inclusivo', 'en' : 'Dados do Banco Central para crédito inclusivo', 'es' : 'Dados do Banco Central para crédito inclusivo'}, 'palestrante' : [{'nome' : 'Fernando Masanori Ashikaga', 'foto' : "https://talks.python.org.br/media/avatars/Fernando_Masanori_O_Globo_NYpkEXH_thumbnail_default.jpg"}]},
    ]
   },
 ]
@@ -397,10 +111,10 @@ export default function PainelDaProgramacao() {
 
       <div className='todas_palestras'>
         {palestrasFiltradas.map((data, index) => (
-          <div className='card_palestra' key={index}>
+          <div className='card_palestra' key={data.id}>
             <div className='card_palestra_infos_1'>
-              <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
-              <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
+              {/* <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6> */}
+              {/* <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6> */}
               <h6 className='card_palestra_infos_1_nivel'>{data['nivel'][lang]}</h6>
               <h6 className='card_palestra_infos_1_atividade'>{data['atividade'][lang]}</h6>
             </div>
@@ -411,16 +125,16 @@ export default function PainelDaProgramacao() {
             <div className='card_palestra_infos_3'>
               {data.palestrante.length > 1 ? (
                 <>
-                <div className='card_palestra_infos_3_fotos'>
-                {data.palestrante.map ((data_palestrante, index_foto) => (
-                  <img key={index_foto} src={data_palestrante['foto']} alt="" />
-                ))}
-                </div>
-                <div className='card_palestra_infos_3_nomes'>
-                {data.palestrante.map ((data_palestrante, index_nome) => (
-                    <h3 key={index_nome}>{data_palestrante['nome']}</h3>
-                ))}
-                </div>
+                  <div className='card_palestra_infos_3_fotos'>
+                    {data.palestrante.map ((data_palestrante, index_foto) => (
+                      <img key={index_foto} src={data_palestrante['foto']} alt="" />
+                    ))}
+                  </div>
+                  <div className='card_palestra_infos_3_nomes'>
+                    {data.palestrante.map ((data_palestrante, index_nome) => (
+                        <h3 key={index_nome}>{data_palestrante['nome']}</h3>
+                    ))}
+                  </div>
                 </>
                 ) : (
                   <>
