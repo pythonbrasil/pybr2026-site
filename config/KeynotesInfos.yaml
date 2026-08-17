@@ -17,9 +17,18 @@ allKeynotes:
   - id: 1
     name: Camila maia
     biography_text:
-      - br: "Engenheira de software com mais de 16 anos de experiência, especializada em Developer Experience, Python, Ruby e código aberto. É reconhecida internacionalmente por suas contribuições ao open source, com destaque pela OSI e pelo GitHub, que a reconheceu como Mantenedora Oficial de Código Aberto no Brasil. Também foi selecionada para o GitHub Secure Open Source Fund com a ScanAPI e teve a primeira conta do GitHub Sponsors criada no Brasil.\n\nCamila é cofundadora da Cumbuca Dev, comunidade que busca tornar o open source mais acessível e inclusivo, especialmente para grupos minorizados no Brasil."
-      - en: "Software engineer with more than 16 years of experience, specializing in Developer Experience, Python, Ruby, and open source. She is internationally recognized for her contributions to open source, notably by the OSI and GitHub, which recognized her as an Official Open Source Maintainer in Brazil. She was also selected for the GitHub Secure Open Source Fund with ScanAPI and had the first GitHub Sponsors account created in Brazil.\n\nCamila is co-founder of Cumbuca Dev, a community that aims to make open source more accessible and inclusive, especially for underrepresented groups in Brazil."
-      - es: "Ingeniera de software con más de 16 años de experiencia, especializada en Developer Experience, Python, Ruby y código abierto. Es reconocida internacionalmente por sus contribuciones al código abierto, especialmente por la OSI y GitHub, que la reconoció como Mantenedora Oficial de Código Abierto en Brasil. También fue seleccionada para el GitHub Secure Open Source Fund con ScanAPI y tuvo la primera cuenta de GitHub Sponsors creada en Brasil.\n\nCamila es cofundadora de Cumbuca Dev, una comunidad que busca hacer que el código abierto sea más accesible e inclusivo, especialmente para grupos subrepresentados en Brasil."
+      - br: >-
+          Engenheira de software, especialista em Developer Experience e apaixonada por código aberto, Camila também é cofundadora da
+          <a href="https://cumbuca.dev/" target="_blank" rel="noopener noreferrer">Cumbuca Dev</a>,
+          comunidade que trabalha para tornar o open source mais acessível e inclusivo no Brasil.
+      - en: >-
+          Software engineer, specialist in Developer Experience, and passionate about open source, Camila is also a co-founder of
+          <a href="https://cumbuca.dev/" target="_blank" rel="noopener noreferrer">Cumbuca Dev</a>,
+          a community that works to make open source more accessible and inclusive in Brazil.
+      - es: >-
+          Ingeniera de software, especialista en Developer Experience y apasionada por el código abierto, Camila también es cofundadora de
+          <a href="https://cumbuca.dev/" target="_blank" rel="noopener noreferrer">Cumbuca Dev</a>,
+          una comunidad que trabaja para hacer que el open source sea más accesible e inclusivo en Brasil.
     photo: "keynotesImgs/defaultImg/Camila_Maia.jpg"
     dot_photo: "keynotesImgs/dotImg/Camila_Maia.jpg"
     github_url: ""

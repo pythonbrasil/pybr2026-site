@@ -99,6 +99,10 @@
         max-width: 330px;
         white-space: pre-line;
     }
+
+    & a {
+        text-decoration: underline;
+    }
 }
 
 .Home_Section3_carrossel_foto_selecao_keynote {

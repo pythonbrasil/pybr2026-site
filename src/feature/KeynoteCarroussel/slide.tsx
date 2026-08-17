@@ -25,7 +25,7 @@ export default function Slide({
                     </div>
                     <div className="Home_Section3_carrossel_card_keynote_parte_direita">
                         <h4>{name}</h4>
-                        <p>{biography}</p>
+                        <p dangerouslySetInnerHTML={{ __html: biography }} />
                     </div>
                 </div>
             </>
