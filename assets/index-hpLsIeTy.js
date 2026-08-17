@@ -32,7 +32,7 @@ Please change the parent <Route path="${T}"> to <Route path="${T==="/"?"*":`${T}
           <a href="https://cumbuca.dev/" target="_blank" rel="noopener noreferrer">Cumbuca Dev</a>,\r
           comunidade que trabalha para tornar o open source mais acessível e inclusivo no Brasil.\r
       - en: >-\r
-          Software engineer, specialist in Developer Experience, and passionate about open source, Camila is also a co-founder of\r
+          Software engineer,  specialist in Developer Experience, and passionate about open source, Camila is also a co-founder of\r
           <a href="https://cumbuca.dev/" target="_blank" rel="noopener noreferrer">Cumbuca Dev</a>,\r
           a community that works to make open source more accessible and inclusive in Brazil.\r
       - es: >-\r
