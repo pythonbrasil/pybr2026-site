@@ -15,6 +15,12 @@
   flex-direction: row;
   transition: transform 0.3s ease;
   width: 800px;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.swiper-track:active {
+  cursor: grabbing;
 }
 
 .swiper-slide {

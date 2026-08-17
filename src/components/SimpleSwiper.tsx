@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./styles/SimpleSwiper.css";
 
 type SimpleSwiperProps = {
@@ -8,9 +8,48 @@ type SimpleSwiperProps = {
 
 export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
   const [index, setIndex] = useState(0);
+  const [dragging, setDragging] = useState(false);
+
+  const startX = useRef(0);
+  const currentX = useRef(0);
 
   if (slides.length !== dots.length) {
     console.warn("slides e dots devem ter o mesmo tamanho");
+  }
+
+  function handlePointerDown(e: React.PointerEvent<HTMLDivElement>) {
+    startX.current = e.clientX;
+    currentX.current = e.clientX;
+    setDragging(true);
+  }
+
+  function handlePointerMove(e: React.PointerEvent<HTMLDivElement>) {
+    if (!dragging) return;
+
+    currentX.current = e.clientX;
+  }
+
+  function handlePointerUp() {
+    if (!dragging) return;
+
+    const distance = currentX.current - startX.current;
+    const threshold = 50;
+
+    if (Math.abs(distance) > threshold) {
+      if (distance < 0 && index < slides.length - 1) {
+        // Arrastou para a esquerda
+        setIndex((prev) => prev + 1);
+      } else if (distance > 0 && index > 0) {
+        // Arrastou para a direita
+        setIndex((prev) => prev - 1);
+      }
+    }
+
+    setDragging(false);
+  }
+
+  function handlePointerCancel() {
+    setDragging(false);
   }
 
   return (
@@ -26,9 +65,17 @@ export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
           />
         ))}
       </div>
+
       <div
         className="swiper-track"
-        style={{ transform: `translateX(-${index * 100}%)` }}
+        style={{
+          transform: `translateX(-${index * 100}%)`,
+          transition: dragging ? "none" : "transform 0.3s ease",
+        }}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerCancel}
       >
         {slides.map((slide, i) => (
           <div className="swiper-slide" key={i}>
