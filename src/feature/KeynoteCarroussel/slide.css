@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     margin: 80px;
     padding: 40px 0px;
 
@@ -26,7 +26,7 @@
     max-width: 1000px;
 
     & h4 {
-        margin: 20px 0px;
+        margin: 4px 0px;
         font-size: 24px;
     }
 }
@@ -34,7 +34,7 @@
 .Home_Sectine3_carrossel_card_keynote {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
     padding: 20px;
@@ -76,6 +76,31 @@
     }
 }
 
+.Home_Section3_carrossel_card_keynote_parte_direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 280px;
+    height: auto;
+    /* border: 2px red solid; */
+
+    color: aliceblue;
+
+    & h4 {
+        margin: 0px 0px 5px 0px;
+        font-weight: 600;
+    }
+
+    & p {
+        font-weight: 200;
+        width: 23vw;
+        max-width: 330px;
+        white-space: pre-line;
+    }
+}
+
 .Home_Section3_carrossel_foto_selecao_keynote {
     display: flex;
     flex-wrap: wrap;
@@ -95,9 +120,9 @@
 
     .Home_Sectine3_carrossel_card_keynote {
         flex-direction: column;
+        align-items: center;
         gap: 25px;
         padding: 18px 18px 5px 18px;
-        height: auto;
         width: 100%;
         max-width: 335px;
     }
@@ -123,6 +148,34 @@
             width: 100%;
         }
     }
+
+    .Home_Section3_carrossel_card_keynote_parte_direita {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        text-align: left;
+        min-height: 280px;
+        height: auto;
+        width: 200px;
+        /* border: 2px red solid; */
+
+        color: aliceblue;
+
+        & h4 {
+            margin: 0px 0px 5px 0px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        & p {
+            font-size: 14px;
+            font-weight: 200;
+            width: 90%;
+            max-width: 330px;
+            margin-bottom: 13px;
+        }
+    }
 }
 
 @media (max-width : 500px) {
@@ -130,7 +183,6 @@
         flex-direction: column;
         gap: 25px;
         padding: 18px 18px 5px 18px;
-        height: auto;
         width: 90%;
         max-width: 335px;
     }
