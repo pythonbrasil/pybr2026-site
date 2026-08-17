@@ -76,6 +76,7 @@ export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerCancel}
+        onDragStart={(e) => e.preventDefault()}
       >
         {slides.map((slide, i) => (
           <div className="swiper-slide" key={i}>
