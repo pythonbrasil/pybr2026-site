@@ -79,7 +79,7 @@ i18n
                 section6 : {
                     localizacao : "Localização",
                     palestras : "Palestras",
-                    palestrasData : "16 a 19 de Outubro",
+                    palestrasData : "16 a 18 de Outubro",
                     paragrafo1 : "Dias principais do evento, espaços para job fair, network, palestras de diversos temas acontecendo simultaneamente.",
                     plantaDoEvento : "Planta do Evento",
                     verNoMapa : "Ver no mapa",
@@ -194,7 +194,7 @@ i18n
                 section6: {
                     localizacao: "Location",
                     palestras: "Talks",
-                    palestrasData: "October 16–19",
+                    palestrasData: "October 16–18",
                     paragrafo1: "Main days of the event, with spaces for the job fair, networking, and talks on various topics happening simultaneously.",
                     plantaDoEvento: "Event Map",
                     verNoMapa: "View on map",
@@ -309,7 +309,7 @@ i18n
                 section6: {
                     localizacao: "Ubicación",
                     palestras: "Charlas",
-                    palestrasData: "16 al 19 de octubre",
+                    palestrasData: "16 al 18 de octubre",
                     paragrafo1: "Días principales del evento, con espacios para feria de empleo, networking y charlas sobre diversos temas que ocurren simultáneamente.",
                     plantaDoEvento: "Plano del Evento",
                     verNoMapa: "Ver en el mapa",
