@@ -49,18 +49,6 @@ export default function SimpleSwiper({ slides, dots, swiperTrackWidth = '800px' 
 
   return (
     <div className="swiper">
-      <div className="swiper-dots">
-        {dots?.map((dot, i) => (
-          <img
-            key={i}
-            src={dot}
-            alt=""
-            className={`dot ${i === index ? "active" : ""}`}
-            onClick={() => setIndex(i)}
-          />
-        ))}
-      </div>
-
       <div
         className="swiper-track"
         style={{
@@ -78,6 +66,17 @@ export default function SimpleSwiper({ slides, dots, swiperTrackWidth = '800px' 
           <div className="swiper-slide" key={i}>
             {slide}
           </div>
+        ))}
+      </div>
+      <div className="swiper-dots">
+        {dots?.map((dot, i) => (
+          <img
+            key={i}
+            src={dot}
+            alt=""
+            className={`dot ${i === index ? "active" : ""}`}
+            onClick={() => setIndex(i)}
+          />
         ))}
       </div>
     </div>

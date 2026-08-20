@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 export default function Home_Section4() {
     const { t } = useTranslation();
 
+    // secao Submissão de Atividades
+
     return(<section className="Home_Section4" id="SUBMISSAO_DE_ATIVIDADES">
             <div className="Home_Section4_itens_texto">
                 <h4>{t("home.section4.submissaoDeAtividades")}</h4>

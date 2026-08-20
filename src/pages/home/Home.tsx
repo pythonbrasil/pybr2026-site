@@ -12,7 +12,6 @@ export default function Home() {
         <Home_Section1/>
         <Home_Section2/>
         <KeynoteCarroussel/>
-        <ActivitiesCarroussel/>
         <Carrossel/>
         <Home_Section5/>
         <EventLocals/>

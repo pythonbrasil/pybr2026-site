@@ -46,10 +46,12 @@
   margin: 0 4px;
   background: #ccc;
   cursor: pointer;
+  filter: grayscale(100%);
 }
 
 .dot.active {
   background: #333;
+  filter: grayscale(0%);
 }
 
 @media (max-width : 1000px){

@@ -53,11 +53,12 @@
     justify-content: center;
     gap: 10px;
 
-    width: 80%;
+    width: 100%;
     max-width: 300px;
 
     & h3 {
         font-size: 1.4rem;
+        word-break: break-word;
     }
 
 
