@@ -1,0 +1,25 @@
+AllSponsors:
+  - prata:
+    flag: '/img/page/home/section7/patrocinador/prata/bandeira_prata.png'
+    name:
+      - br: "Prata"
+      - en: "Silver"
+      - es: "Plata"
+    sponsors:
+      - name: "Pythonic Cafe"
+        img: '/img/page/home/section7/patrocinador/prata/pythonic_cafe.png'
+      - name: 'Nekt'
+        img: '/img/page/home/section7/patrocinador/prata/nekt.png'
+  - bronze:
+    flag: '/img/page/home/section7/patrocinador/bronze/bandeira_bronze.png'
+    name:
+      - br: "Bronze"
+      - en: "BronzeEN"
+      - es: "BronzeES"
+    sponsors:
+      - name: "Quansight"
+        img: '/img/page/home/section7/patrocinador/prata/pythonic_cafe.png'
+      - name: 'Lincoln Loop'
+        img: '/img/page/home/section7/patrocinador/prata/nekt.png'
+      - name: 'Robbin'
+        img: '/img/page/home/section7/patrocinador/prata/nekt.png
