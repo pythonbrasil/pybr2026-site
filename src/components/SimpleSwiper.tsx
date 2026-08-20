@@ -3,19 +3,16 @@ import "./styles/SimpleSwiper.css";
 
 type SimpleSwiperProps = {
   slides: readonly React.ReactNode[];
-  dots: readonly string[];
+  dots?: readonly string[];
+  swiperTrackWidth?: string;
 };
 
-export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
+export default function SimpleSwiper({ slides, dots, swiperTrackWidth = '800px' }: SimpleSwiperProps) {
   const [index, setIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
 
   const startX = useRef(0);
   const currentX = useRef(0);
-
-  if (slides.length !== dots.length) {
-    console.warn("slides e dots devem ter o mesmo tamanho");
-  }
 
   function handlePointerDown(e: React.PointerEvent<HTMLDivElement>) {
     startX.current = e.clientX;
@@ -37,10 +34,8 @@ export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
 
     if (Math.abs(distance) > threshold) {
       if (distance < 0 && index < slides.length - 1) {
-        // Arrastou para a esquerda
         setIndex((prev) => prev + 1);
       } else if (distance > 0 && index > 0) {
-        // Arrastou para a direita
         setIndex((prev) => prev - 1);
       }
     }
@@ -55,7 +50,7 @@ export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
   return (
     <div className="swiper">
       <div className="swiper-dots">
-        {dots.map((dot, i) => (
+        {dots?.map((dot, i) => (
           <img
             key={i}
             src={dot}
@@ -71,6 +66,7 @@ export default function SimpleSwiper({ slides, dots }: SimpleSwiperProps) {
         style={{
           transform: `translateX(-${index * 100}%)`,
           transition: dragging ? "none" : "transform 0.3s ease",
+          width: `${swiperTrackWidth}`
         }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}

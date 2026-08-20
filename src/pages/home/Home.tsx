@@ -5,12 +5,14 @@ import Home_Section7 from "./section/Home.Section7"
 import Carrossel from "../../components/Carrossel"
 import { KeynoteCarroussel } from "../../feature/KeynoteCarroussel"
 import { EventLocals } from "../../feature/EventLocals"
+import {ActivitiesCarroussel} from "../../feature/ActivitiesCarroussel"
 
 export default function Home() {
     return(<>
         <Home_Section1/>
         <Home_Section2/>
         <KeynoteCarroussel/>
+        <ActivitiesCarroussel/>
         <Carrossel/>
         <Home_Section5/>
         <EventLocals/>
