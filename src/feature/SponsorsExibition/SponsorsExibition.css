@@ -12,34 +12,6 @@
     position: relative;
 }
 
-.patrocinadores_prata {
-    display: flex;
-    gap: 20px;
-    width: 80%;
-    justify-content: center;
-    /* border: 2px red solid; */
-
-    /* NÃO SEI PQ FUNCIONA, MAS FUNCIONA */
-    & img {
-        width: 35%;
-        flex: none;
-    }
-}
-
-
-.patrocinadores_bronze {
-    display: flex;
-    gap: 20px;
-    width: 80%;
-    justify-content: center;
-    /* border: 2px red solid; */
-
-    /* NÃO SEI PQ FUNCIONA, MAS FUNCIONA */
-    & img {
-        width: 25%;
-        flex: none;
-    }
-}
 .Home_Section7_cobra_topo {
     position: absolute;
     top: 0px;
@@ -116,14 +88,14 @@
 
 .Home_Section7_patrocinadores_logos {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    width: 80%;
+    width: 100%;
     /* border: 2px red solid; */
-
-    /* NÃO SEI PQ FUNCIONA, MAS FUNCIONA */
     & img {
-        flex: 1;
-        width: calc(80% / 4);
+        max-width: 200px;
     }
 }
 
@@ -147,37 +119,6 @@
         }
     }
 
-    .Home_Section7_patrocinadores_logos.patrocinadores_ouro{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        
-        gap: 10px;
-        width: 90%;
-
-        & img {
-            flex: 1;
-            width: 100%;
-        }
-    }
-
-    .Home_Section7_patrocinadores_logos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: none;
-        justify-items: center;
-        align-items: center;
-        
-        gap: 10px;
-        width: 90%;
-
-        & img {
-            flex: 1;
-            width: 45%;
-        }
-    }
-
     .Home_Section7_patrocinadores_bandeira_linha.ultima_linha {
         margin-bottom: 50px;
     }
@@ -189,23 +130,4 @@
                 margin-left: 2vw;
         }
     }    
-}
-.Home_Section7_patrocinadores_logos.patrocinadores_prata {
-    width: 80%;
-    justify-content: center;
-    
-    & img {
-        flex: 0 0 auto;
-        width: 35%;
-    }
-}
-
-.Home_Section7_patrocinadores_logos.patrocinadores_bronze {
-    width: 80%;
-    justify-content: center;
-    
-    & img {
-        flex: 0 0 auto;
-        width: 25%;
-    }
 }
