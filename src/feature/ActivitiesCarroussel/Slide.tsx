@@ -1,4 +1,4 @@
-import './Slide.css'
+import './styles/Slide.css'
 
 export const Slide = ({
     img , talkerName , talkTitle, talkSubtitle, variant = ""

@@ -1,6 +1,6 @@
 import SimpleSwiper from "../../components/SimpleSwiper"
 import { Slide } from "./Slide"
-import "./ActivitiesCarroussel.css"
+import "./styles/ActivitiesCarroussel.css"
 import { activities } from "../../data/AllActivities"
 
 export const ActivitiesCarroussel = () => {

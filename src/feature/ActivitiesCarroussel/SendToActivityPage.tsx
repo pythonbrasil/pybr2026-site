@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./SendToActivityPage.css"
+import "./styles/SendToActivityPage.css"
 import cobra_1 from "/img/page/home/section4/secao4_cobra_1.png"
 import cobra_2 from "/img/page/home/section4/secao4_cobra_2.png"
 import { useTranslation } from "react-i18next";
