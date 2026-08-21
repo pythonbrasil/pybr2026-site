@@ -7,6 +7,11 @@ i18n
     resources: {
       br: {
         translation : {
+            SendToActivityPage: {
+                text1: 'Confira toda programação',
+                text2: 'Acessar programação',
+                text3: 'Acompanhe as novidades nas nossas redes sociais',
+            },
             header: {
                 OEvento: "O Evento",
                 Programacao: "Programação",
@@ -64,12 +69,6 @@ i18n
                     paragrafo3 : "A edição de 2026 está sendo organizada pela comunidade Python de <1>Florianópolis/SC</1> com o apoio da APyB (Associação Python Brasil)"
                 },
                 section3 : {},
-                section4 : {
-                    submissaoDeAtividades : "Submissão de Atividades",
-                    enviarAtividade : "Enviar Atividade",
-                    regulamento : "Regulamento",
-                    paragrafo1 : "Acompanhe as novidades nas nossas redes sociais"
-                },
                 section5 : {
                     guiaDaCidade : "Guia da Cidade",
                     paragrafo1 : "Em outubro, em Florianópolis, você pode aproveitar as praias (ainda não tão cheias), fazer trilhas, explorar o centro histórico, visitar o Projeto Tamar, relaxar em parques, curtir a gastronomia local e aproveitar ao máximo a Python Brasil 2026 com um clima fresco.",
@@ -122,6 +121,11 @@ i18n
       },
       en: {
         translation : {
+            SendToActivityPage: {
+                text1: 'Check out the full schedule',
+                text2: 'View schedule',
+                text3: 'Follow the latest news on our social media',
+            },
             header: {
                 OEvento: "The event",
                 Programacao: "Schedule",
@@ -237,6 +241,11 @@ i18n
       },
       es: {
         translation : {
+            SendToActivityPage: {
+                text1: 'Consulta toda la programación',
+                text2: 'Ver programación',
+                text3: 'Sigue las novedades en nuestras redes sociales',
+            },
             header: {
                 OEvento: "El evento",
                 Programacao: "Cronograma",

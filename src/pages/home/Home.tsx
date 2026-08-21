@@ -4,8 +4,8 @@ import Home_Section5 from "./section/Home.Section5"
 import Carrossel from "../../components/Carrossel"
 import { KeynoteCarroussel } from "../../feature/KeynoteCarroussel"
 import { EventLocals } from "../../feature/EventLocals"
-import {ActivitiesCarroussel} from "../../feature/ActivitiesCarroussel"
 import { SponsorsExibition } from "../../feature/SponsorsExibition/SponsorsExibition"
+import { SendToActivityPage } from "../../feature"
 
 export default function Home() {
     return(<>
@@ -13,6 +13,7 @@ export default function Home() {
         <Home_Section2/>
         <KeynoteCarroussel/>
         <Carrossel/>
+        <SendToActivityPage/>
         <Home_Section5/>
         <EventLocals/>
         <SponsorsExibition/>

@@ -1,7 +1,7 @@
 import SimpleSwiper from "../../components/SimpleSwiper"
 import { Slide } from "./Slide"
 import "./ActivitiesCarroussel.css"
-import { activities } from "./AllActivities"
+import { activities } from "../../data/AllActivities"
 
 export const ActivitiesCarroussel = () => {
     const lang = "br";
