@@ -64,6 +64,11 @@ export default function Header() {
                         </div>
                     </ul>
                     <ul className="Header_menu_desktop"><HashLink smooth to="/#O_EVENTO">{t("header.OEvento")}</HashLink></ul>
+                    <ul>
+                        <Link to={'/atividades'}>
+                            {t("header.text1")}
+                        </Link>
+                    </ul>
                     {/*<ul className="Header_menu_desktop"><HashLink smooth to="/#SUBMISSAO_DE_ATIVIDADES">{t("home.section4.submissaoDeAtividades")}</HashLink></ul>*/}
                     {/* <ul className="Header_menu_desktop"><a href="#KEYNOTES">Keynotes</a></ul> */}
                     {/* <Link to="/programacao"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}

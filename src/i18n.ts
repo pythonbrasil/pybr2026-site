@@ -17,6 +17,7 @@ i18n
                 text3: 'Acompanhe as novidades nas nossas redes sociais',
             },
             header: {
+                text1: 'Programação',
                 OEvento: "O Evento",
                 Programacao: "Programação",
                 ComprarIngresso : "Comprar Ingressos!",
@@ -135,6 +136,7 @@ i18n
                 text3: 'Follow the latest news on our social media',
             },
             header: {
+                text1: 'Schedule',
                 OEvento: "The event",
                 Programacao: "Schedule",
                 ComprarIngresso : "Buy Tickets!",
@@ -259,6 +261,7 @@ i18n
                 text3: 'Sigue las novedades en nuestras redes sociales',
             },
             header: {
+                text1: 'Cronograma',
                 OEvento: "El evento",
                 Programacao: "Cronograma",
                 ComprarIngresso : "¡Compra entradas!",
