@@ -1,4 +1,4 @@
-.ActivitiesCarroussel {
+.ActivitiesPage {
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
@@ -6,22 +6,18 @@
     justify-content: center;
     
     width: 100%;
+    padding-bottom: 60px;
 
-    background-color: greenyellow;
-}
-
-.ActivitiesCarroussel.tutorial {
     background-color: #0f0f0f;
 }
 
-.ActivitiesCarroussel_itens {
+.ActivitiesPage_itens {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin: 80px;
-    padding: 40px 0px;
+    gap: 30px;
+    padding: 20px 0px;
 
     background-color: #0f0f0f;
     width: 80%;
@@ -31,13 +27,5 @@
         margin: 4px 0px;
         font-size: 24px;
         color: aliceblue;
-    }
-}
-
-.ActivitiesCarroussel_itens.tutorial {
-    background-color: greenyellow;
-
-    & h4 {
-        color: #0f0f0f;
     }
 }

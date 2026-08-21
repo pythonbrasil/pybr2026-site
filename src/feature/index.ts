@@ -1,1 +1,1 @@
-export { ActivitiesCarroussel, SendToActivityPage } from "./ActivitiesCarroussel";
+export { ActivitiesPage, SendToActivityPage } from "./ActivitiesCarroussel";

@@ -7,6 +7,10 @@ i18n
     resources: {
       br: {
         translation : {
+            ActivitiesPage: {
+                text1: 'Palestras',
+                text2: 'Tutoriais'
+            },
             SendToActivityPage: {
                 text1: 'Confira toda programação',
                 text2: 'Acessar programação',
@@ -121,6 +125,10 @@ i18n
       },
       en: {
         translation : {
+            ActivitiesPage: {
+                text1: 'Talks',
+                text2: 'Tutorials'
+            },
             SendToActivityPage: {
                 text1: 'Check out the full schedule',
                 text2: 'View schedule',
@@ -241,6 +249,10 @@ i18n
       },
       es: {
         translation : {
+            ActivitiesPage: {
+                text1: 'Charlas',
+                text2: 'Tutoriales'
+            },
             SendToActivityPage: {
                 text1: 'Consulta toda la programación',
                 text2: 'Ver programación',

@@ -1,4 +1,4 @@
-.ActivitiesCarroussel_Slide {
+.activity {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -6,23 +6,21 @@
     gap: 30px;
     padding: 20px;
     background-color: greenyellow;
-    padding: 30px 20px;
+    padding: 30px;
     height: auto;
-    width: 50vw;
+    width: 100%;
     min-width: 200px;
-    max-width: 350px;
+    max-width: 650px;
+    border-radius: 20px 0px 10px 0px;
 }
 
-.ActivitiesCarroussel_Slide.tutorial {
-    background-color: #0f0f0f;
-}
-
-.ActivitiesCarroussel_Slide_talker {
+.activity_talker {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    width: 80%;
     
     & img {
         width: 60px;
@@ -34,19 +32,12 @@
     & h4 {
         color: #0f0f0f !important;
         font-size: 1.2rem !important;
-        width: 40vw;
-        max-width: 200px;
+        width: 80%;
         min-width: 120px;
     }
 }
 
-.ActivitiesCarroussel_Slide_talker.tutorial {
-    & h4 {
-        color: aliceblue !important;
-    }
-}
-
-.ActivitiesCarroussel_Slide_talk {
+.activity_talk {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,7 +45,6 @@
     gap: 10px;
 
     width: 100%;
-    max-width: 300px;
 
     & h3 {
         font-size: 1.4rem;
@@ -65,11 +55,5 @@
     & h6 {
         font-size: 0.8rem;
         font-weight: 400;
-    }
-}
-
-.ActivitiesCarroussel_Slide_talk.tutorial {
-    & h3, h6 {
-        color: aliceblue !important;
     }
 }

@@ -5,7 +5,9 @@ import Carregamento from './components/Carregamento'
 import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom"
 import Layout from './Layout'
-import Programacao from './pages/programacao/Programacao';
+// import Programacao from './pages/programacao/Programacao';
+import { ActivitiesPage } from './feature';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,17 +18,21 @@ function App() {
     }, 2000);
   }, []);
 
-  return (<>
-    {loading && <Carregamento />}
-
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home/>} />
-        <Route path="perguntas_frequentes" element={<Faq/>} />
-        {/* <Route path="programacao" element={<Programacao/>} /> */}
-      </Route>
-    </Routes>
-  </>)
+  return (
+    <>
+      {loading && <Carregamento />}
+      <ScrollToTop />
+    
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>} />
+          <Route path="perguntas_frequentes" element={<Faq/>} />
+          <Route path="atividades" element={<ActivitiesPage/>} />
+          {/* <Route path="programacao" element={<Programacao/>} /> */}
+        </Route>
+      </Routes>
+    </>
+  )
 }
 
 export default App
