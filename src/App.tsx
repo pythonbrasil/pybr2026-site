@@ -5,7 +5,7 @@ import Carregamento from './components/Carregamento'
 import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom"
 import Layout from './Layout'
-// import Programacao from './pages/programacao/Programacao';
+import Programacao from './pages/programacao/Programacao';
 import { ActivitiesPage } from './feature';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -28,7 +28,7 @@ function App() {
           <Route index element={<Home/>} />
           <Route path="perguntas_frequentes" element={<Faq/>} />
           <Route path="atividades" element={<ActivitiesPage/>} />
-          {/* <Route path="programacao" element={<Programacao/>} /> */}
+          <Route path="programacao" element={<Programacao/>} />
         </Route>
       </Routes>
     </>

@@ -21,7 +21,7 @@
     justify-content: flex-start;
     gap: 10px;
     width: 80%;
-    
+
     & img {
         width: 60px;
         height: 60px;
@@ -32,8 +32,8 @@
     & h4 {
         color: #0f0f0f !important;
         font-size: 1.2rem !important;
-        width: 80%;
-        min-width: 120px;
+        width: auto;
+        max-width: 300px;
     }
 }
 

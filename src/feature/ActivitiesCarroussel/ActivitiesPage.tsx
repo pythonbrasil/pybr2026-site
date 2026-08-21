@@ -25,6 +25,7 @@ export const ActivitiesPage = () => {
                         <Activity 
                             img = {Keynote.palestrante[0].foto}
                             talkerName = {Keynote.palestrante[0].nome}
+                            talkers = {Keynote.palestrante}
                             talkTitle = {Keynote.titulo[lang]}
                             talkSubtitle ={Keynote.descricao[lang]}
                         />

@@ -1,15 +1,25 @@
 import './styles/Activity.css'
 
 export const Activity = ({
-    img , talkerName , talkTitle, talkSubtitle
+    talkers = [], talkTitle, talkSubtitle
 } : any) => {
 
     return (
         <div className="activity">
-            <div className="activity_talker">
-                <img src={img} alt="foto do palestrante" />
-                <h4>{talkerName}</h4>
-            </div>
+            {talkers.map((talker : any) => (
+                <div 
+                    className="activity_talker"
+                    key={talker.nome}
+                >
+                    <img 
+                        src={talker.foto} 
+                        alt="foto do palestrante"
+                    />
+                    <h4>
+                        {talker.nome}
+                    </h4>
+                </div>
+            ))}
             <div className="activity_talk">
                 <h3>{talkTitle}</h3>
                 <h6>{talkSubtitle}</h6>
