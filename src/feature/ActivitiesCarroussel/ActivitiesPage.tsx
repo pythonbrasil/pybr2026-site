@@ -20,14 +20,13 @@ export const ActivitiesPage = () => {
                 </h4>
                 {
                     [...palestras]
-                    .sort(() => Math.random() - 0.5)
-                    .map((Keynote : any) => (
+                    .sort((a, b) => a.titulo[lang].localeCompare(b.titulo[lang]))
+                    .map((Talker : any) => (
                         <Activity 
-                            img = {Keynote.palestrante[0].foto}
-                            talkerName = {Keynote.palestrante[0].nome}
-                            talkers = {Keynote.palestrante}
-                            talkTitle = {Keynote.titulo[lang]}
-                            talkSubtitle ={Keynote.descricao[lang]}
+                            img = {Talker.palestrante[0].foto}
+                            talkers = {Talker.palestrante}
+                            talkTitle = {Talker.titulo[lang]}
+                            talkLink={Talker.link}
                         />
                     )
                 )}
@@ -40,13 +39,13 @@ export const ActivitiesPage = () => {
                 </h4>
                 {
                     [...tutoriais]
-                    .sort(() => Math.random() - 0.5)
-                    .map((Keynote : any) => (
+                    .sort((a, b) => a.titulo[lang].localeCompare(b.titulo[lang]))
+                    .map((Talker : any) => (
                         <Activity 
-                            img = {Keynote.palestrante[0].foto}
-                            talkerName = {Keynote.palestrante[0].nome}
-                            talkTitle = {Keynote.titulo[lang]}
-                            talkSubtitle ={Keynote.descricao[lang]}
+                            img = {Talker.palestrante[0].foto}
+                            talkers = {Talker.palestrante}
+                            talkTitle = {Talker.titulo[lang]}
+                            talkLink={Talker.link}
                         />
                     )
                 )}

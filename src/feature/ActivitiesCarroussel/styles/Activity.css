@@ -14,6 +14,10 @@
     border-radius: 20px 0px 10px 0px;
 }
 
+.activity_link {
+    width: 100%;
+}
+
 .activity_talker {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +25,7 @@
     justify-content: flex-start;
     gap: 10px;
     width: 80%;
+    margin-top: 20px;
 
     & img {
         width: 60px;
@@ -34,6 +39,9 @@
         font-size: 1.2rem !important;
         width: auto;
         max-width: 300px;
+        font-weight: normal;
+
+
     }
 }
 
@@ -43,7 +51,6 @@
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-
     width: 100%;
 
     & h3 {
