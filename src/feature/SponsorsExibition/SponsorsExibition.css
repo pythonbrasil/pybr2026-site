@@ -95,7 +95,9 @@
     width: 100%;
     /* border: 2px red solid; */
     & img {
-        max-width: 200px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
     }
 }
 

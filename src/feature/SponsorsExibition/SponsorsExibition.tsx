@@ -17,6 +17,8 @@ export const SponsorsExibition = () => {
         es: 2
     }[lang];
 
+    console.log(Sponsors[0].imgMaxSize)
+
     return(
         <section className="Home_Section7" id="PATROCINADORES">
             <img src={cobra_topo} alt="" className="Home_Section7_cobra_topo"/>
@@ -32,7 +34,13 @@ export const SponsorsExibition = () => {
                         <h5>{nivel.name[numberLang][lang]}</h5>
                         <div className="Home_Section7_patrocinadores_logos">
                             {nivel.sponsors.map((sponsor : any) => (
-                                <img src={sponsor.img} alt={sponsor.name} />
+                                <img 
+                                    src={sponsor.img} 
+                                    alt={sponsor.name} 
+                                    style={{
+                                        maxWidth: `${nivel.imgMaxSize}` ,
+                                    }}
+                                />
                             ))}
                         </div>
                     </div>

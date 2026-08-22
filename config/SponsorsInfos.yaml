@@ -5,6 +5,7 @@ AllSponsors:
       - br: "Ouro"
       - en: "OuroEN"
       - es: "OuroES"
+    imgMaxSize: '200px'
     sponsors:
       - name: "Aws"
         img: '/Sponsors/aws.png'
@@ -14,6 +15,7 @@ AllSponsors:
       - br: "Prata"
       - en: "Silver"
       - es: "Plata"
+    imgMaxSize: '150px'
     sponsors:
       - name: "Pythonic Cafe"
         img: '/Sponsors/pythonic_cafe.png'
@@ -25,6 +27,7 @@ AllSponsors:
       - br: "Bronze"
       - en: "BronzeEN"
       - es: "BronzeES"
+    imgMaxSize: '125px'
     sponsors:
       - name: "Quansight"
         img: '/Sponsors/quansight.png'
