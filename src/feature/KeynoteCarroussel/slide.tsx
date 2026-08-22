@@ -1,8 +1,8 @@
 import "./slide.css"
-import logo_github from "/img/page/home/section3/logo_github.png"
-import logo_globinho from "/img/page/home/section3/logo_globinho.png"
-import logo_ig from "/img/page/home/section3/logo_ig.png"
-import logo_linkdin from "/img/page/home/section3/logo_linkdin.png"
+import logo_github from "./assets/logo_github.png"
+import logo_globinho from "./assets/logo_globinho.png"
+import logo_ig from "./assets/logo_ig.png"
+import logo_linkdin from "./assets/logo_linkdin.png"
 
 export default function Slide({
             name, biography, foto, githubUrl="",
