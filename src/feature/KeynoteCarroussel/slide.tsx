@@ -9,19 +9,29 @@ export default function Slide({
             instagramUrl="", linkedinUrl="", siteUrl=""
         } : any
     ) {
+        const socialLinks = [
+            { url: linkedinUrl, icon: logo_linkdin, alt: 'LinkedIn' },
+            { url: githubUrl, icon: logo_github, alt: 'GitHub' },
+            { url: instagramUrl, icon: logo_ig, alt: 'Instagram' },
+            { url: siteUrl, icon: logo_globinho, alt: 'Site' },
+        ].filter(({ url }) => Boolean(url && url.trim()));
+
         return(
             <>
-                <div className="Home_Sectine3_carrossel_card_keynote">
+                <div className="Home_Sectine3_carrossel_card_keynote keynotes">
                     <div className="Home_Section3_carrossel_card_keynote_parte_esquerda">
                         <div className="Home_Section3_carrossel_card_keynote_parte_esquerda_foto_keynote">
                             <img src={foto} alt="foto do keynote"/>
                         </div>
-                        <li>
-                            <a href={linkedinUrl}><ul><img src={logo_linkdin} alt="" /></ul></a>
-                            <a href={githubUrl}><ul><img src={logo_github} alt="" /></ul></a>
-                            <a href={instagramUrl}><ul><img src={logo_ig} alt="" /></ul></a>
-                            <a href={siteUrl}><ul><img src={logo_globinho} alt="" /></ul></a>
-                        </li>
+                        {socialLinks.length > 0 && (
+                            <li>
+                                {socialLinks.map(({ url, icon, alt }) => (
+                                    <a key={alt} href={url} target="_blank" rel="noreferrer">
+                                        <ul><img src={icon} alt={alt} /></ul>
+                                    </a>
+                                ))}
+                            </li>
+                        )}
                     </div>
                     <div className="Home_Section3_carrossel_card_keynote_parte_direita">
                         <h4>{name}</h4>

@@ -120,7 +120,7 @@ export default function PainelDaProgramacao() {
             </div>
             <div className='card_palestra_infos_2'>
               <h3 className='card_palestra_infos_2_titulo'>{data['titulo'][lang]}</h3>
-              <h3 className='card_palestra_infos_2_descricao'>{data['descricao'][lang]}</h3>
+              {/* <h3 className='card_palestra_infos_2_descricao'>{data['descricao'][lang]}</h3> */}
             </div>
             <div className='card_palestra_infos_3'>
               {data.palestrante.length > 1 ? (
@@ -138,8 +138,8 @@ export default function PainelDaProgramacao() {
                 </>
                 ) : (
                   <>
-                    <img key={index} src={data.palestrante[0].foto} alt="" />
-                    <h3 key={index}>{data.palestrante[0].nome}</h3>
+                    <img src={data.palestrante[0].foto} alt="" />
+                    <h3>{data.palestrante[0].nome}</h3>
                   </>
                 )}
             </div>

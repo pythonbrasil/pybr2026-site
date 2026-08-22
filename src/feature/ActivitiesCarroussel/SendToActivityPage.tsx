@@ -8,7 +8,7 @@ export const SendToActivityPage = () => {
     const { t } = useTranslation();
 
     return(
-        <section className="SendToActivityPage">
+        <section className="SendToActivityPage" id="ATIVIDADES">
                 <div className="SendToActivityPage_itens_texto">
                     <h4>
                         {t("SendToActivityPage.text1")}

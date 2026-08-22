@@ -34,13 +34,15 @@ export const SponsorsExibition = () => {
                         <h5>{nivel.name[numberLang][lang]}</h5>
                         <div className="Home_Section7_patrocinadores_logos">
                             {nivel.sponsors.map((sponsor : any) => (
-                                <img 
-                                    src={sponsor.img} 
-                                    alt={sponsor.name} 
-                                    style={{
-                                        maxWidth: `${nivel.imgMaxSize}` ,
-                                    }}
-                                />
+                                <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+                                    <img 
+                                        src={sponsor.img} 
+                                        alt={sponsor.name} 
+                                        style={{
+                                            maxWidth: `${nivel.imgMaxSize}` ,
+                                        }}
+                                    />
+                                </a>
                             ))}
                         </div>
                     </div>

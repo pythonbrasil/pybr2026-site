@@ -3,16 +3,16 @@ allKeynotes:
     name: Geisa Silva
     biography_text:
       - br: >-
-          Educadora popular e Mestranda em Comunicação pelo POSCOM-UFBA, integrante dos grupos de pesquisa Gig@-UFBA e Meninas Digitais-BA, carpinteira do universo no Raul Hacker Clube e desenvolvedora de projetos de infraestruturas para autonomia feminista na Coletiva Periféricas.
+          Educadora popular e Mestranda em Comunicação pelo POSCOM-UFBA, integrante dos grupos de pesquisa Gig@-UFBA e Meninas Digitais-BA, carpinteira do universo no <a href="https://www.instagram.com/raulhackerclub/" target="_blank" rel="noopener noreferrer">Raul Hacker Clube</a> e desenvolvedora de projetos de infraestruturas para autonomia feminista na Coletiva Periféricas.
       - en: >-
-          Popular educator and master's student in Communication at POSCOM-UFBA, member of the research groups Gig@-UFBA and Meninas Digitais-BA, universe carpenter at Raul Hacker Clube, and developer of infrastructure projects for feminist autonomy at Coletiva Periféricas.
+          Popular educator and master's student in Communication at POSCOM-UFBA, member of the research groups Gig@-UFBA and Meninas Digitais-BA, universe carpenter at <a href="https://www.instagram.com/raulhackerclub/" target="_blank" rel="noopener noreferrer">Raul Hacker Clube</a>, and developer of infrastructure projects for feminist autonomy at Coletiva Periféricas.
       - es: >-
-          Educadora popular y estudiante de maestría en Comunicación en POSCOM-UFBA, integrante de los grupos de investigación Gig@-UFBA y Meninas Digitais-BA, carpintera del universo en Raul Hacker Clube y desarrolladora de proyectos de infraestructuras para la autonomía feminista en Coletiva Periféricas.
+          Educadora popular y estudiante de maestría en Comunicación en POSCOM-UFBA, integrante de los grupos de investigación Gig@-UFBA y Meninas Digitais-BA, carpintera del universo en <a href="https://www.instagram.com/raulhackerclub/" target="_blank" rel="noopener noreferrer">Raul Hacker Clube</a> y desarrolladora de proyectos de infraestructuras para la autonomía feminista en Coletiva Periféricas.
     photo: "keynotesImgs/defaultImg/Geisa_Silva.jpg"
     dot_photo: "keynotesImgs/dotImg/Geisa_Silva.jpg"
     github_url: ""
-    instagram_url: ""
-    linkedin_url: ""
+    instagram_url: "https://www.instagram.com/geisasantos/"
+    linkedin_url: "https://www.linkedin.com/in/geisasantos"
     site_url: ""
   - id: 1
     name: Camila maia
@@ -31,7 +31,7 @@ allKeynotes:
           una comunidad que trabaja para hacer que el open source sea más accesible e inclusivo en Brasil.
     photo: "keynotesImgs/defaultImg/Camila_Maia.jpg"
     dot_photo: "keynotesImgs/dotImg/Camila_Maia.jpg"
-    github_url: ""
-    instagram_url: ""
-    linkedin_url: ""
-    site_url: ""
+    github_url: "https://github.com/camilamaia"
+    instagram_url: "https://www.instagram.com/cmaiacd/"
+    linkedin_url: "https://www.linkedin.com/in/cmaiacd/"
+    site_url: "https://cumbuca.dev/"

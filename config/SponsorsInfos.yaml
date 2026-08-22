@@ -9,6 +9,7 @@ AllSponsors:
     sponsors:
       - name: "Aws"
         img: '/Sponsors/aws.png'
+        link: 'https://aws.amazon.com/pt/'
   - prata: "Patrocinadores Prata"
     flag: '/Sponsors/bandeira_prata.png'
     name:
@@ -19,8 +20,10 @@ AllSponsors:
     sponsors:
       - name: "Pythonic Cafe"
         img: '/Sponsors/pythonic_cafe.png'
+        link: 'https://pythonic.cafe/'
       - name: 'Nekt'
         img: '/Sponsors/nekt.png'
+        link: 'https://www.nekt.com/'
   - bronze: "Patrocinadores Bronze"
     flag: '/Sponsors/bandeira_bronze.png'
     name:
@@ -31,7 +34,10 @@ AllSponsors:
     sponsors:
       - name: "Quansight"
         img: '/Sponsors/quansight.png'
+        link: 'https://www.quansight.com/'
       - name: 'Lincoln Loop'
         img: '/Sponsors/lincoln_loop.png'
+        link: 'https://www.lincolnloop.com/'
       - name: 'Robbin'
         img: '/Sponsors/robbin.png'
+        link: 'https://www.robbin.com.br/'
