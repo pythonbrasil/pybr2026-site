@@ -1,5 +1,5 @@
 import "./styles/Footer.css"
-import logo from "/img/components/footer/logo.png"
+import logo from "/img/components/footer/logo.svg"
 import { useTranslation } from "react-i18next";
 import { LINK_COMPRAR_INGRESSO } from "../links"
 
@@ -9,7 +9,7 @@ export default function Footer() {
     return (<footer className="Footer" id="CONTATO_footer">
             <div className="Footer_barra_verde"></div>
         <div className="Footer_logo">
-            <img src={logo} alt="LOGO" />
+            <img src={logo} alt="LOGO" style={{ maxWidth: "208px" }} />
         </div>
         <div className="Footer_links">
             <div className="Footer_links_site">
