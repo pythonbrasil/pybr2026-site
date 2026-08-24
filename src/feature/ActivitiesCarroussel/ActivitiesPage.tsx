@@ -5,7 +5,9 @@ import { useTranslation } from "react-i18next";
 
 type Lang = 'br' | 'en' | 'es'
 
-export const ActivitiesPage = () => {
+export const ActivitiesPage = (
+    {counterCat} : any
+) => {
     const { t, i18n } = useTranslation();
     const lang = i18n.language as Lang
     const palestras = activities[0].info;
@@ -27,6 +29,7 @@ export const ActivitiesPage = () => {
                             talkers = {Talker.palestrante}
                             talkTitle = {Talker.titulo[lang]}
                             talkLink={Talker.link}
+                            counterCat={counterCat}
                         />
                     )
                 )}

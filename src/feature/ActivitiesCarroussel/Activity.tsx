@@ -1,7 +1,8 @@
+import { Image } from '../../components/Image'
 import './styles/Activity.css'
 
 export const Activity = ({
-    talkers = [], talkTitle, talkLink
+    talkers = [], talkTitle, talkLink, counterCat
 } : any) => {
 
     return (
@@ -15,9 +16,10 @@ export const Activity = ({
                     <div 
                         className="activity_talker"
                         key={talker.nome}>
-                        <img 
-                            src={talker.foto} 
+                        <Image 
+                            image={talker.foto} 
                             alt="foto do palestrante"
+                            counterCat={counterCat}
                         />
                         <h4>
                             {talker.nome}

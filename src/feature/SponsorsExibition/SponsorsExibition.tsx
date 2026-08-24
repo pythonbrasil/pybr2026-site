@@ -17,8 +17,6 @@ export const SponsorsExibition = () => {
         es: 2
     }[lang];
 
-    console.log(Sponsors[0].imgMaxSize)
-
     return(
         <section className="Home_Section7" id="PATROCINADORES">
             <img src={cobra_topo} alt="" className="Home_Section7_cobra_topo"/>

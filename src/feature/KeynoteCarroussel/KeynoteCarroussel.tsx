@@ -9,7 +9,9 @@ const Keynotes = parse(KeynotesInfos).allKeynotes;
 
 type Lang = 'br' | 'en' | 'es'
 
-export function KeynoteCarroussel() {
+export function KeynoteCarroussel(
+    {counterCat} : any
+) {
     const { i18n } = useTranslation();
     const lang = i18n.language as Lang
     const lang_number = {
@@ -33,6 +35,7 @@ export function KeynoteCarroussel() {
                                 instagramUrl={Keynote.instagram_url}
                                 linkedinUrl={Keynote.linkedin_url}
                                 siteUrl={Keynote.site_url}
+                                counterCat={counterCat}
                             />
                         ))
                     }

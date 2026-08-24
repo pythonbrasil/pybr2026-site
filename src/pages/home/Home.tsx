@@ -7,15 +7,26 @@ import { EventLocals } from "../../feature/EventLocals"
 import { SponsorsExibition } from "../../feature/SponsorsExibition/SponsorsExibition"
 import { SendToActivityPage } from "../../feature"
 
-export default function Home() {
-    return(<>
-        <Home_Section1/>
-        <Home_Section2/>
-        <KeynoteCarroussel/>
-        <Carrossel/>
-        <SendToActivityPage/>
-        <Home_Section5/>
-        <EventLocals/>
-        <SponsorsExibition/>
-    </>)
+export default function Home(
+    {setCounterCat, counterCat} : any
+) {
+    return(
+        <>
+            <Home_Section1
+                setCounterCat = {setCounterCat}
+                counterCat = {counterCat}
+            />
+            <Home_Section2
+                counterCat = {counterCat}
+            />
+            <KeynoteCarroussel
+                counterCat = {counterCat}
+            />
+            <Carrossel/>
+            <SendToActivityPage/>
+            <Home_Section5/>
+            <EventLocals/>
+            <SponsorsExibition/>
+        </>
+    )
 }
