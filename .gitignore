@@ -26,3 +26,4 @@ dist-ssr
 # Config files
 config/PyBR26 - pré grade - palestras.csv
 config/PyBR26 - pré grade - tutoriais.csv
+.vite/*
