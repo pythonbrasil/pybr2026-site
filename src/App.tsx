@@ -11,7 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [ catMode, _setCatMode ] = useState<boolean>(true);
+  const [ counterCat , setCounterCat ] = useState<number>(0);
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,9 +26,15 @@ function App() {
     
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home/>} />
+          <Route index element={
+              <Home
+                setCounterCat = {setCounterCat}
+                counterCat = {counterCat}
+              />
+            }
+          />
           <Route path="perguntas_frequentes" element={<Faq/>} />
-          <Route path="atividades" element={<ActivitiesPage catMode={catMode}/>} />
+          <Route path="atividades" element={<ActivitiesPage counterCat={counterCat}/>} />
           <Route path="programacao" element={<Programacao/>} />
         </Route>
       </Routes>

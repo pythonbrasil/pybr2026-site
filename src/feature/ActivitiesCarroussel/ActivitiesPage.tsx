@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 type Lang = 'br' | 'en' | 'es'
 
 export const ActivitiesPage = (
-    {catMode} : any
+    {counterCat} : any
 ) => {
     const { t, i18n } = useTranslation();
     const lang = i18n.language as Lang
@@ -29,7 +29,7 @@ export const ActivitiesPage = (
                             talkers = {Talker.palestrante}
                             talkTitle = {Talker.titulo[lang]}
                             talkLink={Talker.link}
-                            catMode={catMode}
+                            counterCat={counterCat}
                         />
                     )
                 )}

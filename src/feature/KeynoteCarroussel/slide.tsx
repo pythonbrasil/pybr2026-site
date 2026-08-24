@@ -3,10 +3,12 @@ import logo_github from "./assets/logo_github.png"
 import logo_globinho from "./assets/logo_globinho.png"
 import logo_ig from "./assets/logo_ig.png"
 import logo_linkdin from "./assets/logo_linkdin.png"
+import { Image } from "../../components/Image"
 
 export default function Slide({
             name, biography, foto, githubUrl="",
-            instagramUrl="", linkedinUrl="", siteUrl=""
+            instagramUrl="", linkedinUrl="", siteUrl="",
+            counterCat
         } : any
     ) {
         const socialLinks = [
@@ -21,7 +23,10 @@ export default function Slide({
                 <div className="Home_Sectine3_carrossel_card_keynote keynotes">
                     <div className="Home_Section3_carrossel_card_keynote_parte_esquerda">
                         <div className="Home_Section3_carrossel_card_keynote_parte_esquerda_foto_keynote">
-                            <img src={foto} alt="foto do keynote"/>
+                            <Image
+                                image={foto}
+                                counterCat={counterCat}
+                            />
                         </div>
                         {socialLinks.length > 0 && (
                             <li>

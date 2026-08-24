@@ -2,7 +2,7 @@ import { Image } from '../../components/Image'
 import './styles/Activity.css'
 
 export const Activity = ({
-    talkers = [], talkTitle, talkLink, catMode
+    talkers = [], talkTitle, talkLink, counterCat
 } : any) => {
 
     return (
@@ -19,7 +19,7 @@ export const Activity = ({
                         <Image 
                             image={talker.foto} 
                             alt="foto do palestrante"
-                            catMode={catMode}
+                            counterCat={counterCat}
                         />
                         <h4>
                             {talker.nome}
