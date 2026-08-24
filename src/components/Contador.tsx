@@ -33,7 +33,7 @@ export default function Contador() {
         const segundos = Math.floor((distancia / 1000) % 60);
 
         setTempo({
-            dias: String(dias).padStart(3, "0"),
+            dias: String(dias).padStart(2, "0"),
             horas: String(horas).padStart(2, "0"),
             minutos: String(minutos).padStart(2, "0"),
             segundos: String(segundos).padStart(2, "0"),
