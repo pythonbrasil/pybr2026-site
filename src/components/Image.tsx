@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export const Image = ({ counterCat, image }: any) => {
     const [catUrl] = useState(
-        `https://cataas.com/cat/cute?type=small&unique=${crypto.randomUUID()}`
+        `https://cataas.com/cat/cute&unique=${crypto.randomUUID()}`
     )
 
     if (counterCat >= 10) {
