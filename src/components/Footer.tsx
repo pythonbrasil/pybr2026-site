@@ -1,5 +1,5 @@
 import "./styles/Footer.css"
-import logo from "/img/components/footer/logo.png"
+import logo from "/img/components/footer/logo.svg"
 import { useTranslation } from "react-i18next";
 import { LINK_COMPRAR_INGRESSO } from "../links"
 
@@ -9,18 +9,18 @@ export default function Footer() {
     return (<footer className="Footer" id="CONTATO_footer">
             <div className="Footer_barra_verde"></div>
         <div className="Footer_logo">
-            <img src={logo} alt="LOGO" />
+            <img src={logo} alt="LOGO" style={{ maxWidth: "208px" }} />
         </div>
         <div className="Footer_links">
             <div className="Footer_links_site">
                 <h4>{t("footer.site")}</h4>
                 <li>
-                    <a href="#contador-home"><ul>{t("footer.inicio")}</ul></a>
-                    <a href="#O_EVENTO"><ul>{t("footer.oEvento")}</ul></a>
-                    <a href="#KEYNOTES"><ul>Keynotes</ul></a>
-                    <a href="#ATIVIDADES"><ul>{t("footer.programacao")}</ul></a>
-                    <a href="#GUIA_DA_CIDADE"><ul>{t("footer.guiaDaCidade")}</ul></a>
-                    <a href="#PATROCINADORES"><ul>{t("footer.patrocinadores")}</ul></a>
+                    <a href="/#contador-home"><ul>{t("footer.inicio")}</ul></a>
+                    <a href="/#O_EVENTO"><ul>{t("footer.oEvento")}</ul></a>
+                    <a href="/#KEYNOTES"><ul>Keynotes</ul></a>
+                    <a href="/#ATIVIDADES"><ul>{t("footer.programacao")}</ul></a>
+                    <a href="/#GUIA_DA_CIDADE"><ul>{t("footer.guiaDaCidade")}</ul></a>
+                    <a href="/#PATROCINADORES"><ul>{t("footer.patrocinadores")}</ul></a>
                     {/* <a href=""><ul>FAQ</ul></a> */}
                     {/* <a href=""><ul>{t("footer.contato")}</ul></a> */}
                     {/* <a href=""><ul>{t("footer.inscrevaSe")}</ul></a> */}

@@ -3,8 +3,8 @@ AllSponsors:
     flag: '/Sponsors/bandeira_ouro.png'
     name:
       - br: "Ouro"
-      - en: "OuroEN"
-      - es: "OuroES"
+      - en: "Gold"
+      - es: "Oro"
     imgMaxSize: '200px'
     sponsors:
       - name: "Aws"
@@ -16,7 +16,7 @@ AllSponsors:
       - br: "Prata"
       - en: "Silver"
       - es: "Plata"
-    imgMaxSize: '150px'
+    imgMaxSize: '175px'
     sponsors:
       - name: "Pythonic Cafe"
         img: '/Sponsors/pythonic_cafe.png'
@@ -28,16 +28,24 @@ AllSponsors:
     flag: '/Sponsors/bandeira_bronze.png'
     name:
       - br: "Bronze"
-      - en: "BronzeEN"
-      - es: "BronzeES"
-    imgMaxSize: '125px'
+      - en: "Bronze"
+      - es: "Bronce"
+    imgMaxSize: '150px'
     sponsors:
       - name: "Quansight"
         img: '/Sponsors/quansight.png'
         link: 'https://www.quansight.com/'
-      - name: 'Lincoln Loop'
-        img: '/Sponsors/lincoln_loop.png'
-        link: 'https://www.lincolnloop.com/'
       - name: 'Robbin'
         img: '/Sponsors/robbin.png'
         link: 'https://www.robbin.com.br/'
+  - cobre: "Patrocinadores Cobre"
+    flag: '/Sponsors/bandeira_cobre.png'
+    name:
+      - br: "Cobre"
+      - en: "Copper"
+      - es: "Cobre"
+    imgMaxSize: '125px'
+    sponsors:
+      - name: 'Lincoln Loop'
+        img: '/Sponsors/lincoln_loop.png'
+        link: 'https://www.lincolnloop.com/'
