@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
 
     & img {
@@ -37,8 +37,7 @@
     & h4 {
         color: #0f0f0f !important;
         font-size: 1.2rem !important;
-        width: auto;
-        max-width: 300px;
+        width: 60%;
         font-weight: normal;
 
 
