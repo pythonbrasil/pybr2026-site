@@ -35,3 +35,18 @@ allKeynotes:
     instagram_url: "https://www.instagram.com/cmaiacd/"
     linkedin_url: "https://www.linkedin.com/in/cmaiacd/"
     site_url: "https://cumbuca.dev/"
+  - id: 2
+    name: Caio Gomes
+    biography_text:
+      - br: >-
+          Físico e especialista em Machine Learning e inteligência artificial, Caio Gomes tem uma trajetória incrível liderando times e produtos de IA em empresas como Amazon, Booking.com e Nubank. Atualmente, é Chief Data & Analytics Officer e Chief Artificial Intelligence Officer do grupo Magalu.
+      - en: >-
+          A physicist and Machine Learning and Artificial Intelligence specialist, Caio Gomes has an impressive track record of leading AI teams and products at companies such as Amazon, Booking.com, and Nubank. He is currently the Chief Data & Analytics Officer and Chief Artificial Intelligence Officer at Magalu Group.
+      - es: >-
+          Físico y especialista en Machine Learning e Inteligencia Artificial, Caio Gomes cuenta con una trayectoria destacada liderando equipos y productos de IA en empresas como Amazon, Booking.com y Nubank. Actualmente, es Chief Data & Analytics Officer y Chief Artificial Intelligence Officer del Grupo Magalu.
+    photo: "keynotesImgs/defaultImg/Caio_Gomes.png"
+    dot_photo: "keynotesImgs/dotImg/Caio_Gomes.png"
+    github_url: ""
+    instagram_url: "https://www.instagram.com/mr_caiogomes/"
+    linkedin_url: "https://www.linkedin.com/in/caiokylegomes/"
+    site_url: ""
