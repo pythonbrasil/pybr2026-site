@@ -75,6 +75,7 @@ i18n
                 },
                 section3 : {},
                 section5 : {
+                    sugestaoDeHospedagem: "Sugestôes de hospedagem",
                     guiaDaCidade : "Guia da Cidade",
                     paragrafo1 : "Em outubro, em Florianópolis, você pode aproveitar as praias (ainda não tão cheias), fazer trilhas, explorar o centro histórico, visitar o Projeto Tamar, relaxar em parques, curtir a gastronomia local e aproveitar ao máximo a Python Brasil 2026 com um clima fresco.",
                     paragrafo2 : "A cidade está na primavera, com um clima que combina dias quentes e ensolarados com possibilidade de chuvas e dias nublados.",
@@ -200,6 +201,7 @@ i18n
                     paragrafo1: "Follow the latest updates on our social media"
                 },
                 section5: {
+                    sugestaoDeHospedagem: "Accommodation Recommendations",
                     guiaDaCidade: "City Guide",
                     paragrafo1: "In October, in Florianópolis, you can enjoy the beaches (not too crowded yet), go hiking, explore the historic center, visit Projeto Tamar, relax in parks, enjoy the local cuisine, and make the most of Python Brasil 2026 with cool weather.",
                     paragrafo2: "The city is in spring, with a climate that combines warm, sunny days with the possibility of rain and cloudy days.",
@@ -325,6 +327,7 @@ i18n
                     paragrafo1: "Sigue las novedades en nuestras redes sociales"
                 },
                 section5: {
+                    sugestaoDeHospedagem: "Recomendaciones de alojamiento",
                     guiaDaCidade: "Guía de la Ciudad",
                     paragrafo1: "En octubre, en Florianópolis, puedes disfrutar de las playas (aún no tan llenas), hacer senderismo, explorar el centro histórico, visitar el Proyecto Tamar, relajarte en parques, disfrutar de la gastronomía local y aprovechar al máximo Python Brasil 2026 con un clima fresco.",
                     paragrafo2: "La ciudad está en primavera, con un clima que combina días cálidos y soleados con posibilidad de lluvias y días nublados.",

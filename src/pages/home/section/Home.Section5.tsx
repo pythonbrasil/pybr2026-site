@@ -19,6 +19,9 @@ export default function Home_Section5() {
                     <a href="https://blog.pythonbrasil.org.br/guia-essencial-de-florianopolis-python-brasil-2026.html" target="_blank" rel="noopener noreferrer">
                         <button>{t("home.section5.guiaDaCidade")}</button>
                     </a>
+                    <a href="https://blog.pythonbrasil.org.br/sugestoes-de-estadia-python-brasil-2026.html" target="_blank" rel="noopener noreferrer">
+                        <button>{t("home.section5.sugestaoDeHospedagem")}</button>
+                    </a>
                 </div>
                 <img src={cidade} alt="Imagem da cidade" />
             </div>
