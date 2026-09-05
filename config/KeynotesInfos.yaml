@@ -50,3 +50,18 @@ allKeynotes:
     instagram_url: "https://www.instagram.com/mr_caiogomes/"
     linkedin_url: "https://www.linkedin.com/in/caiokylegomes/"
     site_url: ""
+  - id: 3
+    name: Karo Ladino-Puerto
+    biography_text:
+      - br: >-
+          Engenheira em Robótica, eterna estudante, líder de comunidade, PSF Fellow e cofundadora da Fundação Átoma. Karobot está à frente da PyLadies Colômbia desde 2018. Hoje faz parte do time que lidera a Python Colômbia e segue criando redes para sustentar e crescer na e com a tecnologia.
+      - en: >-
+          Robotics Engineer, lifelong learner, community leader, PSF Fellow, and co-founder of the Átoma Foundation. Karobot has been leading PyLadies Colombia since 2018. Today, she is part of the team leading Python Colombia and continues to build networks that support and foster growth in and through technology.
+      - es: >-
+          Ingeniera en Robótica, eterna estudiante, líder comunitaria, PSF Fellow y cofundadora de la Fundación Átoma. Karobot lidera PyLadies Colombia desde 2018. Actualmente, forma parte del equipo que lidera Python Colombia y continúa creando redes para apoyar y fomentar el crecimiento en y a través de la tecnología.
+    photo: "keynotesImgs/defaultImg/Karo_Ladino.jpg"
+    dot_photo: "keynotesImgs/dotImg/Karo_Ladino.jpg"
+    github_url: ""
+    instagram_url: "https://www.instagram.com/karobot.co/"
+    linkedin_url: "https://www.linkedin.com/in/karobotco/"
+    site_url: ""
