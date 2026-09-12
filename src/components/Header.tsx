@@ -1,8 +1,7 @@
 import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
-import { Link } from "react-router-dom"
-import { HashLink } from "react-router-hash-link";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.svg"
@@ -15,6 +14,19 @@ export default function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [linguaSelecionada, setLinguaSelecionada] = useState("br")
     const { t, i18n } = useTranslation();
+    const navigate = useNavigate();
+
+    const srollToSelectedId = (id : string) => {
+        setIsModalOpen(false);
+
+        navigate("/");
+
+        setTimeout(() => {
+            document
+                .getElementById(id)
+                ?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+    };
 
     return (<header className="Header">
         <div className="Header_itens">
@@ -37,14 +49,14 @@ export default function Header() {
                                             </div>
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
-                                            <Link to='/'><a href="/#HOME" onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</a></Link>
+                                            <Link to='/' onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</Link>
                                             <Link to="/atividades" onClick={() => setIsModalOpen(false)}>ATIVIDADES</Link>
-                                            <a href="/#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
+                                            <Link to="/" onClick={() => srollToSelectedId("KEYNOTES")}>KEYNOTES</Link>
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
-                                            <a href="/#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>{t("header.menu.guiaDaCidade")}</a>
-                                            <a href="/#PATROCINADORES" onClick={() => setIsModalOpen(false)}>{t("header.menu.patrocinadores")}</a>
+                                            <Link to="/" onClick={() => srollToSelectedId("GUIA_DA_CIDADE")}>{t("header.menu.guiaDaCidade")}</Link>
+                                            <Link to="/" onClick={() => srollToSelectedId("PATROCINADORES")}>{t("header.menu.patrocinadores")}</Link>
                                             <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
-                                            <HashLink smooth to="/#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</HashLink>
+                                            <Link to="/" onClick={() => srollToSelectedId("CONTATO_footer")}>{t("header.menu.contato")}</Link>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
                                             <a href={LINK_COMPRAR_INGRESSO} target="_blank">
@@ -63,13 +75,12 @@ export default function Header() {
 
                         </div>
                     </ul>
-                    <ul className="Header_menu_desktop"><HashLink smooth to="/#O_EVENTO">{t("header.OEvento")}</HashLink></ul>
+                    <ul className="Header_menu_desktop"><Link to="/" onClick={() => srollToSelectedId("O_EVENTO")}>{t("header.OEvento")}</Link></ul>
                     {/* <ul>
                         <Link to={'/atividades'}>
                             {t("header.text1")}
                         </Link>
                     </ul> LINK QUE LEVA PRAS ATIVIDADES */}
-                    {/*<ul className="Header_menu_desktop"><HashLink smooth to="/#SUBMISSAO_DE_ATIVIDADES">{t("home.section4.submissaoDeAtividades")}</HashLink></ul>*/}
                     <ul className="Header_menu_desktop"><a href="/#KEYNOTES">Keynotes</a></ul>
                     {/* <Link to="/programacao"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
                     {/* <Link to="/"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
