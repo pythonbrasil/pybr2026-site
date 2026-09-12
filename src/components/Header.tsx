@@ -38,7 +38,7 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <Link to='/'><a href="/#HOME" onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</a></Link>
-                                            <HashLink smooth to="/#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</HashLink>
+                                            <Link to="/atividades" onClick={() => setIsModalOpen(false)}>ATIVIDADES</Link>
                                             <a href="/#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
                                             <a href="/#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>{t("header.menu.guiaDaCidade")}</a>
