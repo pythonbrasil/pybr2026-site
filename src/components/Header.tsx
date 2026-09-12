@@ -81,7 +81,9 @@ export default function Header() {
                             {t("header.text1")}
                         </Link>
                     </ul> LINK QUE LEVA PRAS ATIVIDADES */}
-                    <ul className="Header_menu_desktop"><a href="/#KEYNOTES">Keynotes</a></ul>
+                    <ul className="Header_menu_desktop">
+                        <Link to="/" onClick={() => srollToSelectedId("KEYNOTES")}>KEYNOTES</Link>
+                    </ul>
                     {/* <Link to="/programacao"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
                     {/* <Link to="/"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link> */}
                 </li>
