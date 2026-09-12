@@ -65,3 +65,18 @@ allKeynotes:
     instagram_url: "https://www.instagram.com/karobot.co/"
     linkedin_url: "https://www.linkedin.com/in/karobotco/"
     site_url: ""
+  - id: 4
+    name: Hazel Saenz
+    biography_text:
+      - br: >-
+          Developer Advocate da Amazon Web Services (AWS) para a América Latina e ex-AWS Serverless Hero, Hazel tem mais de 20 anos de experiência em desenvolvimento de aplicações e 6 anos de atuação com tecnologias de nuvem. É especialista em arquiteturas serverless, sistemas orientados a eventos e IA generativa na AWS, além de compartilhar conhecimento e experiências com comunidades de desenvolvedores em toda a América Latina.
+      - en: >-
+          Amazon Web Services (AWS) Developer Advocate for Latin America and former AWS Serverless Hero, Hazel has over 20 years of experience in application development and 6 years of experience working with cloud technologies. She specializes in serverless architectures, event-driven systems, and generative AI on AWS, while also sharing her knowledge and experience with developer communities across Latin America.
+      - es: >-
+          Developer Advocate de Amazon Web Services (AWS) para América Latina y ex-AWS Serverless Hero, Hazel cuenta con más de 20 años de experiencia en el desarrollo de aplicaciones y 6 años de experiencia trabajando con tecnologías de nube. Es especialista en arquitecturas serverless, sistemas orientados a eventos e IA generativa en AWS, además de compartir sus conocimientos y experiencias con comunidades de desarrolladores de toda América Latina.
+    photo: "keynotesImgs/defaultImg/Hazel_Saenz.jpg"
+    dot_photo: "keynotesImgs/dotImg/Hazel_Saenz.jpg"
+    github_url: "https://github.com/hsaenzG"
+    instagram_url: "https://www.instagram.com/hazelsaenz.tech/"
+    linkedin_url: "https://www.linkedin.com/in/hazelsaenz/"
+    site_url: "https://www.hazelsaenz.tech/"
