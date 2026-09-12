@@ -49,6 +49,7 @@ export const ActivitiesPage = (
                             talkers = {Talker.palestrante}
                             talkTitle = {Talker.titulo[lang]}
                             talkLink={Talker.link}
+                            counterCat={counterCat}
                         />
                     )
                 )}
