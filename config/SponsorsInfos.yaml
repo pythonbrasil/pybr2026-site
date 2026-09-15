@@ -49,3 +49,14 @@ AllSponsors:
       - name: 'Lincoln Loop'
         img: '/Sponsors/lincoln_loop.png'
         link: 'https://www.lincolnloop.com/'
+  - apoio: "Apoio"
+    flag: '/Sponsors/bandeira_apoio.png'
+    name:
+      - br: "Apoio"
+      - en: "Support"
+      - es: "Apoyo"
+    imgMaxSize: '100px'
+    sponsors:
+      - name: 'UNICESUSC'
+        img: '/Sponsors/unicesusc.png'
+        link: 'https://www.unicesusc.br/'
