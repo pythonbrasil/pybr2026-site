@@ -80,3 +80,18 @@ allKeynotes:
     instagram_url: "https://www.instagram.com/hazelsaenz.tech/"
     linkedin_url: "https://www.linkedin.com/in/hazelsaenz/"
     site_url: "https://www.hazelsaenz.tech/"
+  - id: 5
+    name: Fernando Masanori
+    biography_text:
+      - br: >-
+          Fernando Masanori é professor da FATEC São José dos Campos e um dos pioneiros da comunidade Python brasileira. Formado em Computação pelo IME-USP e mestre pelo ITA, é criador do Python para Zumbis, iniciativa voltada ao ensino de Python e programação. É Fellow da Python Software Foundation e recebeu o Prêmio Dorneles Treméa, uma das homenagens da comunidade Python brasileira.
+      - en: >-
+          Fernando Masanori is a professor at FATEC São José dos Campos and one of the pioneers of the Python community in Brazil. He holds a degree in Computer Science from IME-USP and a master's degree from ITA. He is the creator of Python para Zumbis, an initiative focused on teaching Python and programming. He is a Fellow of the Python Software Foundation and received the Dorneles Treméa Award, one of the honors bestowed by the Brazilian Python community.
+      - es: >-
+          Fernando Masanori es profesor de la FATEC São José dos Campos y uno de los pioneros de la comunidad Python en Brasil. Graduado en Computación por el IME-USP y con una maestría por el ITA, es el creador de Python para Zumbis, una iniciativa dedicada a la enseñanza de Python y la programación. Es Fellow de la Python Software Foundation y recibió el Premio Dorneles Treméa, uno de los reconocimientos otorgados por la comunidad Python brasileña.
+    photo: "keynotesImgs/defaultImg/Massanori.jpg"
+    dot_photo: "keynotesImgs/dotImg/Massanori.jpg"
+    github_url: "https://github.com/fmasanori"
+    instagram_url: "https://www.instagram.com/fmasanori/"
+    linkedin_url: "https://www.linkedin.com/in/fmasanori/"
+    site_url: "https://linktr.ee/fmasanori"
