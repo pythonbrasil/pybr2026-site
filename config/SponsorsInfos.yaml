@@ -49,3 +49,17 @@ AllSponsors:
       - name: 'Lincoln Loop'
         img: '/Sponsors/lincoln_loop.png'
         link: 'https://www.lincolnloop.com/'
+      - name: 'Simples Consultoria'
+        img: '/Sponsors/simples-consultoria.png'
+        link: 'https://simplesconsultoria.com.br/'
+  - apoio: "Apoio"
+    flag: '/Sponsors/bandeira_apoio.png'
+    name:
+      - br: "Apoio"
+      - en: "Support"
+      - es: "Apoyo"
+    imgMaxSize: '100px'
+    sponsors:
+      - name: 'UNICESUSC'
+        img: '/Sponsors/unicesusc.png'
+        link: 'https://unicesusc.edu.br/'

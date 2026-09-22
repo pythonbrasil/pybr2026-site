@@ -8,7 +8,8 @@ const LocalDosTutoriais = () => {
     return (
             <div className="Home_Section6_localizacao_cards_Palestras">
                 <h6>{t("home.section6.tutoriais")}</h6>
-                <h5>Faculdade UNICESUSC</h5>
+                <h5>Centro Universitário CESUSC - UNICESUSC</h5>
+                <small>Em parceria com o curso de Análise e Desenvolvimento de Sistemas do UNICESUSC</small>
                 <p className="Home_Section6_localizacao_cards_Palestras_data">{t("home.section6.tutoriaisData")}</p>
                 <img src={uni} alt="" />
                 <p>{t("home.section6.paragrafo2")}</p>
@@ -26,7 +27,7 @@ const LocalDasPalestras = () => {
     return (
             <div className="Home_Section6_localizacao_cards_Palestras">
                 <h6>{t("home.section6.palestras")}</h6>
-                <h5>Oceania Park Hotel Spa & Convention Center</h5>
+                <h5 style={{ marginBottom: '38px' }}>Oceania Park Hotel Spa & Convention Center</h5>
                 <p className="Home_Section6_localizacao_cards_Palestras_data">{t("home.section6.palestrasData")}</p>
                 <img src={hotel} alt="" />
                 <p>{t("home.section6.paragrafo1")}</p>
