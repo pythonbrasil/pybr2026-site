@@ -52,6 +52,9 @@ AllSponsors:
       - name: 'Simples Consultoria'
         img: '/Sponsors/simples-consultoria.png'
         link: 'https://simplesconsultoria.com.br/'
+      - name: 'Black Python Devs'
+        img: '/Sponsors/black_python_devs.png'
+        link: 'https://blackpythondevs.com/'
   - apoio: "Apoio"
     flag: '/Sponsors/bandeira_apoio.png'
     name:
