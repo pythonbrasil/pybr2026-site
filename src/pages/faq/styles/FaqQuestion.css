@@ -49,3 +49,16 @@
         rotate: 180deg;
     }
 }
+
+.faq-list-item::marker {
+    color: #adff30;
+}
+
+.faq-link {
+    color: #adff30;
+    text-decoration: none;
+}
+
+.FaqQuestion_resposta p {
+    margin: 0 !important;
+}

@@ -70,7 +70,7 @@ i18n
             home : {
                 section2 : {
                     paragrafo1 : "A <1>Python Brasil 2026</1> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.",
-                    paragrafo2 : "Serão 5 dias de imersão com atividades que vão desde contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com profissionais renomados da comunidade.",
+                    paragrafo2 : "Serão 6 dias de imersão com atividades que vão desde contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com profissionais renomados da comunidade.",
                     paragrafo3 : "A edição de 2026 está sendo organizada pela comunidade Python de <1>Florianópolis/SC</1> com o apoio da APyB (Associação Python Brasil)"
                 },
                 section3 : {},
@@ -107,19 +107,25 @@ i18n
                 perguntas : [
                     {
                         pergunta : "Qual a programação do evento?",
-                        resposta : "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta : "Você pode conferir a programação completa do evento na página de programação: [[atividades|Confira a programação]]."
                     },
                     {
                         pergunta: "Ganho certificado por participar da Python Brasil 2026?",
-                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta: "Sim! Todos os participantes receberão por e-mail um certificado de participação no evento."
                     },
                     {
                         pergunta: "Quem organiza a Python Brasil?",
-                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta: "A Python Brasil é organizada por um time de voluntários e pela Associação Python Brasil."
                     },
                     {
                         pergunta: "Quais as condições para adquirir um ingresso de meia entrada?",
-                        resposta: "A Python Brasil 2026 é o maior encontro da comunidade Python do Brasil. O evento reúne pessoas desenvolvedoras, entusiastas, pesquisadoras e empresas para compartilhar conhecimento, experiências e fortalecer a comunidade."
+                        resposta: `Seguimos a lei do Governo do Estado de São Paulo disponível nesse link. Em resumo, as pessoas que possuem o direito a meia entrada são:
+                        
+                        - Estudantes devidamente matriculados em instituições de ensino
+                        - Professores da rede pública de ensino
+                        - Pessoas com deficiência e um acompanhante, quando necessário
+                        - Idosos com idade igual ou superior a 60 anos
+                        `
                     },
                 ]
             }
@@ -190,7 +196,7 @@ i18n
             home : {
                 section2: {
                   paragrafo1: "The <1>Python Brazil 2026</1> is the largest conference focused on the Python programming language in Brazil and Latin America.",
-                  paragrafo2: "There will be 5 days of immersion with activities ranging from contributing to open source projects, participating in training sessions, and gaining new knowledge from renowned professionals in the community.",
+                  paragrafo2: "There will be 6 days of immersion with activities ranging from contributing to open source projects, participating in training sessions, and gaining new knowledge from renowned professionals in the community.",
                   paragrafo3: "The 2026 edition is being organized by the Python community of <1>Florianópolis/SC</1> with the support of APyB (Python Brazil Association)."
                 },
                 section3 : {},
@@ -233,19 +239,25 @@ i18n
                 perguntas: [
                     {
                         pergunta : "What is the event schedule?",
-                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community. [[atividades|View schedule]]"
                     },
                     {
                         pergunta : "Do I receive a certificate for participating in Python Brasil 2026?",
-                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Yes! All participants will receive a participation certificate by email."
                     },
                     {
                         pergunta : "Who organizes Python Brasil?",
-                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : "Python Brasil is organized by a team of volunteers and by the Python Brazil Association (APyB)."
                     },
                     {
                         pergunta : "What are the conditions to purchase a discounted (half-price) ticket?",
-                        resposta : "Python Brasil 2026 is the largest gathering of the Python community in Brazil. The event brings together developers, enthusiasts, researchers, and companies to share knowledge, experiences, and strengthen the community."
+                        resposta : `We follow the law of the State Government of São Paulo available at this link. In summary, people entitled to half-price tickets are:
+                        
+                        - Students duly enrolled in educational institutions
+                        - Public school teachers
+                        - People with disabilities and a companion, when necessary
+                        - Seniors aged 60 or older
+                        `
                     }
                 ]
             }
@@ -316,7 +328,7 @@ i18n
             home : {
                 section2: {
                   paragrafo1: "La <1>Python Brasil 2026</1> es la mayor conferencia sobre el lenguaje de programación Python en Brasil y América Latina.",
-                  paragrafo2: "Serán 5 días de inmersión con actividades que van desde contribuir a proyectos de software libre, participar en capacitaciones y adquirir nuevos conocimientos con profesionales reconocidos de la comunidad.",
+                  paragrafo2: "Serán 6 días de inmersión con actividades que van desde contribuir a proyectos de software libre, participar en capacitaciones y adquirir nuevos conocimientos con profesionales reconocidos de la comunidad.",
                   paragrafo3: "La edición de 2026 está siendo organizada por la comunidad Python de <1>Florianópolis/SC</1> con el apoyo de la APyB (Asociación Python Brasil)."
                 },
                 section3 : {},
@@ -359,19 +371,25 @@ i18n
                 perguntas: [
                     {
                         pergunta : "¿Cuál es la programación del evento?",
-                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "Puedes consultar la programación completa del evento en la página de programación: [[atividades|Consulta la programación]]."
                     },
                     {
                         pergunta : "¿Obtengo un certificado por participar en Python Brasil 2026?",
-                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "¡Sí! Todos los participantes recibirán por correo electrónico un certificado de participación en el evento."
                     },
                     {
                         pergunta : "¿Quién organiza Python Brasil?",
-                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : "Python Brasil está organizada por un equipo de voluntarios y por la Asociación Python Brasil (APyB)."
                     },
                     {
                         pergunta : "¿Cuáles son las condiciones para adquirir una entrada de media tarifa?",
-                        resposta : "Python Brasil 2026 es el mayor encuentro de la comunidad Python en Brasil. El evento reúne a desarrolladores, entusiastas, investigadores y empresas para compartir conocimientos, experiencias y fortalecer la comunidad."
+                        resposta : `Seguimos la ley del Gobierno del Estado de São Paulo disponible en este enlace. En resumen, las personas que tienen derecho a la media entrada son:
+                        
+                        - Estudiantes debidamente matriculados en instituciones educativas
+                        - Profesores de la red pública
+                        - Personas con discapacidad y un acompañante, cuando sea necesario
+                        - Personas mayores de 60 años
+                        `
                     }
                 ]
             }
