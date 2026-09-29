@@ -1,4 +1,15 @@
 AllSponsors:
+  - platina: "Patrocinadores Platina"
+    flag: '/Sponsors/bandeira_platina.png'
+    name:
+      - br: "Platina"
+      - en: "Platinum"
+      - es: "Platino"
+    imgMaxSize: '250px'
+    sponsors:
+      - name: "NIC.br"
+        img: '/Sponsors/nicbr.png'
+        link: 'https://nic.br/'
   - ouro: "Patrocinadores Ouro"
     flag: '/Sponsors/bandeira_ouro.png'
     name:
@@ -10,6 +21,9 @@ AllSponsors:
       - name: "Aws"
         img: '/Sponsors/aws.png'
         link: 'https://aws.amazon.com/pt/'
+      - name: "Elastic"
+        img: '/Sponsors/elastic.png'
+        link: 'https://www.elastic.co/'
   - prata: "Patrocinadores Prata"
     flag: '/Sponsors/bandeira_prata.png'
     name:
