@@ -246,11 +246,8 @@
   }
 
   .painel_filtro_de_palestras {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .painel_filtro_de_palestras_todas_opcoes {
@@ -269,7 +266,7 @@
   }
 }
 
-@media (max-width : 300px) {
+@media (max-width : 360px) {
   .card_palestra_infos_3 {
     flex-direction: column;
   }
@@ -280,7 +277,27 @@
     text-align: center;
   }
 
+  .painel_filtro_de_palestras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .painel_filtro_de_palestras_esquerda {
     align-items: center;
+    margin-bottom: 6px;
+
+    & h5 {
+      align-self: self-start;
+    }
+  }
+
+  .painel_filtro_de_palestras_todas_opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: flex-start;
   }
 }
