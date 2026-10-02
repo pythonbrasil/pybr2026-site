@@ -52,7 +52,7 @@ const LocalDasSprints = () => {
                 <img src={linkFotoDaHostGator} alt="" />
                 <p>{t("home.section6.paragrafo3")}</p>
                 <div className="Home_Section6_localizacao_cards_Palestras_buttons">
-                    <a href="https://www.google.com/maps/place/Oceania+Park+Hotel+Spa+%26+Convention+Center/data=!4m2!3m1!1s0x9527420740c91677:0x232385519d3577c4?sa=X&ved=1t:242&ictx=111" target="blank">
+                    <a href="https://www.google.com/maps/place/HostGator+Brasil/@-27.5842809,-48.5245406,17z/data=!3m1!4b1!4m6!3m5!1s0x9527385c31053fed:0x599d9668b51c844a!8m2!3d-27.5842809!4d-48.5245406!16s%2Fg%2F11s49m63wq?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDkyOS4wIKXMDSoASAFQAw%3D%3D" target="blank">
                         <button>{t("home.section6.verNoMapa")}</button>
                     </a>
                 </div>
