@@ -23,8 +23,8 @@ export const SponsorsExibition = () => {
             <div className="Home_Section7_grupo_de_patrocinadores">
                 <h4>{t("home.section7.patrocinadores")}</h4>
         
-                {Sponsors.map((nivel : any) => (
-                    <div className="Home_Section7_patrocinadores">
+                {Sponsors.map((nivel : any, index : any) => (
+                    <div className="Home_Section7_patrocinadores" key={`${nivel.name}_${index}`}>
                         <div className="Home_Section7_patrocinadores_bandeira">
                             <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                             <img src={nivel.flag} alt="" />
@@ -32,7 +32,12 @@ export const SponsorsExibition = () => {
                         <h5>{nivel.name[numberLang][lang]}</h5>
                         <div className="Home_Section7_patrocinadores_logos">
                             {nivel.sponsors.map((sponsor : any) => (
-                                <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+                                <a
+                                    key={`${sponsor.name}_${index}`}
+                                    href={sponsor.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
                                     <img 
                                         src={sponsor.img} 
                                         alt={sponsor.name} 

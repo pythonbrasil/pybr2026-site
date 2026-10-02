@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { activities } from '../data/AllActivities';
 import { Image } from './Image';
-import star from '../../public/star.svg'
+import star from '/star.svg'
 
 type Lang = 'br' | 'en' | 'es'
 
@@ -21,14 +21,14 @@ export const PainelDaProgramacao = (
   });
 
   const palestrasFiltradas = activities[indexAtivo]['info'].filter((palestra) => {
-  
+
     const pertenceAoFiltro =
       indexAtivoFiltroPalestras === "Todos" ||
       palestra.atividade.br === indexAtivoFiltroPalestras;
-  
+
     const eFavorito =
       favoritos.includes(String(palestra.id));
-  
+
     return pertenceAoFiltro && (!favoriteActive || eFavorito);
   });
 
@@ -46,6 +46,7 @@ export const PainelDaProgramacao = (
 
   useEffect(() => {
     localStorage.setItem("palestras_favoritas", JSON.stringify(favoritos));
+    console.warn("Se você consegue ler essa mensagem, deve conseguir entender bem o que vou explicar: todo o sistema de salvamento é local, então é por isso que se você salvou no seu celular, o salvamento não passou pro seu computador :D")
   }, [favoritos]);
 
   return (<div className='datas'>
