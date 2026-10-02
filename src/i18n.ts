@@ -91,7 +91,9 @@ i18n
                     tutoriais : "Tutoriais",
                     tutoriaisData : "14 a 15 de Outubro",
                     paragrafo2 : "Dias voltados para minicursos oferecidos pela própria comunidade, em breve você poderá se inscrever para participar!",
-                    aDefinir : "A definir"
+                    aDefinir : "A definir",
+                    sprintData : "19 de Outubro",
+                    paragrafo3 : "Dias voltados para minicursos oferecidos pela própria comunidade, em breve você poderá se inscrever para participar!",
                 },
                 section7 : {
                     patrocinadores : "Patrocinadores",
@@ -223,7 +225,9 @@ i18n
                     tutoriais: "Tutorial Sessions",
                     tutoriaisData : "October 14–15",
                     paragrafo2: "Days dedicated to minicourses offered by the community itself, soon you will be able to register to participate!",
-                    aDefinir: "To be defined"
+                    aDefinir: "To be defined",
+                    sprintData : "October 19",
+                    paragrafo3 : "Days dedicated to programming marathons, collaborative project development, practical resolution of technical challenges, and specialized mentoring.",
                 },
                 section7: {
                     patrocinadores: "Sponsors",
@@ -355,7 +359,9 @@ i18n
                     tutoriais: "Talleres",
                     tutoriaisData : "14 al 15 de octubre",
                     paragrafo2: "Días dedicados a minicursos ofrecidos por la propia comunidad, pronto podrás registrarte para participar!",
-                    aDefinir: "Por definir"
+                    aDefinir: "Por definir",
+                    sprintData : "19 de octubre",
+                    paragrafo3 : "Días dedicados a minicursos ofrecidos por la propia comunidad, ¡pronto podrás inscribirte para participar!",
                 },
                 section7: {
                     patrocinadores: "Patrocinadores",

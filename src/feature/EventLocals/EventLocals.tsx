@@ -40,6 +40,26 @@ const LocalDasPalestras = () => {
     )
 }
 
+const linkFotoDaHostGator = 'https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8v3w-O4UiWRWscFvuwmzfDD1aUQ-QyWZEGNkreOnKEI_8FvHSgIxPtsxRqYns0dTlCT4sw5BCHvqzVuYQSbi9SpLtfXKnV17gsAi6us7oK3eguDoO88zYBqj98shnH2uK6gufA3A=s2048-v1';
+
+const LocalDasSprints = () => {
+    const { t } = useTranslation();
+    return (
+            <div className="Home_Section6_localizacao_cards_Palestras">
+                <h6>Sprints</h6>
+                <h5 style={{ marginBottom: '38px' }}>HostGator Brasil</h5>
+                <p className="Home_Section6_localizacao_cards_Palestras_data">{t("home.section6.sprintData")}</p>
+                <img src={linkFotoDaHostGator} alt="" />
+                <p>{t("home.section6.paragrafo3")}</p>
+                <div className="Home_Section6_localizacao_cards_Palestras_buttons">
+                    <a href="https://www.google.com/maps/place/Oceania+Park+Hotel+Spa+%26+Convention+Center/data=!4m2!3m1!1s0x9527420740c91677:0x232385519d3577c4?sa=X&ved=1t:242&ictx=111" target="blank">
+                        <button>{t("home.section6.verNoMapa")}</button>
+                    </a>
+                </div>
+            </div>
+    )
+}
+
 export function EventLocals() {
     const { t } = useTranslation();
     
@@ -49,10 +69,7 @@ export function EventLocals() {
             <div className="Home_Section6_localizacao_cards">
                 <LocalDosTutoriais/>
                 <LocalDasPalestras/>
-                <div className="Home_Section6_localizacao_cards_Sprints">
-                    <h6>Sprints</h6>
-                    <h5>{t("home.section6.aDefinir")}</h5>
-                </div>
+                <LocalDasSprints/>
             </div>
             
     </section>
