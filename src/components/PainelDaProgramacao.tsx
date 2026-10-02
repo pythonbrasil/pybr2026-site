@@ -1,5 +1,5 @@
 import './styles/PainelDaProgramacao.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { activities } from '../data/AllActivities';
 import { Image } from './Image';
@@ -15,11 +15,38 @@ export const PainelDaProgramacao = (
   const [indexAtivo, setIndex] = useState(0);
   const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
   const [favoriteActive, setFavoriteActive] = useState(false);
+  const [favoritos, setFavoritos] = useState(() => {
+    const favoritosSalvos = localStorage.getItem("palestras_favoritas");
+    return favoritosSalvos ? JSON.parse(favoritosSalvos) : [];
+  });
 
   const palestrasFiltradas = activities[indexAtivo]['info'].filter((palestra) => {
-    if (indexAtivoFiltroPalestras === "Todos") return true;
-    return palestra.atividade.br === indexAtivoFiltroPalestras;
+  
+    const pertenceAoFiltro =
+      indexAtivoFiltroPalestras === "Todos" ||
+      palestra.atividade.br === indexAtivoFiltroPalestras;
+  
+    const eFavorito =
+      favoritos.includes(String(palestra.id));
+  
+    return pertenceAoFiltro && (!favoriteActive || eFavorito);
   });
+
+  const adicionarRemoverFavorito = (id: number) => {
+    const idString = String(id);
+
+    setFavoritos((favoritosAtuais : any) => {
+      if (favoritosAtuais.includes(idString)) {
+        return favoritosAtuais.filter((favorito : any) => favorito !== idString);
+      }
+
+      return [...favoritosAtuais, idString];
+    });
+  };
+
+  useEffect(() => {
+    localStorage.setItem("palestras_favoritas", JSON.stringify(favoritos));
+  }, [favoritos]);
 
   return (<div className='datas'>
       <div className='painel_das_palestras'>
@@ -42,7 +69,7 @@ export const PainelDaProgramacao = (
             </h6>
           </div>
         </div>
-        <div className={`painel_filtro_de_palestras_direita ${favoriteActive ? "ativado" : ""}`}>
+        <div className={`estrela_favorito ${favoriteActive ? "ativado" : ""}`}>
           <img 
             src={star}
             alt="Estrela de marcação de favoritos"
@@ -67,11 +94,24 @@ export const PainelDaProgramacao = (
             key={data.id} 
             onClick={() => window.open(data.link, '_blank')}
           >
-            <div className='card_palestra_infos_1'>
-              <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
-              <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
-              <h6 className='card_palestra_infos_1_nivel'>{data['nivel'][lang]}</h6>
-              <h6 className='card_palestra_infos_1_atividade'>{data['atividade'][lang]}</h6>
+            <div className='card_palestra_infos'>
+              <div className='card_palestra_infos_1'>
+                <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
+                <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
+                <h6 className='card_palestra_infos_1_nivel'>{data['nivel'][lang]}</h6>
+                <h6 className='card_palestra_infos_1_atividade'>{data['atividade'][lang]}</h6>
+                <h6 className='card_palestra_infos_1_atividade'>{data['sala'][lang]}</h6>
+              </div>
+              <div className={`estrela_favorito ${favoritos.includes(String(data.id)) ? "ativado" : ""}`}>
+                <img 
+                  src={star}
+                  alt="Estrela de marcação de favoritos"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    adicionarRemoverFavorito(data.id);
+                  }}
+                />
+              </div>
             </div>
             <div className='card_palestra_infos_2'>
               <h3 className='card_palestra_infos_2_titulo'>{data['titulo'][lang]}</h3>

@@ -38,7 +38,10 @@
   width: auto;
 }
 
-.painel_filtro_de_palestras_direita {
+.estrela_favorito {
+  cursor: pointer;
+  align-self: self-start;
+  
   & img {
     height: 52px;
     filter: brightness(0);
@@ -128,6 +131,15 @@
   width: 100%;
   background-color: #B7FF06;
   cursor: pointer;
+}
+
+.card_palestra_infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
 
 .card_palestra_infos_1 {
@@ -240,7 +252,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     gap: 10px;
   }
@@ -257,12 +269,6 @@
     justify-content: center;
     width: 100%;
     gap: 10px;
-  }
-}
-
-@media (max-width : 600px) {
-  .card_palestra_infos_1 {
-    justify-content: center;
   }
 }
 
