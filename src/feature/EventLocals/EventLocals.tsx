@@ -40,8 +40,6 @@ const LocalDasPalestras = () => {
     )
 }
 
-const linkFotoDaHostGator = 'https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8v3w-O4UiWRWscFvuwmzfDD1aUQ-QyWZEGNkreOnKEI_8FvHSgIxPtsxRqYns0dTlCT4sw5BCHvqzVuYQSbi9SpLtfXKnV17gsAi6us7oK3eguDoO88zYBqj98shnH2uK6gufA3A=s2048-v1';
-
 const LocalDasSprints = () => {
     const { t } = useTranslation();
     return (
@@ -49,7 +47,7 @@ const LocalDasSprints = () => {
                 <h6>Sprints</h6>
                 <h5 style={{ marginBottom: '38px' }}>HostGator Brasil</h5>
                 <p className="Home_Section6_localizacao_cards_Palestras_data">{t("home.section6.sprintData")}</p>
-                <img src={linkFotoDaHostGator} alt="" />
+                <img src="https://i.imgur.com/VbtgfOd.jpeg" alt="" />
                 <p>{t("home.section6.paragrafo3")}</p>
                 <div className="Home_Section6_localizacao_cards_Palestras_buttons">
                     <a href="https://www.google.com/maps/place/HostGator+Brasil/@-27.5842809,-48.5245406,17z/data=!3m1!4b1!4m6!3m5!1s0x9527385c31053fed:0x599d9668b51c844a!8m2!3d-27.5842809!4d-48.5245406!16s%2Fg%2F11s49m63wq?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDkyOS4wIKXMDSoASAFQAw%3D%3D" target="blank">
