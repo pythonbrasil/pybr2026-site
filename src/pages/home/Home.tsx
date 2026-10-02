@@ -5,7 +5,7 @@ import Carrossel from "../../components/Carrossel"
 import { KeynoteCarroussel } from "../../feature/KeynoteCarroussel"
 import { EventLocals } from "../../feature/EventLocals"
 import { SponsorsExibition } from "../../feature/SponsorsExibition/SponsorsExibition"
-import { SendToActivityPage } from "../../feature"
+import { SendToActivityPage } from "../../feature/SendToActivityPage/SendToActivityPage"
 
 export default function Home(
     {setCounterCat, counterCat} : any

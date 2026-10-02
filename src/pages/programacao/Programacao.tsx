@@ -1,9 +1,11 @@
 import "./styles/Programacao.css"
-import PainelDaProgramacao from '../../components/PainelDaProgramacao'
 import Carrossel from '../../components/Carrossel'
 import { useTranslation } from "react-i18next";
+import { PainelDaProgramacao } from "../../components/PainelDaProgramacao";
 
-export default function Programacao() {
+export const Programacao = (
+    {counterCat} : any
+) => {
     const { t } = useTranslation();
     return(
         <>
@@ -11,7 +13,7 @@ export default function Programacao() {
                 <h3>{t("header.Programacao")}</h3>
                 <Carrossel/>
             </section>
-            <PainelDaProgramacao/>
+            <PainelDaProgramacao counterCat={counterCat}/>
             <div className="Programacao_margim_baixo"></div>
         </>
     )

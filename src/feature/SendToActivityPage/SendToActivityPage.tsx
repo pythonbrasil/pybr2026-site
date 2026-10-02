@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./styles/SendToActivityPage.css"
+import "./SendToActivityPage.css"
 import cobra_1 from "/img/page/home/section4/secao4_cobra_1.png"
 import cobra_2 from "/img/page/home/section4/secao4_cobra_2.png"
 import { useTranslation } from "react-i18next";
@@ -14,7 +14,7 @@ export const SendToActivityPage = () => {
                         {t("SendToActivityPage.text1")}
                     </h4>
                     <div className="SendToActivityPage_itens_texto_buttons">
-                        <Link to={'/atividades'}>
+                        <Link to={'/programacao'}>
                             <button className="SendToActivityPage_buttons_1">
                                 {t("SendToActivityPage.text2")}
                             </button>

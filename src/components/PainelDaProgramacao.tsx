@@ -2,10 +2,13 @@ import './styles/PainelDaProgramacao.css'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { activities } from '../data/AllActivities';
+import { Image } from './Image';
 
 type Lang = 'br' | 'en' | 'es'
 
-export default function PainelDaProgramacao() {
+export const PainelDaProgramacao = (
+    {counterCat} : any
+) => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language as Lang
   const [indexAtivo, setIndex] = useState(0);
@@ -72,7 +75,12 @@ export default function PainelDaProgramacao() {
                 <>
                   <div className='card_palestra_infos_3_fotos'>
                     {data.palestrante.map ((data_palestrante, index_foto) => (
-                      <img key={index_foto} src={data_palestrante['foto']} alt="" />
+                      <Image 
+                          key={index_foto}
+                          image={data_palestrante['foto']} 
+                          alt="foto do palestrante"
+                          counterCat={counterCat}
+                      />
                     ))}
                   </div>
                   <div className='card_palestra_infos_3_nomes'>
@@ -83,7 +91,11 @@ export default function PainelDaProgramacao() {
                 </>
                 ) : (
                   <>
-                    <img src={data.palestrante[0].foto} alt="" />
+                    <Image 
+                        image={data.palestrante[0].foto} 
+                        alt="foto do palestrante"
+                        counterCat={counterCat}
+                    />
                     <h3>{data.palestrante[0].nome}</h3>
                   </>
                 )}

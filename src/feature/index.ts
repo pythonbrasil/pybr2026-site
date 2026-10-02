@@ -1,1 +1,0 @@
-export { ActivitiesPage, SendToActivityPage } from "./ActivitiesPage";
