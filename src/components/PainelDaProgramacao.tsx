@@ -52,10 +52,14 @@ export default function PainelDaProgramacao() {
 
       <div className='todas_palestras'>
         {palestrasFiltradas.map((data, _index) => (
-          <div className='card_palestra' key={data.id}>
+          <div 
+            className='card_palestra' 
+            key={data.id} 
+            onClick={() => window.open(data.link, '_blank')}
+          >
             <div className='card_palestra_infos_1'>
-              {/* <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6> */}
-              {/* <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6> */}
+              <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
+              <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
               <h6 className='card_palestra_infos_1_nivel'>{data['nivel'][lang]}</h6>
               <h6 className='card_palestra_infos_1_atividade'>{data['atividade'][lang]}</h6>
             </div>

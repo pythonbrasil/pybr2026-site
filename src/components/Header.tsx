@@ -50,7 +50,7 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <Link to='/' onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</Link>
-                                            <Link to="/atividades" onClick={() => setIsModalOpen(false)}>ATIVIDADES</Link>
+                                            <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link>
                                             <Link to="/" onClick={() => srollToSelectedId("KEYNOTES")}>KEYNOTES</Link>
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
                                             <Link to="/" onClick={() => srollToSelectedId("GUIA_DA_CIDADE")}>{t("header.menu.guiaDaCidade")}</Link>
