@@ -21,6 +21,14 @@
 
 .painel_filtro_de_palestras {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.painel_filtro_de_palestras_esquerda {
+  display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
@@ -30,13 +38,27 @@
   width: auto;
 }
 
+.painel_filtro_de_palestras_direita {
+  & img {
+    height: 52px;
+    filter: brightness(0);
+  }
+
+  &.ativado {
+    & img {
+      height: 52px;
+      filter: none;
+    }
+  }
+}
+
 .painel_filtro_de_palestras_todas_opcoes {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   align-self: start;
-  width: 350px;
+  gap: 16px;
 }
 
 .painel_filtro_de_palestras_opcao {
@@ -256,5 +278,9 @@
     flex-direction: column;
     gap: 2px;
     text-align: center;
+  }
+
+  .painel_filtro_de_palestras_esquerda {
+    align-items: center;
   }
 }

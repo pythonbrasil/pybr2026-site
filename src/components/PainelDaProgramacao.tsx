@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { activities } from '../data/AllActivities';
 import { Image } from './Image';
+import star from '../../public/star.svg'
 
 type Lang = 'br' | 'en' | 'es'
 
@@ -13,6 +14,7 @@ export const PainelDaProgramacao = (
   const lang = i18n.language as Lang
   const [indexAtivo, setIndex] = useState(0);
   const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
+  const [favoriteActive, setFavoriteActive] = useState(false);
 
   const palestrasFiltradas = activities[indexAtivo]['info'].filter((palestra) => {
     if (indexAtivoFiltroPalestras === "Todos") return true;
@@ -23,24 +25,29 @@ export const PainelDaProgramacao = (
       <div className='painel_das_palestras'>
 
       <div className='painel_filtro_de_palestras'>
-        <h5>{t("painelDaProgramacao.filtrarPor")}</h5>
-        <div className='painel_filtro_de_palestras_todas_opcoes'>
-          <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
-              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
-            {t("painelDaProgramacao.todos")}
-          </h6>
-          <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
-              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
-            {t("painelDaProgramacao.palestras")}
-          </h6>
-          <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
-              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
-            {t("painelDaProgramacao.tutoriais")}
-          </h6>
-          <h6 onClick={() => setIndexAtivoFiltroPalestras("Debate")}
-              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Debate" ? "selecionado" : ""}`}>
-            {t("painelDaProgramacao.debates")}
-          </h6>
+        <div className='painel_filtro_de_palestras_esquerda'>
+          <h5>{t("painelDaProgramacao.filtrarPor")}</h5>
+          <div className='painel_filtro_de_palestras_todas_opcoes'>
+            <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
+                className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
+              {t("painelDaProgramacao.todos")}
+            </h6>
+            <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
+                className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
+              {t("painelDaProgramacao.palestras")}
+            </h6>
+            <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
+                className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
+              {t("painelDaProgramacao.tutoriais")}
+            </h6>
+          </div>
+        </div>
+        <div className={`painel_filtro_de_palestras_direita ${favoriteActive ? "ativado" : ""}`}>
+          <img 
+            src={star}
+            alt="Estrela de marcação de favoritos"
+            onClick={() => setFavoriteActive(!favoriteActive)}
+          />
         </div>
       </div>
 
