@@ -39,6 +39,7 @@ O site é uma aplicação web SPA (Single Page Application) desenvolvida com Rea
 - **Vite 7.2.4** - Build tool com dev server ultra-rápido
 - **React Router 7.12.0** - Roteamento client-side SPA
 - **React Router Hash Link 2.4.3** - Links hash para navegação interna
+- **yaml 2.9.0** - Parsing de arquivos YAML (dados de programação)
 
 ### Internacionalização
 - **i18next 25.7.4** - Framework de tradução
@@ -59,12 +60,12 @@ O site é uma aplicação web SPA (Single Page Application) desenvolvida com Rea
 ## Arquitetura
 
 ### Estrutura Geral
-O projeto segue uma arquitetura de **componentes compostos** com separação clara entre lógica, apresentação e dados:
+O projeto segue uma arquitetura de **componentes compostos** com separação clara entre lógica, apresentação e dados. Features complexas são extraídas para `src/feature/` com seus próprios estilos e assets:
 
 ```
 App (Raiz)
-  └── Layout (Header + Footer + Contador + Outlet)
-        ├── Home (Página inicial com 7 seções)
+  └── Layout (Header + Footer + Contador + Outlet + ScrollToTop)
+        ├── Home (Página inicial com 8 blocos)
         ├── FAQ (Perguntas frequentes)
         └── Programação (Agenda do evento)
 ```
@@ -78,17 +79,19 @@ App (Raiz)
 - **Outlet**: Área onde o conteúdo da rota atual é renderizado
 - **ButtonPrincipal**: Botões flutuantes no rodapé (ingressos, patrocínio)
 - **Footer**: Links do site, redes sociais, APyB
+- **ScrollToTop**: Scroll automático ao topo ao trocar de rota
 
 #### Página Home
-Composta por 7 seções visuais:
+Composta por 8 blocos (seções + features extraídas):
 
-1. **Hero Section** - Banner principal com imagem e carrossel de scrolling
-2. **Sobre o Evento** - Descrição do Python Brasil 2026, comunidade, APyB
-3. **Keynotes** - Palestrantes principais com carrossel interativo
-4. **Submissão de Atividades** - CFP (Call for Papers) com links para talks.python.org
-5. **Guia da Cidade** - Informações sobre Florianópolis, atividades, clima
-6. **Localização** - Hotel do evento, datas, planta, mapa
-7. **Patrocinadores** - Níveis de patrocínio (Bronze, Prata, Ouro, Apoiador, Comunidade)
+1. **Hero Section** (`Home.Section1`) - Banner principal com imagem e contador de categoria
+2. **Sobre o Evento** (`Home.Section2`) - Descrição do Python Brasil 2026, comunidade, APyB
+3. **Keynotes** (`KeynoteCarroussel`) - Feature separada: carrossel interativo de palestrantes principais
+4. **Carrossel de Scrolling** (`Carrossel`) - Texto animado "pela comunidade / para comunidade"
+5. **CTA Programação** (`SendToActivityPage`) - Feature separada: botão para acessar programação completa
+6. **Guia da Cidade** (`Home.Section5`) - Informações sobre Florianópolis, atividades, clima, hospedagem
+7. **Localização do Evento** (`EventLocals`) - Feature separada: hotel, datas, planta, mapa
+8. **Patrocinadores** (`SponsorsExibition`) - Feature separada: níveis de patrocínio (Bronze, Prata, Ouro, Apoiador, Comunidade)
 
 #### FAQ
 - Lista de perguntas frequentes expansíveis
@@ -100,10 +103,11 @@ Composta por 7 seções visuais:
 - Painel com datas, horários, atividades
 - Filtro por tipo: Palestras, Tutoriais, Debates
 - Palestrantes com fotos e bios
+- Dados carregados de `src/data/AllActivities.ts` (YAML)
 
 ### Gerenciamento de Estado
-- **useState**: Estado local em componentes (menu aberto, FAQ aberto, idioma)
-- **useEffect**: Side effects (contador, loading de 2 segundos)
+- **useState**: Estado local em componentes (menu aberto, FAQ aberto, idioma, contadores)
+- **useEffect**: Side effects (contador regressivo, loading de 2 segundos, scroll to top)
 - **i18n context**: Estado global de idioma via i18next
 - **React Router state**: Roteamento e navegação
 
@@ -136,14 +140,20 @@ Carrossel automático infinito com texto alternado:
 - Animação CSS contínua (150 segundos para completar ciclo)
 - Background verde limão (#b7ff06)
 
-### 5. Seção de Keynotes
-Swiper interativo com:
+### 5. Seção de Keynotes (`KeynoteCarroussel`)
+Feature extraída (`src/feature/KeynoteCarroussel/`) — Swiper interativo com:
 - 4 slides de palestrantes
 - Dots de seleção clicáveis
-- Foto do palestrante + links de redes sociais + bio
+- Foto do palestrante + links de redes sociais (GitHub, LinkedIn, Instagram) + bio
 - Exemplo: Fernanda Wanderley (UFRJ, UFMG, Google Developer Expert)
+- Assets locais para logos de redes sociais
 
-### 6. FAQ Interativo
+### 6. CTA Programação (`SendToActivityPage`)
+Feature extraída (`src/feature/SendToActivityPage/`) — Botão de ação para direcionar à página de programação completa:
+- Texto e link traduzidos (3 idiomas)
+- Estilo consistente com botões principais
+
+### 7. FAQ Interativo
 Cada pergunta funciona como um acordeão:
 - Clique para expandir/recolher
 - Seta animada (rotação 180°)
@@ -155,16 +165,34 @@ Exibe a agenda do evento organizada por dias:
 - Cada dia lista atividades com horário, duração, nível e tipo
 - Cards com título, descrição e palestrantes
 - Filtro por categoria (Palestras, Tutoriais, Debates)
-- Dados em JSON com suporte multi-idioma
+- Dados carregados de YAML (`src/data/AllActivities.ts`) com suporte multi-idioma
 
-### 8. Tela de Loading
+### 8. Localização do Evento (`EventLocals`)
+Feature extraída (`src/feature/EventLocals/`) — Informações de localização:
+- Hotel do evento, datas, planta do evento, link para mapa
+- Datas de palestras (16-18 out), tutoriais (14-15 out), sprints (19 out)
+- Textos traduzidos em 3 idiomas
+
+### 9. Patrocinadores (`SponsorsExibition`)
+Feature extraída (`src/feature/SponsorsExibition/`) — Exibição de patrocinadores por nível:
+- Ouro, Prata, Bronze, Apoiador, Comunidade
+- Layout responsivo com logos
+- Textos traduzidos em 3 idiomas
+
+### 10. Tela de Loading
 Ao abrir o site, exibe uma tela de carregamento por 2 segundos:
 - Imagem SVG animada de cobra
 - Texto "Carregando..."
 - Animação de slide contínuo
 - Posição fixa com z-index alto
 
-### 9. Botões Flutuantes
+### 11. Scroll To Top (`ScrollToTop`)
+Componente que rola a página automaticamente para o topo ao trocar de rota:
+- Usa `useLocation` do React Router para detectar mudança de rota
+- `window.scrollTo(0, 0)` instantâneo
+- Integrado no `Layout` para funcionar em todas as páginas
+
+### 12. Botões Flutuantes
 No rodapé, dois botões fixos:
 - "Comprar Ingressos" → Link externo para ingressos.python.org.br
 - "Plano de Patrocínio" → Link para canva com plano de patrocínio
@@ -195,6 +223,14 @@ O projeto suporta **3 idiomas** com tradução completa:
 - **Trans**: Componente para tradução de HTML inline (usado em spans coloridos)
 - **Arrays**: Chaves como `faq.perguntas[]` retornam arrays de objetos
 - **Placeholders**: Tags `<1>` são substituídas por spans coloridos na tradução
+
+### Novas chaves de tradução (features extraídas)
+- `SendToActivityPage` — textos do CTA para programação
+- `ActivitiesPage` — labels de filtro (Palestras/Tutoriais/Debates)
+- `home.section4` — submissão de atividades (CFP)
+- `home.section5` — guia da cidade (atualizado)
+- `home.section6` — localização do evento (era section6, agora feature)
+- `home.section7` — patrocinadores (era section7, agora feature)
 
 Exemplo de uso:
 ```typescript
@@ -348,33 +384,53 @@ pybr2026/
 │   ├── i18n.ts                  # Configuração de idiomas
 │   ├── links.ts                 # Links constantes
 │   ├── Layout.tsx               # Layout wrapper
-│   ├── components/              # Componentes reutilizáveis
+│   ├── components/              # Componentes reutilizáveis (UI genérica)
 │   │   ├── Header.tsx           # Cabeçalho + menu + idioma
 │   │   ├── Footer.tsx           # Rodapé + redes sociais
 │   │   ├── Contador.tsx         # Contador regressivo
 │   │   ├── Carregamento.tsx     # Tela de loading
 │   │   ├── Carrossel.tsx        # Carrossel de scrolling
-│   │   ├── SimpleSwiper.tsx     # Swiper para keynotes
-│   │   ├── slide.tsx            # Slide de keynote
 │   │   ├── ButtonPrincipal.tsx  # Botões flutuantes
+│   │   ├── Image.tsx            # Componente de imagem reutilizável
+│   │   ├── ScrollToTop.tsx      # Scroll automático ao trocar rota
 │   │   └── PainelDaProgramacao.tsx # Painel de agenda
+│   ├── feature/                 # Features complexas (auto-contidas: componente + estilo + assets)
+│   │   ├── KeynoteCarroussel/   # Carrossel de keynotes (substitui SimpleSwiper/slide)
+│   │   │   ├── KeynoteCarroussel.tsx
+│   │   │   ├── KeynoteCarroussel.css
+│   │   │   ├── slide.tsx
+│   │   │   ├── slide.css
+│   │   │   ├── index.ts
+│   │   │   └── assets/          # logos redes sociais dos palestrantes
+│   │   ├── EventLocals/         # Localização do evento (era Home.Section6)
+│   │   │   ├── EventLocals.tsx
+│   │   │   ├── EventLocals.css
+│   │   │   └── index.ts
+│   │   ├── SponsorsExibition/   # Exibição de patrocinadores (era Home.Section7)
+│   │   │   ├── SponsorsExibition.tsx
+│   │   │   ├── SponsorsExibition.css
+│   │   │   └── index.ts
+│   │   └── SendToActivityPage/  # CTA para página de programação
+│   │       ├── SendToActivityPage.tsx
+│   │       ├── SendToActivityPage.css
+│   │       └── index.ts
 │   ├── pages/
 │   │   ├── home/
-│   │   │   ├── Home.tsx         # Página inicial
-│   │   │   └── section/         # 7 seções da home
+│   │   │   ├── Home.tsx         # Página inicial (compose 8 blocos)
+│   │   │   └── section/         # Seções da home (1, 2, 5)
 │   │   ├── faq/
 │   │   │   ├── Faq.tsx          # Página FAQ
 │   │   │   └── FaqQuestion.tsx  # Pergunta expansível
 │   │   └── programacao/
 │   │       └── Programacao.tsx  # Página de programação
-│   └── styles/                  # Arquivos CSS de cada componente
+│   └── data/
+│       └── AllActivities.ts     # Dados de programação (parse YAML)
 ├── public/img/                  # Imagens do projeto
 ├── index.html                   # HTML principal
 ├── package.json                 # Dependências
-├── deploy.bat                   # Script de deploy Windows
-├── script.js                    # Script vanilla fallback
+├── deploy.bat                   # Script de deploy Windows (build + 404.html + deploy)
+├── script.js                    # Script vanilla fallback (legado)
 ├── style.css                    # Estilos globais
-└── TODO                         # Tarefas pendentes
 ```
 
 ---
