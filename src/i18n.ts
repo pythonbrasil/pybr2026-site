@@ -93,7 +93,7 @@ i18n
                     paragrafo2 : "Dias voltados para minicursos oferecidos pela própria comunidade, em breve você poderá se inscrever para participar!",
                     aDefinir : "A definir",
                     sprintData : "19 de Outubro",
-                    paragrafo3 : "Dias voltados para minicursos oferecidos pela própria comunidade, em breve você poderá se inscrever para participar!",
+                    paragrafo3 : "Dia dedicado às sprints de contribuição open source: venha colaborar em projetos da comunidade, aprender com mantenedores experientes e fazer suas primeiras contribuições em um ambiente acolhedor e guiado.",
                 },
                 section7 : {
                     patrocinadores : "Patrocinadores",
@@ -227,7 +227,7 @@ i18n
                     paragrafo2: "Days dedicated to minicourses offered by the community itself, soon you will be able to register to participate!",
                     aDefinir: "To be defined",
                     sprintData : "October 19",
-                    paragrafo3 : "Days dedicated to programming marathons, collaborative project development, practical resolution of technical challenges, and specialized mentoring.",
+                    paragrafo3 : "A day dedicated to open source contribution sprints: come collaborate on community projects, learn from experienced maintainers, and make your first contributions in a welcoming and guided environment.",
                 },
                 section7: {
                     patrocinadores: "Sponsors",
@@ -361,7 +361,7 @@ i18n
                     paragrafo2: "Días dedicados a minicursos ofrecidos por la propia comunidad, pronto podrás registrarte para participar!",
                     aDefinir: "Por definir",
                     sprintData : "19 de octubre",
-                    paragrafo3 : "Días dedicados a minicursos ofrecidos por la propia comunidad, ¡pronto podrás inscribirte para participar!",
+                    paragrafo3 : "Un día dedicado a las sprints de contribución al código abierto: ven a colaborar en proyectos de la comunidad, aprender de mantenedores experimentados y realizar tus primeras contribuciones en un entorno acogedor y guiado.",
                 },
                 section7: {
                     patrocinadores: "Patrocinadores",
