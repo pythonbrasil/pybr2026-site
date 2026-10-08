@@ -71,6 +71,33 @@
   color: black;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  position: relative;
+}
+
+.menu_de_salas.ativo {
+  display: flex;
+}
+
+.menu_de_salas {
+  position: absolute;
+  z-index: 200;
+  top: 24.4px;
+  left: -1px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  border-radius: 10px;
+  width: 105px;
+  padding: 10px 0px;
+  border: 1px black solid;
+  background-color: #B7FF06;
+
+  & h6 {
+    font-size: 14px;
+  }
 }
 
 .painel_filtro_de_palestras_opcao.selecionado {

@@ -13,23 +13,42 @@ export const PainelDaProgramacao = (
   const { t, i18n } = useTranslation();
   const lang = i18n.language as Lang
   const [indexAtivo, setIndex] = useState(0);
+  const [menuDeSalasOpen, setMenuDeSalasOpen] = useState(false);
   const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
+  const [indexAtivoFiltroSala, setIndexAtivoFiltroSala] = useState("Todas");
   const [favoriteActive, setFavoriteActive] = useState(false);
   const [favoritos, setFavoritos] = useState(() => {
     const favoritosSalvos = localStorage.getItem("palestras_favoritas");
     return favoritosSalvos ? JSON.parse(favoritosSalvos) : [];
   });
 
-  const palestrasFiltradas = activities[indexAtivo]['info'].filter((palestra) => {
+  const salasDisponiveis = [
+    ...new Map(
+      activities[indexAtivo].info.map((palestra) => [
+        palestra.sala.br,
+        palestra.sala,
+      ])
+    ).values(),
+  ];
+
+  const palestrasFiltradas = activities[indexAtivo].info.filter((palestra) => {
 
     const pertenceAoFiltro =
       indexAtivoFiltroPalestras === "Todos" ||
       palestra.atividade.br === indexAtivoFiltroPalestras;
 
+    const pertenceAoFiltroSala =
+      indexAtivoFiltroSala === "Todas" ||
+      palestra.sala.br === indexAtivoFiltroSala;
+
     const eFavorito =
       favoritos.includes(String(palestra.id));
 
-    return pertenceAoFiltro && (!favoriteActive || eFavorito);
+    return (
+      pertenceAoFiltro &&
+      pertenceAoFiltroSala &&
+      (!favoriteActive || eFavorito)
+    );
   });
 
   const adicionarRemoverFavorito = (id: number) => {
@@ -68,6 +87,23 @@ export const PainelDaProgramacao = (
                 className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
               {t("painelDaProgramacao.tutoriais")}
             </h6>
+            <div 
+              className='painel_filtro_de_palestras_opcao'
+              onClick={() => setMenuDeSalasOpen(!menuDeSalasOpen)}
+            >
+              <h6>Selecionar sala</h6>
+              <div className={`menu_de_salas ${menuDeSalasOpen ? "ativo" : ""}`}>
+                <h6 onClick={() => setIndexAtivoFiltroSala("Todas")}>Todas</h6>
+                {salasDisponiveis.map((sala) => (
+                  <h6 
+                    key={sala.br}
+                    onClick={() => setIndexAtivoFiltroSala(sala.br)}
+                  >
+                    {sala[lang]}
+                  </h6>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className={`estrela_favorito ${favoriteActive ? "ativado" : ""}`}>
