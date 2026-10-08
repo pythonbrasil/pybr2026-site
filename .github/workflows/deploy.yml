@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+# Executa a pipeline a cada push na branch main
+on:
+  push:
+    branches:
+      - main # Mude para 'master' se for o nome da sua branch principal
+
+# Necessário para que a action tenha permissão de gravar na branch gh-pages
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Fazer o Build (npm run build)
+        run: npm run build
+
+      - name: Criar 404.html
+        run: cp dist/index.html dist/404.html
+
+      - name: Realizar Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
