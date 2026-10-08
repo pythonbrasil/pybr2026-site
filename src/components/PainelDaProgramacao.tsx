@@ -88,10 +88,12 @@ export const PainelDaProgramacao = (
               {t("painelDaProgramacao.tutoriais")}
             </h6>
             <div 
-              className='painel_filtro_de_palestras_opcao'
+              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroSala == "Todas" ? "" : "selecionado"}`}
               onClick={() => setMenuDeSalasOpen(!menuDeSalasOpen)}
             >
-              <h6>Selecionar sala</h6>
+              <h6>
+                {indexAtivoFiltroSala === "Todas" ? "Selecionar sala" : indexAtivoFiltroSala}
+              </h6>
               <div className={`menu_de_salas ${menuDeSalasOpen ? "ativo" : ""}`}>
                 <h6 onClick={() => setIndexAtivoFiltroSala("Todas")}>Todas</h6>
                 {salasDisponiveis.map((sala) => (
