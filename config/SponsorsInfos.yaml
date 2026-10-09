@@ -69,6 +69,9 @@ AllSponsors:
       - name: 'Black Python Devs'
         img: '/Sponsors/black_python_devs.png'
         link: 'https://blackpythondevs.com/'
+      - name: 'Vinta'
+        img: '/Sponsors/vinta.png'
+        link: 'https://www.vintasoftware.com/'
   - apoio: "Apoio"
     flag: '/Sponsors/bandeira_apoio.png'
     name:
@@ -80,3 +83,6 @@ AllSponsors:
       - name: 'UNICESUSC'
         img: '/Sponsors/unicesusc.png'
         link: 'https://unicesusc.edu.br/'
+      - name: 'HostGator'
+        img: '/Sponsors/hostgator.png'
+        link: 'https://www.hostgator.com.br/'
