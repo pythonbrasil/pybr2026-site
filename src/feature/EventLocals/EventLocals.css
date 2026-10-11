@@ -73,7 +73,7 @@
 
     & .Home_Section6_localizacao_cards_Palestras_data {
         font-weight: 550;
-        font-size: 14px;
+        font-size: 23px;
         margin-bottom: 5px;
     }
 
@@ -87,7 +87,6 @@
     & .Home_Section6_localizacao_cards_Palestras_buttons {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
     }
 
     & button {
@@ -140,6 +139,81 @@
     background-color: #b7ff06;
 }
 
+.tutorials_modal_overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.tutorials_modal {
+    position: relative;
+    width: min(420px, calc(100vw - 32px));
+    padding: 28px 24px 22px;
+    border-radius: 20px;
+    background: #0f0f0f;
+    border: 2px solid #b7ff06;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+    color: #f5f7fa;
+}
+
+.tutorials_modal_tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #b7ff06;
+    color: #0f0f0f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.tutorials_modal h3 {
+    margin: 18px 0 12px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.tutorials_modal p {
+    margin: 0 0 10px;
+    color: #dfe7ee;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tutorials_modal_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #b7ff06;
+    border-radius: 50%;
+    background: transparent;
+    color: #b7ff06;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.tutorials_modal_button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: #b7ff06;
+    color: #0f0f0f;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 @media (max-width : 520px) {
     .Home_Section6_localizacao_cards_Palestras {
         min-width: 180px;
@@ -154,4 +228,19 @@
         max-width: 380px;
         padding: 20px;
     }   
+}
+
+.localizacao_buttons {
+    width: 100%;
+    a {
+        width: 50%;
+
+        .inscrition {
+            float: right;
+        }
+
+        .mapa {
+            float: left;
+        }
+    }
 }

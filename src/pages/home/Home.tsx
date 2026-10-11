@@ -23,9 +23,9 @@ export default function Home(
                 counterCat = {counterCat}
             />
             <Carrossel/>
+            <EventLocals/>
             <SendToActivityPage/>
             <Home_Section5/>
-            <EventLocals/>
             <SponsorsExibition/>
         </>
     )
