@@ -1,6 +1,7 @@
 import "./styles/FaqQuestion.css"
 import seta from './styles/seta.svg'
 import { useState } from 'react';
+import { LINK_PROGRAMACAO } from '../../links';
 
 type FaqQuestionProps = {
     pergunta : string,
@@ -30,7 +31,7 @@ export default function FaqQuestion({ pergunta , resposta } : FaqQuestionProps) 
                 const label = m[2];
                 if (target === 'programacao') {
                     parts.push(
-                        <a key={`a-${idx++}`} className="faq-link" href="/programacao" target="_blank" rel="noopener noreferrer">{label}</a>
+                        <a key={`a-${idx++}`} className="faq-link" href={LINK_PROGRAMACAO} target="_blank" rel="noopener noreferrer">{label}</a>
                     );
                 } else {
                     parts.push(

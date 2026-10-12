@@ -8,7 +8,7 @@ import logo from "/img/components/header/logo.svg"
 import logo_menu from "/img/components/menu/Logo.svg"
 import X_menu from "/img/components/menu/X.svg"
 import surf_menu from "/img/components/menu/surf.svg"
-import { LINK_COMPRAR_INGRESSO } from "../links"
+import { LINK_COMPRAR_INGRESSO, LINK_PROGRAMACAO } from "../links"
 
 export default function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -50,7 +50,7 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <Link to='/' onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</Link>
-                                            <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link>
+                                            <a href={LINK_PROGRAMACAO} target="_blank" rel="noreferrer noopener" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</a>
                                             <Link to="/" onClick={() => srollToSelectedId("KEYNOTES")}>KEYNOTES</Link>
                                             {/* <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link> */}
                                             <Link to="/" onClick={() => srollToSelectedId("GUIA_DA_CIDADE")}>{t("header.menu.guiaDaCidade")}</Link>
