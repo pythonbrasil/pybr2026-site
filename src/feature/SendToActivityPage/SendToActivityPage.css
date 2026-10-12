@@ -51,11 +51,6 @@
     max-width: 241px;
 }
 
-.SendToActivityPage_buttons_1 {
-    background-color: black;
-    color: aliceblue;
-}
-
 .SendToActivityPage_buttons_2 {
     background-color: rgba(0, 0, 0, 0);
     color: black;
@@ -95,4 +90,19 @@
             text-align: center;
         }
     }
+}
+
+.SendToActivityPage_buttons_to_schedule {
+    background-color: black !important;
+    color: aliceblue !important;
+    font-size: 18px;
+    font-weight: 350;
+    cursor: pointer;
+    padding: 18px 32px;
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: none;
+    border-radius: 60px;
+    text-decoration-line: blink !important;
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./SendToActivityPage.css"
 import cobra_1 from "/img/page/home/section4/secao4_cobra_1.png"
 import cobra_2 from "/img/page/home/section4/secao4_cobra_2.png"
@@ -14,13 +13,15 @@ export const SendToActivityPage = () => {
                         {t("SendToActivityPage.text1")}
                     </h4>
                     <div className="SendToActivityPage_itens_texto_buttons">
-                        <Link to={'/programacao'}>
-                            <button className="SendToActivityPage_buttons_1">
-                                {t("SendToActivityPage.text2")}
-                            </button>
-                        </Link>
+                        <a
+                            className="SendToActivityPage_buttons_to_schedule"
+                            href="https://talks.python.org.br/pybr26/schedule/"
+                            target="_blank"
+                            rel="noreferrer noopener">
+                            {t("SendToActivityPage.text2")}
+                        </a>
                     </div>
-                    <a href="https://instagram.com/pythonbrasil" target="_blank">
+                    <a href="https://instagram.com/pythonbrasil" target="_blank" rel="noreferrer noopener">
                         <p>
                             {t("SendToActivityPage.text3")}
                         </p>
