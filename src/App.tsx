@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom"
 import Layout from './Layout'
 import ScrollToTop from './components/ScrollToTop';
-import { Programacao } from './pages/programacao/Programacao';
+import { RedirectToPretix } from './components/RedirectToPretix';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +33,7 @@ function App() {
             }
           />
           <Route path="perguntas_frequentes" element={<Faq/>} />
-          <Route path="programacao" element={<Programacao counterCat={counterCat}/>} />
+          <Route path="programacao" element={<RedirectToPretix/>} />
         </Route>
       </Routes>
     </>
